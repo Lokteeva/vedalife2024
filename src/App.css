@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Bahnschrift';
+  src: url('../public/fonts/ASJHEV-Bahnschrift.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'BebasNeueLight';
+  src: url('../public/fonts/AUTIJG-BebasNeue-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Corvetta';
+  src: url('../public/fonts/AYFDYM-Corvetta.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'OzHandicraftBT';
+  src: url('../public/fonts/BACEVI-OzHandicraftBT-Roman.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'BebasNeueRegular'; /* tel, nav*/
+  src: url('../public/fonts/BEYLAF-BebasNeueRegular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'SourceCodeVariable';
+  src: url('../public/fonts/DRVTLM-SourceCodeVariable-Roman.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('../public/fonts/FPVANI-MyriadPro-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'SourceSansVariable';
+  src: url('../public/fonts/JVTYRA-SourceSansVariable-Roman.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'BebasNeueBold';
+  src: url('../public/fonts/PWXNXO-BebasNeueBold.ttf') format('truetype');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --pink: rgb(208, 9, 128);
+  --white: #fff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.podlogka {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 0.3;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.podlogka img {
+  width: 100vw;
+}
+.header {
+}
+.header__line {
+  height: 16px;
+  background: linear-gradient(to right, rgb(0, 151, 159), rgb(128, 188, 206));
+}
+.header__box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 120px;
+  background-color: var(--pink);
 }
-
-.App-link {
-  color: #61dafb;
+.header__logo1 img {
+  width: 90px;
+  height: 60px;
+  padding-top: 30px;
+  padding-left: 40px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header__logo2 img {
+  padding-left: 33px;
+  padding-top: 30px;
+  width: 230px;
+  height: 75px;
+}
+.header__logo3 img {
+  padding-top: 25px;
+  padding-left: 35px;
+  width: 135px;
+  height: 55px;
+}
+.header__social-box {
+  /* background-color: green; */
+}
+.header__social {
+  display: flex;
+  /* background-color: red; */
+  margin-left: 160px;
+  height: 67px;
+}
+.social__whatsapp {
+  width: 18px;
+  height: 18px;
+  background-color: var(--white);
+  border-radius: 50%;
+  padding: 4px;
+  margin-top: 40px;
+}
+.whatsapp {
+  width: 18px;
+}
+.social__whatsapp:hover,
+.social__telegram:hover,
+.social__instagram:hover,
+.social__vk:hover,
+.header__nav li:hover {
+  /* opacity: 0.8; */
+  scale: 1.2;
+  transition: scale .2s ease-in;
+}
+.social__telegram {
+  width: 18px;
+  height: 18px;
+  background-color: var(--white);
+  border-radius: 50%;
+  padding: 3.5px;
+  margin-left: 12px;
+  margin-top: 40px;
+}
+.telegram {
+  width: 16px;
+}
+.social__vk {
+  width: 18px;
+  height: 18px;
+  margin-left: 10px;
+  margin-top: 37px;
+}
+.vk {
+  width: 28px;
+}
+.social__instagram {
+  width: 18px;
+  height: 18px;
+  margin-left: 20px;
+  margin-top: 38px;
+}
+.instagram {
+  width: 25px;
+}
+.header__tel a {
+  text-decoration: none;
+  color: var(--white);
+  /* font-family: 'Bahnschrift'; */
+  font-family: 'BebasNeueRegular';
+  margin-left: 170px;
+  font-size: 22px;
+}
+.header__nav {
+  padding-left: 55px;
+}
+.header__nav ul {
+  display: flex;
+  column-gap: 65px;
+  list-style: none;
+  text-transform: uppercase;
+  font-family: 'BebasNeueRegular';
+  font-size: 20px;
+  font-weight: 20px;
+  color: var(--white);
+  padding-top: 25px;
+}
+.header__nav li:last-child {
+  border: 1px solid var(--white);
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: -10px;
+}
+.header__nav li:last-child:hover {
+  color: var(--pink);
+  background-color: var(--white);
+  box-shadow: 0px 0px 20px #ffffff;
+}
+/* home */
+.home img {
+  width: 100%;
+  padding-top: 5px;
 }
