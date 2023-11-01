@@ -38,9 +38,10 @@
 :root {
   --pink: rgb(208, 9, 128);
   --white: #fff;
+  --index: calc(1vw + 1vh);
 }
 .podlogka {
-  display: none;
+  /* display: none; */
   position: absolute;
   top: 0;
   left: 0;
@@ -53,118 +54,107 @@
 .header {
 }
 .header__line {
-  height: 16px;
+  /* height: 16px; */
+  height: calc(var(--index) * 0.6);
   background: linear-gradient(to right, rgb(0, 151, 159), rgb(128, 188, 206));
 }
 .header__box {
   display: flex;
-  height: 120px;
+  /* height: 120px; */
+  height: calc(var(--index) * 5.1);
+
   background-color: var(--pink);
 }
 .header__logo1 img {
-  width: 90px;
-  height: 60px;
-  padding-top: 30px;
-  padding-left: 40px;
+  width: calc(var(--index) * 4);
+  height: calc(var(--index) * 2.6);
+  padding-top: calc(var(--index) * 1.5);
+  padding-left: calc(var(--index) * 1.5);
 }
 .header__logo2 img {
-  padding-left: 33px;
-  padding-top: 30px;
-  width: 230px;
-  height: 75px;
+  width: calc(var(--index) * 9.8);
+  height: calc(var(--index) * 3);
+  padding-top: calc(var(--index) * 1.4);
+  padding-left: calc(var(--index) * 1.5);
 }
 .header__logo3 img {
-  padding-top: 25px;
-  padding-left: 35px;
-  width: 135px;
-  height: 55px;
-}
-.header__social-box {
-  /* background-color: green; */
+  width: calc(var(--index) * 5.7);
+  height: calc(var(--index) * 2.3);
+  padding-top: calc(var(--index) * 1.2);
+  padding-left: calc(var(--index) * 1.5);
 }
 .header__social {
   display: flex;
   /* background-color: red; */
-  margin-left: 160px;
-  height: 67px;
+  margin-left: calc(var(--index) * 6.6);
+  height: calc(var(--index) * 2.9);
 }
 .social__whatsapp {
-  width: 18px;
-  height: 18px;
-  background-color: var(--white);
-  border-radius: 50%;
-  padding: 4px;
-  margin-top: 40px;
+  margin-top: calc(var(--index) * 1.7);
 }
 .whatsapp {
-  width: 18px;
+  width: calc(var(--index) * 1.4);
 }
 .social__whatsapp:hover,
 .social__telegram:hover,
 .social__instagram:hover,
 .social__vk:hover,
 .header__nav li:hover {
-  /* opacity: 0.8; */
   scale: 1.2;
-  transition: scale .2s ease-in;
-}
-.social__telegram {
-  width: 18px;
-  height: 18px;
-  background-color: var(--white);
-  border-radius: 50%;
-  padding: 3.5px;
-  margin-left: 12px;
-  margin-top: 40px;
+  transition: scale 0.2s ease-in;
 }
 .telegram {
-  width: 16px;
+  width: calc(var(--index) * 1.8);
+  margin-top: calc(var(--index) * 1.4);
 }
 .social__vk {
-  width: 18px;
-  height: 18px;
-  margin-left: 10px;
-  margin-top: 37px;
+  width: calc(var(--index) * 0.8);
+  height: calc(var(--index) * 0.8);
+  margin-top: calc(var(--index) * 1.57);
+  margin-left: calc(var(--index) * 0.2);
 }
 .vk {
-  width: 28px;
+  width: calc(var(--index) * 1.4);
 }
 .social__instagram {
-  width: 18px;
-  height: 18px;
-  margin-left: 20px;
-  margin-top: 38px;
+  width: calc(var(--index) * 0.8);
+  height: calc(var(--index) * 0.8);
+  margin-left: calc(var(--index) * 1.1);
+  margin-top: calc(var(--index) * 1.67);
 }
 .instagram {
-  width: 25px;
+  width: calc(var(--index) * 1.2);
 }
 .header__tel a {
   text-decoration: none;
   color: var(--white);
-  /* font-family: 'Bahnschrift'; */
   font-family: 'BebasNeueRegular';
-  margin-left: 170px;
-  font-size: 22px;
+  margin-left: calc(var(--index) * 7.2);
+  font-size: calc(var(--index) * 1);
 }
 .header__nav {
-  padding-left: 55px;
+  padding-left: calc(var(--index) * 1.7);
 }
 .header__nav ul {
   display: flex;
-  column-gap: 65px;
   list-style: none;
   text-transform: uppercase;
   font-family: 'BebasNeueRegular';
-  font-size: 20px;
-  font-weight: 20px;
+  font-size: calc(var(--index) * 0.9);
   color: var(--white);
-  padding-top: 25px;
+  padding-top: calc(var(--index) * 1.1);
+}
+.header__nav li {
+  padding-right: calc(var(--index) * 2.8);
+}
+.header__nav li:nth-child(3) {
+  padding-right: calc(var(--index) * 1.3);
 }
 .header__nav li:last-child {
   border: 1px solid var(--white);
-  padding: 10px 20px;
+  padding: calc(var(--index) * 0.5) calc(var(--index) * 1);
   border-radius: 8px;
-  margin-top: -10px;
+  margin-top: calc(var(--index) * -0.5);
 }
 .header__nav li:last-child:hover {
   color: var(--pink);
@@ -175,4 +165,54 @@
 .home img {
   width: 100%;
   padding-top: 5px;
+}
+/* vedalife */
+.vedalife {
+  padding-top: 80px;
+  display: flex;
+  column-gap: 80px;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.vedalife__img img {
+  width: calc(var(--index) * 24);
+  border-radius: 50%;
+}
+.vedalife__content {
+  max-width: 600px;
+}
+.vedalife__title {
+  color: var(--pink);
+  text-transform: uppercase;
+  font-family: 'BebasNeueRegular';
+  font-size: 27px;
+  letter-spacing: 3px;
+}
+.vedalife__text {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.vedalife__subtitle {
+  font-size: 40px;
+  font-family: 'OzHandicraftBT';
+  letter-spacing: 4px;
+  text-align: center;
+}
+/* new year */
+.newYear {
+  background-color: var(--pink);
+  display: flex;
+}
+.newYear__date {
+  color: var(--white);
+  font-size: calc(var(--index) * 7);
+  font-family: 'BebasNeueRegular';
+}
+.newYear__snowflake {
+}
+.newYear__title {
+}
+.newYear__year img {
+  width: calc(var(--index) * 12);
 }
