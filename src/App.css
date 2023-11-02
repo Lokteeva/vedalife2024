@@ -42,6 +42,8 @@
 * {
   margin: 0;
   padding: 0;
+}
+body {
   overflow-x: hidden;
 }
 
@@ -53,7 +55,7 @@
   --index: calc(1vw + 1vh);
 }
 .podlogka {
-  /* display: none; */
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -335,4 +337,11 @@
   border: none;
   background-color: var(--darkPink);
   border-radius: 28px;
+}
+/* mandarin */
+.mandarin {
+  /* margin: -20px; */
+}
+.mandarin__img {
+  width: 100%;
 }
