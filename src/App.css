@@ -52,10 +52,11 @@ body {
   --darkPink: rgb(213, 8, 127);
   --litePink: rgb(233, 125, 177);
   --white: #fff;
+  --darkBlue: rgb(55,131,161);
   --index: calc(1vw + 1vh);
 }
 .podlogka {
-  display: none;
+  /* display: none; */
   position: absolute;
   top: 0;
   left: 0;
@@ -114,6 +115,7 @@ body {
 .header__nav li:hover {
   scale: 1.2;
   transition: scale 0.2s ease-in;
+  cursor: pointer;
 }
 .telegram {
   width: calc(var(--index) * 1.8);
@@ -234,10 +236,6 @@ body {
   margin-left: calc(var(--index) * 1.6);
   margin-top: calc(var(--index) * -1.5);
 }
-.newYear__date {
-  /* text-align: center; */
-  /* background-color:blue; */
-}
 .newYear__month {
   display: flex;
   position: relative;
@@ -315,8 +313,8 @@ body {
 }
 .festival__snowflake1 {
   position: absolute;
-  bottom: 1px;
-  left: -50px;
+  bottom: calc(var(--index) * 1);
+  left: calc(var(--index) * -1.5);
   width: calc(var(--index) * 15);
   z-index: -1;
   opacity: 0.5;
@@ -326,7 +324,7 @@ body {
   z-index: -1;
   opacity: 0.5;
   width: calc(var(--index) * 20);
-  top: 90px;
+  top: calc(var(--index) * 1);
 }
 .festival__btn {
   position: absolute;
@@ -339,9 +337,57 @@ body {
   border-radius: 28px;
 }
 /* mandarin */
-.mandarin {
-  /* margin: -20px; */
-}
 .mandarin__img {
   width: 100%;
+}
+/* festival */
+.programmFestival {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: calc(var(--index) * 4);
+  padding-bottom: calc(var(--index) * 6);
+}
+.programmFestival__content {
+  width: calc(var(--index) * 25);
+  align-items: center;
+  margin: auto 0;
+}
+.programmFestival__title {
+  font-size: calc(var(--index) * 1);
+  font-family: 'BebasNeueBook';
+  padding-bottom: calc(var(--index) * 1);
+  color: var(--pink);
+  text-transform: uppercase;
+}
+.programmFestival__text {
+  font-size: 18px;
+}
+.programmFestival__text p,
+.programmFestival__text ul {
+  padding-bottom: calc(var(--index) * 1);
+  line-height: 1.5;
+}
+.programmFestival__img img {
+  border-radius: 50%;
+  width: calc(var(--index) * 23);
+  margin-right: calc(var(--index) * 3);
+}
+.programmFestival__snowflake1 {
+  position: absolute;
+  top: calc(var(--index) * 10);
+  right: calc(var(--index) * -1);
+  width: calc(var(--index) * 19);
+  z-index: -1;
+  opacity: 0.5;
+}
+.programmFestival__btn {
+  position: absolute;
+  bottom: calc(var(--index) * 6);
+  left: calc(var(--index) * -1.5);
+  width: calc(var(--index) * 10);
+  height: calc(var(--index) * 2);
+  border: none;
+  background-color: var(--darkBlue);
+  border-radius: 28px;
 }
