@@ -1,34 +1,6 @@
 @font-face {
-  font-family: 'Bahnschrift';
-  src: url('../public/fonts/ASJHEV-Bahnschrift.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'BebasNeueLight';
-  src: url('../public/fonts/AUTIJG-BebasNeue-Light.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Corvetta';
-  src: url('../public/fonts/AYFDYM-Corvetta.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'OzHandicraftBT';
-  src: url('../public/fonts/BACEVI-OzHandicraftBT-Roman.ttf') format('truetype');
-}
-@font-face {
   font-family: 'BebasNeueRegular'; /* tel, nav*/
   src: url('../public/fonts/BEYLAF-BebasNeueRegular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'SourceCodeVariable';
-  src: url('../public/fonts/DRVTLM-SourceCodeVariable-Roman.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'MyriadPro';
-  src: url('../public/fonts/FPVANI-MyriadPro-Regular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'SourceSansVariable';
-  src: url('../public/fonts/JVTYRA-SourceSansVariable-Roman.ttf') format('truetype');
 }
 @font-face {
   font-family: 'BebasNeuelite';
@@ -54,15 +26,6 @@ body {
   --white: #fff;
   --darkBlue: rgb(55, 131, 161);
   --index: calc(1vw + 1vh);
-}
-.podlogka {
-  /* display: none; */
-  position: absolute;
-  top: 6420px;
-  left: 0;
-  width: 100vw;
-  opacity: 0.3;
-  z-index: 10;
 }
 .podlogka img {
   width: 100vw;
