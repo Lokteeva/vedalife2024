@@ -532,7 +532,6 @@ body {
 .cooking__img {
   width: 100%;
 }
-
 .table {
   margin-top: calc(var(--index) * -4.8);
   padding: calc(var(--index) * 1);
@@ -557,7 +556,6 @@ body {
   color: var(--white);
   font-size: calc(var(--index) * 6.7);
   font-family: 'BebasNeueBook';
-  /* align-items:center; */
   margin-left: calc(var(--index) * 1.6);
   margin-top: calc(var(--index) * -1);
   margin-bottom: 0;
@@ -604,4 +602,89 @@ body {
   width: calc(var(--index) * 10);
   padding-left: calc(var(--index) * 1);
   padding-top: calc(var(--index) * 1.5);
+}
+/* speaker */
+.speaker {
+  position: relative;
+  padding-top: calc(var(--index) * 8.5);
+  display: flex;
+  justify-content: right;
+  /* column-gap: calc(var(--index) * 1.3); */
+  padding-right: calc(var(--index) * 6);
+}
+.speaker__box {
+  /* background-color:red; */
+  width: calc(var(--index) * 20.5);
+}
+.speaker__img img{
+  border-radius: 50%;
+  width: calc(var(--index) * 13);
+  margin: auto;
+  display: flex;
+}
+.speaker__content {
+}
+.speaker__title {
+  color: var(--darkBlue);
+  font-size: calc(var(--index) * 1);
+  font-family: 'BebasNeueRegular';
+  text-align: center;
+  padding-top: calc(var(--index) * 1.2);
+  padding-bottom: calc(var(--index) * 0.7);
+}
+.speaker__text p{
+  text-align: center;
+  font-size: calc(var(--index) * 0.8);
+}
+.speaker__snowflake {
+  position: absolute;
+  top: calc(var(--index) * 1);
+  left: calc(var(--index) * 6);
+  width: calc(var(--index) * 19);
+  z-index: -1;
+  opacity: 0.5;
+}
+.speaker__snowflake1 {
+  position: absolute;
+  top: calc(var(--index) * 23);
+  left: calc(var(--index) * 5);
+  width: calc(var(--index) * 7);
+  z-index: -1;
+  opacity: 0.5;
+}
+.speaker__snowflake2 {
+  position: absolute;
+  top: calc(var(--index) * 34);
+  right: calc(var(--index) * -4);
+  width: calc(var(--index) * 19);
+  z-index: -1;
+  opacity: 0.5;
+}
+.speaker__btn1 {
+  position: absolute;
+  top: calc(var(--index) * 38.7);
+  right: calc(var(--index) * -2.5);
+  width: calc(var(--index) * 10);
+  height: calc(var(--index) * 2);
+  border: none;
+  background-color: var(--darkBlue);
+  border-radius: 28px;
+}
+.speaker__btn2 {
+  position: absolute;
+  top: calc(var(--index) * 7);
+  left: calc(var(--index) * -3);
+  width: calc(var(--index) * 10);
+  height: calc(var(--index) * 2);
+  border: none;
+  background-color: var(--pink);
+  border-radius: 28px;
+}
+.speaker2 {
+  position: relative;
+  padding-top: calc(var(--index) * 3.5);
+  display: flex;
+  justify-content: left;
+  /* column-gap: calc(var(--index) * 1.3); */
+  padding-left: calc(var(--index) * 6);
 }
