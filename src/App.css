@@ -56,7 +56,7 @@ body {
   --index: calc(1vw + 1vh);
 }
 .podlogka {
-  display: none;
+  /* display: none; */
   position: absolute;
   top: 6420px;
   left: 0;
@@ -783,7 +783,6 @@ body {
   font-size: calc(var(--index) * 1);
   font-family: 'BebasNeueRegular';
   margin-bottom: calc(var(--index) * 3);
-  
 }
 .price__btn1 {
   position: absolute;
@@ -811,9 +810,69 @@ body {
   left: calc(var(--index) * 1);
   width: calc(var(--index) * 23);
   opacity: 0.5;
+  z-index: -1;
 }
 /* footer */
 .footer {
   background-color: var(--darkBlue);
-  height: 1000px;
+}
+.footer__container {
+  width: calc(var(--index) * 45);
+background-color: red;
+display: flex;
+margin: 0 auto;
+padding-top: calc(var(--index) * 2);
+
+}
+.footer__logo1 img{
+  width: calc(var(--index) * 6);
+  height: calc(var(--index) * 3.5);
+}
+.footer__content {
+padding-left: calc(var(--index) * 2);
+}
+.footer__adress {
+  font-family: 'BebasNeueLite';
+font-size: calc(var(--index) * 0.8);
+color: var(--white);
+padding-bottom: calc(var(--index) * 1);
+}
+.footer__adress a,
+.footer__content a {
+  text-decoration: none;
+color: var(--white);
+text-transform: uppercase;
+font-family: 'BebasNeueBook';
+}
+.footer__social {
+  display: flex;
+  background-color: green;
+  /* margin-left: calc(var(--index) * 6.6); */
+}
+.footer__logo2 img{
+  width: calc(var(--index) * 10);
+}
+.footer__logoPuri img{
+  width: calc(var(--index) * 10);
+}
+.footer__whatsapp {
+  width: calc(var(--index) * 1.4);
+}
+.footer__telegram {
+  width: calc(var(--index) * 1.8);
+  /* margin-top: calc(var(--index) * 1); */
+}
+.footer__vk {
+  width: calc(var(--index) * 1.4);
+}
+.footer__instagram {
+  width: calc(var(--index) * 1.2);
+}
+.footer__whatsapp:hover,
+.footer__telegram:hover,
+.footer__instagram:hover,
+.footer__vk:hover {
+  scale: 1.2;
+  transition: scale 0.2s ease-in;
+  cursor: pointer;
 }
