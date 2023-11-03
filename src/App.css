@@ -618,7 +618,7 @@ body {
   /* background-color:red; */
   width: calc(var(--index) * 20.5);
 }
-.speaker__img img{
+.speaker__img img {
   border-radius: 50%;
   width: calc(var(--index) * 13);
   margin: auto;
@@ -632,7 +632,7 @@ body {
   padding-top: calc(var(--index) * 1.2);
   padding-bottom: calc(var(--index) * 0.7);
 }
-.speaker__text p{
+.speaker__text p {
   text-align: center;
   font-size: calc(var(--index) * 0.8);
 }
@@ -723,20 +723,97 @@ body {
   cursor: pointer;
   color: var(--darkPink);
 }
-.registraition__img img{
+.registraition__img img {
   border-radius: 50%;
   width: calc(var(--index) * 23);
   margin-top: calc(var(--index) * 1);
   margin-bottom: calc(var(--index) * 1);
   margin-left: calc(var(--index) * 3);
-
 }
 .registraition__snowflake {
   position: absolute;
-top: calc(var(--index) * -2);
-left: calc(var(--index) * 1);
-width: calc(var(--index) * 13);
-opacity: 0.5;
+  top: calc(var(--index) * -2);
+  left: calc(var(--index) * 1);
+  width: calc(var(--index) * 13);
+  opacity: 0.5;
 }
-
-
+/* price */
+.price {
+  position: relative;
+}
+.price h2 {
+  text-align: center;
+  font-size: calc(var(--index) * 2);
+  font-family: 'BebasNeueLite';
+  padding-bottom: calc(var(--index) * 1);
+  padding-top: calc(var(--index) * 3);
+  color: var(--darkBlue);
+}
+.price h2 strong {
+  font-family: 'BebasNeueRegular';
+  font-size: calc(var(--index) * 2.5);
+}
+.price__table {
+  margin: 0 auto;
+  display: flex;
+  /* background-color: red; */
+  justify-content: center;
+  font-family: 'BebasNeueBook';
+  font-size: calc(var(--index) * 1.3);
+  padding-bottom: calc(var(--index) * 4);
+}
+.price__table td {
+  border-bottom: 2px solid var(--darkBlue);
+}
+.price__table span {
+  font-size: calc(var(--index) * 0.9);
+  font-family: 'BebasNeueRegular';
+}
+.price__num {
+  color: var(--darkBlue);
+  font-family: 'BebasNeueBook';
+  font-weight: 900;
+  text-align: center;
+}
+.table-btn {
+  color: var(--white);
+  background-color: var(--darkBlue);
+  border-radius: 20px;
+  padding: calc(var(--index) * 0.1) calc(var(--index) * 0.5);
+  font-size: calc(var(--index) * 1);
+  font-family: 'BebasNeueRegular';
+  margin-bottom: calc(var(--index) * 3);
+  
+}
+.price__btn1 {
+  position: absolute;
+  top: calc(var(--index) * 4.2);
+  left: calc(var(--index) * -1.3);
+  width: calc(var(--index) * 10);
+  height: calc(var(--index) * 2);
+  border: none;
+  background-color: var(--darkBlue);
+  border-radius: 28px;
+}
+.price__btn2 {
+  position: absolute;
+  top: calc(var(--index) * 19.5);
+  right: calc(var(--index) * -3.5);
+  width: calc(var(--index) * 10);
+  height: calc(var(--index) * 2);
+  border: none;
+  background-color: var(--pink);
+  border-radius: 28px;
+}
+.price__snowflake {
+  position: absolute;
+  top: calc(var(--index) * 5);
+  left: calc(var(--index) * 1);
+  width: calc(var(--index) * 23);
+  opacity: 0.5;
+}
+/* footer */
+.footer {
+  background-color: var(--darkBlue);
+  height: 1000px;
+}
