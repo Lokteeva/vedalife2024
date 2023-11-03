@@ -52,13 +52,13 @@ body {
   --darkPink: rgb(213, 8, 127);
   --litePink: rgb(233, 125, 177);
   --white: #fff;
-  --darkBlue: rgb(55,131,161);
+  --darkBlue: rgb(55, 131, 161);
   --index: calc(1vw + 1vh);
 }
 .podlogka {
   /* display: none; */
   position: absolute;
-  top: 6400px;
+  top: 6370px;
   left: 0;
   width: 100vw;
   opacity: 0.3;
@@ -400,7 +400,7 @@ body {
   display: flex;
   margin: 0 auto;
   width: 95%;
-  box-shadow: calc(var(--index) * .5) calc(var(--index) * .5) calc(var(--index) * 1) #666;
+  box-shadow: calc(var(--index) * 0.5) calc(var(--index) * 0.5) calc(var(--index) * 1) #666;
 }
 /* description */
 .description {
@@ -438,7 +438,7 @@ body {
 }
 .description__snowflake1 {
   position: absolute;
-  top: calc(var(--index) * .1);
+  top: calc(var(--index) * 0.1);
   right: calc(var(--index) * 2.5);
   width: calc(var(--index) * 19);
   z-index: -1;
@@ -490,7 +490,7 @@ body {
 .description__snowflake5 {
   position: absolute;
   bottom: calc(var(--index) * 1);
-  left: calc(var(--index) * -.5);
+  left: calc(var(--index) * -0.5);
   width: calc(var(--index) * 18);
   z-index: -1;
   opacity: 0.5;
@@ -524,4 +524,84 @@ body {
   border: none;
   background-color: var(--darkPink);
   border-radius: 28px;
+}
+/* img кулинарный мастер-класс */
+.cooking {
+  margin-top: calc(var(--index) * 2.5);
+}
+.cooking__img {
+  width: 100%;
+}
+
+.table {
+  margin-top: calc(var(--index) * -4.8);
+  padding: calc(var(--index) * 1);
+}
+.table__img {
+  display: flex;
+  margin: 0 auto;
+  width: 95%;
+  box-shadow: calc(var(--index) * 0.5) calc(var(--index) * 0.5) calc(var(--index) * 1) #666;
+}
+/* speakers */
+.speakers {
+  background-color: var(--darkBlue);
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+.speakers__date {
+  padding-right: calc(var(--index) * 3);
+}
+.speakers__date h3 {
+  color: var(--white);
+  font-size: calc(var(--index) * 6.7);
+  font-family: 'BebasNeueBook';
+  /* align-items:center; */
+  margin-left: calc(var(--index) * 1.6);
+  margin-top: calc(var(--index) * -1);
+  margin-bottom: 0;
+  height: calc(var(--index) * 7);
+}
+.speakers__month {
+  display: flex;
+  position: relative;
+}
+.speakers__date-dec {
+  color: var(--white);
+  background-color: var(--litePink);
+  border-radius: calc(var(--index) * 0.8);
+  font-size: calc(var(--index) * 1.5);
+  font-weight: 500;
+  padding: calc(var(--index) * 0.01) calc(var(--index) * 0.9) calc(var(--index) * 0.15)
+    calc(var(--index) * 1.4);
+  border: none;
+  z-index: 3;
+  display: flex;
+}
+.speakers__date-jun {
+  position: absolute;
+  right: calc(var(--index) * -1.5);
+  color: var(--litePink);
+  background-color: var(--white);
+  border-radius: calc(var(--index) * 0.8);
+  font-size: calc(var(--index) * 1.5);
+  font-weight: 500;
+  padding: calc(var(--index) * 0.01) calc(var(--index) * 0.9) calc(var(--index) * 0.15)
+    calc(var(--index) * 2.2);
+  border: none;
+  z-index: 1;
+  display: flex;
+}
+.speakers__title h3 {
+  font-size: calc(var(--index) * 3.5);
+  font-family: 'BebasNeueBook';
+  text-align: center;
+  margin: 0;
+  color: var(--white);
+}
+.speakers__year img {
+  width: calc(var(--index) * 10);
+  padding-left: calc(var(--index) * 1);
+  padding-top: calc(var(--index) * 1.5);
 }
