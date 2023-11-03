@@ -56,12 +56,13 @@ body {
   --index: calc(1vw + 1vh);
 }
 .podlogka {
-  /* display: none; */
+  display: none;
   position: absolute;
-  top: 6370px;
+  top: 6420px;
   left: 0;
   width: 100vw;
   opacity: 0.3;
+  z-index: 10;
 }
 .podlogka img {
   width: 100vw;
@@ -548,6 +549,7 @@ body {
   display: flex;
   /* align-items: center; */
   justify-content: space-between;
+  margin-top: calc(var(--index) * 2);
 }
 .speakers__date {
   padding-right: calc(var(--index) * 3);
@@ -622,8 +624,6 @@ body {
   margin: auto;
   display: flex;
 }
-.speaker__content {
-}
 .speaker__title {
   color: var(--darkBlue);
   font-size: calc(var(--index) * 1);
@@ -688,3 +688,55 @@ body {
   /* column-gap: calc(var(--index) * 1.3); */
   padding-left: calc(var(--index) * 6);
 }
+/* регистрация */
+.registraition {
+  position: relative;
+  background-color: var(--darkBlue);
+  margin-top: calc(var(--index) * 3.5);
+  padding-right: calc(var(--index) * 2.5);
+  display: flex;
+  justify-content: right;
+}
+.registraition__content {
+  margin: auto 0;
+  width: calc(var(--index) * 25);
+  /* background-color:red; */
+}
+.registraition__title {
+  font-size: calc(var(--index) * 1);
+  font-family: 'BebasNeueLite';
+  padding-bottom: calc(var(--index) * 1);
+  color: var(--white);
+}
+.registraition__text {
+  font-size: 18px;
+}
+.registraition__text p {
+  margin-bottom: calc(var(--index) * 1);
+  line-height: 1.5;
+}
+.registraition__text p a {
+  text-decoration: none;
+  color: var(--white);
+}
+.registraition__text p a:hover {
+  cursor: pointer;
+  color: var(--darkPink);
+}
+.registraition__img img{
+  border-radius: 50%;
+  width: calc(var(--index) * 23);
+  margin-top: calc(var(--index) * 1);
+  margin-bottom: calc(var(--index) * 1);
+  margin-left: calc(var(--index) * 3);
+
+}
+.registraition__snowflake {
+  position: absolute;
+top: calc(var(--index) * -2);
+left: calc(var(--index) * 1);
+width: calc(var(--index) * 13);
+opacity: 0.5;
+}
+
+
