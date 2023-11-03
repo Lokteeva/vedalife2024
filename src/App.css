@@ -817,43 +817,63 @@ body {
   background-color: var(--darkBlue);
 }
 .footer__container {
-  width: calc(var(--index) * 45);
-background-color: red;
-display: flex;
-margin: 0 auto;
-padding-top: calc(var(--index) * 2);
-
+  width: calc(var(--index) * 46);
+  /* background-color: red; */
+  display: flex;
+  margin: 0 auto;
+  padding-top: calc(var(--index) * 2);
+  padding-bottom: calc(var(--index) * 3);
 }
-.footer__logo1 img{
+.footer__logo1 img {
   width: calc(var(--index) * 6);
   height: calc(var(--index) * 3.5);
 }
 .footer__content {
-padding-left: calc(var(--index) * 2);
+  padding-left: calc(var(--index) * 2);
 }
 .footer__adress {
   font-family: 'BebasNeueLite';
-font-size: calc(var(--index) * 0.8);
-color: var(--white);
-padding-bottom: calc(var(--index) * 1);
+  font-size: calc(var(--index) * 0.8);
+  color: var(--white);
+  padding-bottom: calc(var(--index) * 1);
+  letter-spacing: 1px;
 }
 .footer__adress a,
 .footer__content a {
   text-decoration: none;
-color: var(--white);
-text-transform: uppercase;
-font-family: 'BebasNeueBook';
+  color: var(--white);
+  text-transform: uppercase;
 }
-.footer__social {
+.footer__tel {
+  display: block;
+  font-family: 'BebasNeueRegular';
+  font-size: calc(var(--index) * 1);
+  padding-left: calc(var(--index) * 2);
+  letter-spacing: 1px;
+
+}
+.footer__tel div {
+  padding-bottom: calc(var(--index) * .7);
+}
+.footer__info {
   display: flex;
-  background-color: green;
-  /* margin-left: calc(var(--index) * 6.6); */
 }
-.footer__logo2 img{
-  width: calc(var(--index) * 10);
+.footer__logo2 img {
+  width: calc(var(--index) * 15);
+  margin-left: auto;
+  display: flex;
+  padding-bottom: calc(var(--index) * 1);
 }
-.footer__logoPuri img{
-  width: calc(var(--index) * 10);
+.footer__logoPuri img {
+  width: calc(var(--index) * 25);
+  margin-left: auto;
+  display: flex;
+}
+
+.footer__social {
+  position: relative;
+  padding-right: calc(var(--index) * 1);
+
 }
 .footer__whatsapp {
   width: calc(var(--index) * 1.4);
@@ -861,12 +881,21 @@ font-family: 'BebasNeueBook';
 .footer__telegram {
   width: calc(var(--index) * 1.8);
   /* margin-top: calc(var(--index) * 1); */
+  position: absolute;
+  top: calc(var(--index) * -.3);
+  left: calc(var(--index) * 1.4);
 }
 .footer__vk {
   width: calc(var(--index) * 1.4);
+  position: absolute;
+  top: calc(var(--index) * 0.1);
+  left: calc(var(--index) * -0.2);
 }
 .footer__instagram {
   width: calc(var(--index) * 1.2);
+  position: absolute;
+  top: calc(var(--index) * 0.25);
+  left: calc(var(--index) * 1.7);
 }
 .footer__whatsapp:hover,
 .footer__telegram:hover,
