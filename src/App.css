@@ -18,6 +18,9 @@
 body {
   overflow-x: hidden;
 }
+html.font-loaded .font {
+  color: inherit; 
+}
 
 :root {
   --pink: rgb(208, 9, 128);

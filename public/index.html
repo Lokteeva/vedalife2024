@@ -11,6 +11,9 @@
     />
     <link rel="apple-touch-icon" href="./image/faviconAshram.ico" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="preload" href="./fonts/BEYLAF-BebasNeueRegular.ttf" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="./fonts/Bebas-Neue-book.ttf" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="./fonts/Bebas-Neue-lite.ttf" as="font" type="font/woff" crossorigin>
     <title>VedaLife2024</title>
   </head>
   <body>
@@ -556,6 +559,20 @@
   </footer>
 
  
-
+  <script>
+    // Check if API exists
+    if (document && document.fonts) {    
+      // Do not block page loading
+      setTimeout(function () {           
+        document.fonts.load('BebasNeueRegular').then(() => {
+          // Make font using elements visible
+          document.documentElement.classList.add('font-loaded') 
+        })
+      }, 0)
+    } else {
+      // Fallback if API does not exist 
+      document.documentElement.classList.add('font-loaded') 
+    }
+  </script>
   </body>
 </html>
