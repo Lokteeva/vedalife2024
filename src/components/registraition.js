@@ -1,0 +1,33 @@
+import React from 'react'
+
+function registraition() {
+  return (
+    <div>
+       <section className="registraition">
+    <div className="registraition__content">
+      <div className="registraition__title">
+        <h2> РЕГИСТРАЦИЯ</h2>
+      </div>
+      <div className="registraition__text">
+        <p>
+          Поэтому, дорогие друзья, приглашаем вас встретить грядущий 2024 год в действительно благоприятном месте - Ашраме Сочи на Vedalife!
+        </p>
+        <p>
+          Оставить заявку, чтобы успеть забронировать место по самой выгодной цене! 
+        </p>
+        <p>Оставить заявку на участие в фестивале вы можете по ссылке
+          <a href="https://goo.su/Tm5r9"> https://goo.su/Tm5r9</a>
+        </p>
+      </div>
+    </div>
+    <div className="registraition__img">
+      <img src="./image/17.jpg" alt="img"/>
+    </div>
+  
+    <img className="registraition__snowflake" src="./image/snowflake.png" alt="snowflake"/>
+  </section>
+    </div>
+  )
+}
+
+export default registraition
