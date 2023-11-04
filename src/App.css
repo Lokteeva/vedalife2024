@@ -13,7 +13,6 @@
   src: url('../public/fonts/Bebas-Neue-book.ttf') format('truetype');
   font-display: block;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -21,8 +20,6 @@
 body {
   overflow-x: hidden;
 }
-
-
 :root {
   --pink: rgb(208, 9, 128);
   --darkPink: rgb(213, 8, 127);
@@ -30,9 +27,6 @@ body {
   --white: #fff;
   --darkBlue: rgb(55, 131, 161);
   --index: calc(1vw + 1vh);
-}
-.podlogka img {
-  width: 100vw;
 }
 .header__line {
   /* height: 16px; */
@@ -810,10 +804,9 @@ body {
   font-size: calc(var(--index) * 1);
   padding-left: calc(var(--index) * 2);
   letter-spacing: 1px;
-
 }
 .footer__tel div {
-  padding-bottom: calc(var(--index) * .7);
+  padding-bottom: calc(var(--index) * 0.7);
 }
 .footer__info {
   display: flex;
@@ -833,7 +826,6 @@ body {
 .footer__social {
   position: relative;
   padding-right: calc(var(--index) * 1);
-
 }
 .footer__whatsapp {
   width: calc(var(--index) * 1.4);
@@ -842,7 +834,7 @@ body {
   width: calc(var(--index) * 1.8);
   /* margin-top: calc(var(--index) * 1); */
   position: absolute;
-  top: calc(var(--index) * -.3);
+  top: calc(var(--index) * -0.3);
   left: calc(var(--index) * 1.4);
 }
 .footer__vk {
@@ -864,4 +856,239 @@ body {
   scale: 1.2;
   transition: scale 0.2s ease-in;
   cursor: pointer;
+}
+/* media */
+@media (max-width: 900px) {
+  .social__instagram {
+    margin-top: calc(var(--index) * 1.55);
+  }
+  .registraition__title {
+    margin-top: calc(var(--index) * 3);
+  }
+  .registraition__text p:last-child {
+    margin-bottom: calc(var(--index) * 3);
+  }
+  .registraition__img img {
+    margin-top: calc(var(--index) * 4);
+  }
+  .footer__container {
+    width: calc(var(--index) * 50);
+  }
+  .header__nav ul {
+    font-size: calc(var(--index) * 1.3);
+  }
+  .header__nav li {
+    padding-right: calc(var(--index) * 1.3);
+  }
+  .programmFestival__title,
+  .vedalife__title,
+  .description__title,
+  .festival__title {
+    font-size: calc(var(--index) * 1.8);
+  }
+}
+@media (max-width: 800px) {
+  .header__social {
+    margin-left:calc(var(--index) * 2);
+  }
+  .header__tel a {
+    margin-left:calc(var(--index) * 2.5);
+  }
+  .social__instagram {
+    margin-top: calc(var(--index) * 1.48);
+  }
+  .registraition {
+    display: block;
+  }
+  .registraition__content {
+    margin: auto;
+    width: calc(var(--index) * 40);
+    text-align: center;
+    margin-top: calc(var(--index) * 2);
+  }
+  .registraition__img  {
+    display: flex;
+    justify-content: center;
+  }
+  .registraition__img img {
+    margin-top: calc(var(--index) * 0);
+  }
+  .registraition__title {
+    padding-top: calc(var(--index) * 2);
+  }
+  .festival {
+    flex-direction: column-reverse;
+  }
+  .festival__content {
+    width: calc(var(--index) * 50);
+    /* text-align: center; */
+    margin-right: calc(var(--index) * 0);
+    margin-left: calc(var(--index) * 4);
+  }
+  .festival__img {
+    margin: auto;
+  }
+  .vedalife {
+    flex-direction: column-reverse;
+    margin-left: calc(var(--index) * 4);
+    padding-top: calc(var(--index) * 0);
+  }
+  .vedalife__img {
+    margin: auto;
+    padding-top: calc(var(--index) * 2);
+  }
+  .vedalife__img img,
+  .festival__img img {
+    width: calc(var(--index) * 28);
+  }
+}
+@media (max-width: 700px) {
+  .telegram {
+    margin-top: calc(var(--index) * 1.49);
+  }
+  .social__instagram {
+    margin-top: calc(var(--index) * 1.48);
+  }
+  .social__whatsapp {
+    margin-top: calc(var(--index) * 1.65);
+  }
+  .header__logo1 img {
+    width: calc(var(--index) * 3);
+    height: calc(var(--index) * 2);
+    padding-left: calc(var(--index) * 0.5);
+  }
+  .header__logo2 img {
+    width: calc(var(--index) * 7);
+    height: calc(var(--index) * 2.3);
+    padding-left: calc(var(--index) * 0.7);
+  }
+  .header__logo3 img {
+    width: calc(var(--index) * 4);
+    height: calc(var(--index) * 1.8);
+    padding-top: calc(var(--index) * 1.4);
+    padding-left: calc(var(--index) * 0.7);
+  }
+  .header__social {
+    margin-left: calc(var(--index) * 4);
+    margin-top: calc(var(--index) * -0.7);
+  }
+  .header__tel a {
+    margin-left: calc(var(--index) * 4.5);
+  }
+  .newYear {
+    position: relative;
+  }
+  .newYear__snowflake img {
+    position: absolute;
+    top: calc(var(--index) * 2);
+    left: calc(var(--index) * -1);
+    opacity: 0.5;
+    z-index: 1;
+  }
+  .newYear__date {
+    z-index: 3;
+  }
+  .newYear__title h3 {
+    margin-left: calc(var(--index) * 3);
+  }
+  .programmFestival {
+    flex-direction: column-reverse;
+  }
+  .programmFestival__content {
+    width: calc(var(--index) * 50);
+    margin-left: calc(var(--index) * 6);
+  }
+  .programmFestival__title,
+  .vedalife__title,
+  .description__title,
+  .festival__title {
+    font-size: calc(var(--index) * 1.8);
+  }
+  .programmFestival__img {
+    margin: auto;
+  }
+  .programmFestival__img img {
+    width: calc(var(--index) * 28);
+  }
+  .description__box {
+    flex-direction: column;
+  }
+  .description__content {
+    width: calc(var(--index) * 50);
+    margin-left: calc(var(--index) * 4);
+  }
+  .description__img {
+    margin: auto;
+  }
+  .description__img img {
+    width: calc(var(--index) * 28);
+    padding-bottom: calc(var(--index) * 3);
+  }
+}
+@media (max-width: 600px) {
+  .telegram {
+    margin-top: calc(var(--index) * 1.65);
+  }
+  .header__logo2 {
+    display: none;
+  }
+  .header__nav ul {
+    font-size: calc(var(--index) * 1.5);
+    padding-top: calc(var(--index) * 0.7);
+  }
+}
+@media (max-width: 550px) {
+  .telegram {
+    margin-top: calc(var(--index) * 1.7);
+  }
+}
+@media (max-width: 500px) {
+  .telegram {
+    margin-top: calc(var(--index) * 1.8);
+  }
+  .header__nav li {
+    padding-right: calc(var(--index) * 2);
+  }
+
+  
+  
+}
+@media (max-width: 450px) {
+  .telegram {
+    margin-top: calc(var(--index) * 1.87);
+  }
+  .social__whatsapp {
+    margin-top: calc(var(--index) * 1.68);
+  }
+  .header__social {
+    margin-left: calc(var(--index) * 3);
+    margin-top: calc(var(--index) * -0.9);
+  }
+  .header__tel a {
+    margin-left: calc(var(--index) * 3.7);
+  }
+  .header__nav {
+    padding-left: calc(var(--index) * 2);
+  }
+  .footer__logoPuri img {
+    width: calc(var(--index) * 20);
+  }
+}
+@media (max-width: 400px) {
+  .telegram {
+    margin-top: calc(var(--index) * 2.1);
+  }
+  .header__social {
+    margin-left: calc(var(--index) * 1.5);
+    margin-top: calc(var(--index) * -0.9);
+  }
+  .header__tel a {
+    margin-left: calc(var(--index) * 1.9);
+  }
+  .header__nav {
+    padding-left: calc(var(--index) * 1.5);
+  }
+  .header__nav li {
+    padding-right: calc(var(--index) * 1);
+  }
 }
