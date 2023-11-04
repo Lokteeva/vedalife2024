@@ -6,7 +6,7 @@ function description() {
       <section className="description">
   <div className="description__box">
     <div className="description__img">
-      <img src="./image/12.jpg" alt="img"/>
+      <img src="./image/22.jpg" alt="img"/>
     </div>
   
     <div className="description__content">
@@ -15,8 +15,7 @@ function description() {
       </div>
       <div className="description__text">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eum, laudantium quasi culpa sequi ut deleniti error, unde recusandae expedita hic distinctio veritatis vitae perferendis, dolores dicta repellat quo veniam.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eum, laudantium quasi culpa sequi ut deleniti error, unde recusandae expedita hic distinctio veritatis vitae perferendis, dolores dicta repellat quo veniam.
+        Лекции и семинары на разные темы наполнят вас знаниями, которые расширят ваше сознание и дадут новый импульс к внутренним трансформациям и победам
         </p>
       </div>
     </div>
@@ -31,7 +30,7 @@ function description() {
 <section className="description">
   <div className="description__box box2">
     <div className="description__img description__img-revers">
-      <img src="./image/12.jpg" alt="img"/>
+      <img src="./image/02.jpg" alt="img"/>
     </div>
   
     <div className="description__content">
@@ -40,8 +39,7 @@ function description() {
       </div>
       <div className="description__text description__text-revers">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eum, laudantium quasi culpa sequi ut deleniti error, unde recusandae expedita hic distinctio veritatis vitae perferendis, dolores dicta repellat quo veniam.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eum, laudantium quasi culpa sequi ut deleniti error, unde recusandae expedita hic distinctio veritatis vitae perferendis, dolores dicta repellat quo veniam.
+        Каждый день мы будем проводить мантра медитации и соприкасаться со своим внутренним Я. Будем выстраивать связь с Высшим началом и искать ответы на вечные вопросы бытия изнутри
         </p>
       </div>
     </div>
@@ -55,7 +53,7 @@ function description() {
 <section className="description">
   <div className="description__box">
     <div className="description__img">
-      <img src="./image/12.jpg" alt="img"/>
+      <img src="./image/03.jpg" alt="img"/>
     </div>
   
     <div className="description__content">
@@ -64,8 +62,10 @@ function description() {
       </div>
       <div className="description__text">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eum, laudantium quasi culpa sequi ut deleniti error, unde recusandae expedita hic distinctio veritatis vitae perferendis, dolores dicta repellat quo veniam.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eum, laudantium quasi culpa sequi ut deleniti error, unde recusandae expedita hic distinctio veritatis vitae perferendis, dolores dicta repellat quo veniam.
+        Кулинарные мастер-классы дадут вам понимание что вегетарианская еда - это не картошка, зелень и капуста с огурцами :).
+        </p>
+        <p>
+        Вегетарианство - это сбалансированное, вкусное и  разнообразное питание. Не верите? Мы вам это докажем и покажем на наших кулинарных мастер-классах!
         </p>
       </div>
     </div>
@@ -75,7 +75,7 @@ function description() {
 <section className="description">
   <div className="description__box box2">
     <div className="description__img description__img-revers">
-      <img src="./image/12.jpg" alt="img"/>
+      <img src="./image/04.jpg" alt="img"/>
     </div>
   
     <div className="description__content">
@@ -84,8 +84,7 @@ function description() {
       </div>
       <div className="description__text description__text-revers">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eum, laudantium quasi culpa sequi ut deleniti error, unde recusandae expedita hic distinctio veritatis vitae perferendis, dolores dicta repellat quo veniam.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eum, laudantium quasi culpa sequi ut deleniti error, unde recusandae expedita hic distinctio veritatis vitae perferendis, dolores dicta repellat quo veniam.
+        Йога - это не просто упражнения, это глубокая философия! Йога на санскрите переводиться как "связь", а вот что это за связь, с кем - это вы узнаете на утренней йоге, которая будет проходить каждый день. Будем просыпаться под йогу и настраиваться на день!
         </p>
       </div>
     </div>
@@ -97,7 +96,7 @@ function description() {
 <section className="description">
   <div className="description__box">
     <div className="description__img">
-      <img src="./image/12.jpg" alt="img"/>
+      <img src="./image/05.jpg" alt="img"/>
     </div>
   
     <div className="description__content">
@@ -106,8 +105,7 @@ function description() {
       </div>
       <div className="description__text">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eum, laudantium quasi culpa sequi ut deleniti error, unde recusandae expedita hic distinctio veritatis vitae perferendis, dolores dicta repellat quo veniam.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eum, laudantium quasi culpa sequi ut deleniti error, unde recusandae expedita hic distinctio veritatis vitae perferendis, dolores dicta repellat quo veniam.
+        В женских кругах вы будите дружественной, камерной атмосфере при свечах обсуждать как прошёл день, пообщаетесь с нашими спикерами на женские темы, зарядитесь женской энергией вдохновения и радости
         </p>
       </div>
     </div>
@@ -122,7 +120,7 @@ function description() {
 <section className="description">
   <div className="description__box box2">
     <div className="description__img description__img-revers">
-      <img src="./image/12.jpg" alt="img"/>
+      <img src="./image/06.jpg" alt="img"/>
     </div>
   
     <div className="description__content">
@@ -130,10 +128,17 @@ function description() {
         <h2>мастер-класс сари и дхоти</h2>
       </div>
       <div className="description__text description__text-revers">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eum, laudantium quasi culpa sequi ut deleniti error, unde recusandae expedita hic distinctio veritatis vitae perferendis, dolores dicta repellat quo veniam.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eum, laudantium quasi culpa sequi ut deleniti error, unde recusandae expedita hic distinctio veritatis vitae perferendis, dolores dicta repellat quo veniam.
+      <p>
+        Ведическая культура - это очень красиво. Вы будите учиться одеваться традиционные сари (женщины) и дхоти (мужчины). 
         </p>
+        <p>
+        Мало того что это красиво, так это еще и меняет внутренние ощущения, словами это не передать. Нужно одеться!
+        </p>
+        <p>
+        Будите выглядеть как настоящие индийские женщины и мужчины :). 
+        А потом все идём делать фотосессию, чтобы вы могли показать ваше преображение в ваших соц сетях 😉
+        </p>
+        
       </div>
     </div>
    
@@ -146,7 +151,7 @@ function description() {
 <section className="description">
   <div className="description__box">
     <div className="description__img">
-      <img src="./image/12.jpg" alt="img"/>
+      <img src="./image/07.jpg" alt="img"/>
     </div>
   
     <div className="description__content">
@@ -154,10 +159,9 @@ function description() {
         <h2>мастер-класс танцуют все</h2>
       </div>
       <div className="description__text">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eum, laudantium quasi culpa sequi ut deleniti error, unde recusandae expedita hic distinctio veritatis vitae perferendis, dolores dicta repellat quo veniam.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eum, laudantium quasi culpa sequi ut deleniti error, unde recusandae expedita hic distinctio veritatis vitae perferendis, dolores dicta repellat quo veniam.
-        </p>
+     
+
+
       </div>
     </div>
   </div>
@@ -166,7 +170,7 @@ function description() {
 <section className="description">
   <div className="description__box box2">
     <div className="description__img description__img-revers">
-      <img src="./image/12.jpg" alt="img"/>
+      <img src="./image/08.jpg" alt="img"/>
     </div>
   
     <div className="description__content">
@@ -175,8 +179,10 @@ function description() {
       </div>
       <div className="description__text description__text-revers">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eum, laudantium quasi culpa sequi ut deleniti error, unde recusandae expedita hic distinctio veritatis vitae perferendis, dolores dicta repellat quo veniam.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eum, laudantium quasi culpa sequi ut deleniti error, unde recusandae expedita hic distinctio veritatis vitae perferendis, dolores dicta repellat quo veniam.
+        Традиционно мы за 2-3 месяца начинаем готовить новогодний спектакль - это философское, но при этом с юмором театральное действие на несколько часов.
+        </p>
+        <p>
+          В конце спектакля есть очень эмоциональный мини-тренинг с посланием будущему году, Богу и... что еще - узнаете в новогоднюю ночь :)
         </p>
       </div>
     </div>

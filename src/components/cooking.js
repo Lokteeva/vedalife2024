@@ -4,7 +4,7 @@ function cooking() {
   return (
     <div>
       <div className="cooking">
-        <img className="cooking__img" src="./image/18.jpg" alt="cooking" />
+        <img className="cooking__img" src="./image/09.jpg" alt="cooking" />
       </div>
     </div>
   );

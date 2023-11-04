@@ -16,9 +16,9 @@ function registraition() {
           Оставить заявку, чтобы успеть забронировать место по самой выгодной цене! 
         </p>
         <p>Оставить заявку на участие в фестивале вы можете по ссылке
-          <a href="https://goo.su/Tm5r9"> https://goo.su/Tm5r9</a>
         </p>
       </div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdRaZpZQktevoHTpFihjeujw8oefjtg63IetGSHUyPYMuJrWw/viewform"> Оставить заявку</a>
     </div>
     <div className="registraition__img">
       <img src="./image/17.jpg" alt="img"/>

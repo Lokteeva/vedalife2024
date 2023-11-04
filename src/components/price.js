@@ -6,6 +6,7 @@ function price() {
        <section className="price">
     <h2> <strong>стоимость участия</strong><br/>
 и проживание в номерах</h2>
+<h3>В стоимость входит:<br/> проживание, питание, вся программа</h3>
     <table className="price__table">
       <tbody>
         <tr >
@@ -40,6 +41,10 @@ function price() {
         </tr>
       </tbody>
     </table>
+
+    <p>
+    При оплате <strong>до 15 ноября</strong> <br/> 2 дня ОТДЫХА в ашраме до или после фестиваля <strong>БЕСПЛАТНО!</strong>
+    </p>
 
     <button className="price__btn1"></button>
     <button className="price__btn2"></button>

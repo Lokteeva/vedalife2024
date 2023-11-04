@@ -15,7 +15,7 @@ function newYear() {
     <img src="./image/snowflake.png" alt="snowflake"/>
   </div>
   <div className="newYear__title">
-    <h3> Ведический<br/> новый год</h3>
+    <h3> Новогодний фестиваль<br/> в ашраме!</h3>
   </div>
   <div className="newYear__year">
     <img src="./image/year.png" alt="year"/>

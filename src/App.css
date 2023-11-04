@@ -127,13 +127,15 @@ body {
 .header__nav li:nth-child(3) {
   padding-right: calc(var(--index) * 1.3);
 }
-.header__nav li:last-child {
+.header__nav li a {
   border: 1px solid var(--white);
   padding: calc(var(--index) * 0.5) calc(var(--index) * 1);
   border-radius: 8px;
   margin-top: calc(var(--index) * -0.5);
+  text-decoration: none;
+  color: var(--white);
 }
-.header__nav li:last-child:hover {
+.header__nav li a:hover {
   color: var(--pink);
   background-color: var(--white);
   box-shadow: 0px 0px 20px #ffffff;
@@ -190,10 +192,12 @@ body {
   /* align-items:center; */
   margin-left: calc(var(--index) * 1.6);
   margin-top: calc(var(--index) * -1.5);
+  padding-top: calc(var(--index) * 1);
 }
 .newYear__month {
   display: flex;
   position: relative;
+  padding-bottom: calc(var(--index) * 1);
 }
 .newYear__date-dec {
   color: var(--white);
@@ -224,7 +228,7 @@ body {
   margin-left: calc(var(--index) * 2);
 }
 .newYear__title h3 {
-  font-size: calc(var(--index) * 5);
+  font-size: calc(var(--index) * 3);
   font-family: 'BebasNeueBook';
   text-align: center;
   margin: 0;
@@ -408,6 +412,9 @@ body {
   border: none;
   background-color: var(--darkPink);
   border-radius: 28px;
+}
+.description__text p {
+  padding-bottom: calc(var(--index) * 1);
 }
 /* box2 */
 .box2 {
@@ -655,12 +662,15 @@ body {
   margin: auto 0;
   width: calc(var(--index) * 25);
   /* background-color:red; */
+  color: var(--white);
+  z-index: 3;
 }
 .registraition__title {
   font-size: calc(var(--index) * 1);
-  font-family: 'BebasNeueLite';
+  font-family: 'BebasNeueBook';
   padding-bottom: calc(var(--index) * 1);
-  color: var(--white);
+  color: var(--darkPink);
+  letter-spacing: 1.5px;
 }
 .registraition__text {
   font-size: 18px;
@@ -669,9 +679,23 @@ body {
   margin-bottom: calc(var(--index) * 1);
   line-height: 1.5;
 }
-.registraition__text p a {
+.registraition__text p:last-child{
+  margin-bottom: calc(var(--index) * 2);
+}
+.registraition__content a {
   text-decoration: none;
   color: var(--white);
+  background-color: var(--pink);
+  padding: calc(var(--index) * 0.5) calc(var(--index) * 1);
+  border-radius: calc(var(--index) * 1);
+  box-shadow: 1px 1px 25px var(--white);
+  font-family: 'BebasNeueRegular';
+  font-size: calc(var(--index) * 1);
+}
+.registraition__content a:hover {
+  color: var(--pink);
+  background-color: var(--white);
+  font-family: 'BebasNeueRegular';
 }
 .registraition__text p a:hover {
   cursor: pointer;
@@ -706,6 +730,17 @@ body {
 .price h2 strong {
   font-family: 'BebasNeueRegular';
   font-size: calc(var(--index) * 2.5);
+}
+.price h3 {
+  text-align: center;
+  color: var(--darkBlue);
+  padding-bottom: calc(var(--index) * 2);
+}
+.price p {
+  color: var(--pink);
+  text-align: center;
+  padding-bottom: calc(var(--index) * 2);
+font-size:  calc(var(--index) * 1);
 }
 .price__table {
   margin: 0 auto;
@@ -823,7 +858,7 @@ body {
   display: flex;
 }
 
-.footer__social {
+/* .footer__social {
   position: relative;
   padding-right: calc(var(--index) * 1);
 }
@@ -832,7 +867,6 @@ body {
 }
 .footer__telegram {
   width: calc(var(--index) * 1.8);
-  /* margin-top: calc(var(--index) * 1); */
   position: absolute;
   top: calc(var(--index) * -0.3);
   left: calc(var(--index) * 1.4);
@@ -856,7 +890,7 @@ body {
   scale: 1.2;
   transition: scale 0.2s ease-in;
   cursor: pointer;
-}
+} */
 /* media */
 @media (max-width: 900px) {
   .social__instagram {
@@ -889,10 +923,10 @@ body {
 }
 @media (max-width: 800px) {
   .header__social {
-    margin-left:calc(var(--index) * 2);
+    margin-left: calc(var(--index) * 2);
   }
   .header__tel a {
-    margin-left:calc(var(--index) * 2.5);
+    margin-left: calc(var(--index) * 2.5);
   }
   .social__instagram {
     margin-top: calc(var(--index) * 1.48);
@@ -906,7 +940,7 @@ body {
     text-align: center;
     margin-top: calc(var(--index) * 2);
   }
-  .registraition__img  {
+  .registraition__img {
     display: flex;
     justify-content: center;
   }
@@ -1049,9 +1083,6 @@ body {
   .header__nav li {
     padding-right: calc(var(--index) * 2);
   }
-
-  
-  
 }
 @media (max-width: 450px) {
   .telegram {

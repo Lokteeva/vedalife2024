@@ -41,7 +41,7 @@ function Header() {
   <li>о нас</li>
   <li>фестиваль</li>
   <li>программа</li>
-  <li>регистрация</li>
+  <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdRaZpZQktevoHTpFihjeujw8oefjtg63IetGSHUyPYMuJrWw/viewform">регистрация</a></li>
 </ul>
         </nav>
       </div>

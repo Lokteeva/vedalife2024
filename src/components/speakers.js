@@ -26,7 +26,7 @@ function speakers() {
     </div>
     <div className="speaker__content">
       <div className="speaker__title">
-        <h2>ишана прабху</h2>
+        <h2>Игорь Евстигнеев</h2>
       </div>
       <div className="speaker__text">
         <p>Президент Фестиваля Ведалайф Сочи</p>
@@ -40,7 +40,7 @@ function speakers() {
     </div>
     <div className="speaker__content">
       <div className="speaker__title">
-        <h2>арджуна прия деви даси</h2>
+        <h2>Ольга Зыбина</h2>
       </div>
       <div className="speaker__text">
         <p>Психолог-консультант, гештальт-терапевт,</p>
@@ -62,7 +62,7 @@ function speakers() {
     </div>
     <div className="speaker__content">
       <div className="speaker__title">
-        <h2>рупа рагунатха прабху</h2>
+        <h2>Роман Волков</h2>
       </div>
       <div className="speaker__text">
         <p>текс текс текс текс текс текс текс</p>
@@ -76,11 +76,11 @@ function speakers() {
     </div>
     <div className="speaker__content">
       <div className="speaker__title">
-        <h2>уттама матаджи</h2>
+        <h2>Оксана Волкова-Чудаева</h2>
       </div>
       <div className="speaker__text">
-        <p>текс текс текс текс текс текс текс</p>
-        <p>текс текс текс текс текс текс текс</p>
+        <p>Женский психолог, психотерапевт, </p>
+        <p>аюрведический психолог-консультант</p>
       </div>
     </div>
   </div>
