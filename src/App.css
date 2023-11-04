@@ -58,18 +58,6 @@ body {
   padding-top: calc(var(--index) * 1.2);
   padding-left: calc(var(--index) * 1.5);
 }
-.header__social {
-  display: flex;
-  /* background-color: red; */
-  margin-left: calc(var(--index) * 6.6);
-  height: calc(var(--index) * 2.9);
-}
-.social__whatsapp {
-  margin-top: calc(var(--index) * 1.7);
-}
-.whatsapp {
-  width: calc(var(--index) * 1.4);
-}
 .social__whatsapp:hover,
 .social__telegram:hover,
 .social__instagram:hover,
@@ -79,27 +67,14 @@ body {
   transition: scale 0.2s ease-in;
   cursor: pointer;
 }
-.telegram {
-  width: calc(var(--index) * 1.8);
-  margin-top: calc(var(--index) * 1.4);
+.header__social {
+  display: flex;
+  margin-left: calc(var(--index) * 6.2);
+  margin-top: calc(var(--index) * 1.5);
 }
-.social__vk {
-  width: calc(var(--index) * 0.8);
-  height: calc(var(--index) * 0.8);
-  margin-top: calc(var(--index) * 1.57);
-  margin-left: calc(var(--index) * 0.2);
-}
-.vk {
-  width: calc(var(--index) * 1.4);
-}
-.social__instagram {
-  width: calc(var(--index) * 0.8);
-  height: calc(var(--index) * 0.8);
-  margin-left: calc(var(--index) * 1.1);
-  margin-top: calc(var(--index) * 1.67);
-}
-.instagram {
+.header__social img{
   width: calc(var(--index) * 1.2);
+  margin-left: calc(var(--index) * .5);
 }
 .header__tel a {
   text-decoration: none;
@@ -857,31 +832,12 @@ font-size:  calc(var(--index) * 1);
   margin-left: auto;
   display: flex;
 }
-
-/* .footer__social {
-  position: relative;
-  padding-right: calc(var(--index) * 1);
+.footer__social div{
+  padding-bottom: calc(var(--index) * .5);
 }
-.footer__whatsapp {
-  width: calc(var(--index) * 1.4);
-}
-.footer__telegram {
-  width: calc(var(--index) * 1.8);
-  position: absolute;
-  top: calc(var(--index) * -0.3);
-  left: calc(var(--index) * 1.4);
-}
-.footer__vk {
-  width: calc(var(--index) * 1.4);
-  position: absolute;
-  top: calc(var(--index) * 0.1);
-  left: calc(var(--index) * -0.2);
-}
-.footer__instagram {
+.footer__social img{
   width: calc(var(--index) * 1.2);
-  position: absolute;
-  top: calc(var(--index) * 0.25);
-  left: calc(var(--index) * 1.7);
+  padding-left: calc(var(--index) * .5);
 }
 .footer__whatsapp:hover,
 .footer__telegram:hover,
@@ -890,11 +846,11 @@ font-size:  calc(var(--index) * 1);
   scale: 1.2;
   transition: scale 0.2s ease-in;
   cursor: pointer;
-} */
+}
 /* media */
 @media (max-width: 900px) {
-  .social__instagram {
-    margin-top: calc(var(--index) * 1.55);
+  .header__social-box {
+  margin-left: calc(var(--index) * -5);
   }
   .registraition__title {
     margin-top: calc(var(--index) * 3);
@@ -922,14 +878,12 @@ font-size:  calc(var(--index) * 1);
   }
 }
 @media (max-width: 800px) {
-  .header__social {
-    margin-left: calc(var(--index) * 2);
-  }
   .header__tel a {
-    margin-left: calc(var(--index) * 2.5);
+    margin-left: calc(var(--index) * 7);
   }
-  .social__instagram {
-    margin-top: calc(var(--index) * 1.48);
+  .header__nav {
+    margin-left: calc(var(--index) * -2);
+
   }
   .registraition {
     display: block;
@@ -977,15 +931,6 @@ font-size:  calc(var(--index) * 1);
   }
 }
 @media (max-width: 700px) {
-  .telegram {
-    margin-top: calc(var(--index) * 1.49);
-  }
-  .social__instagram {
-    margin-top: calc(var(--index) * 1.48);
-  }
-  .social__whatsapp {
-    margin-top: calc(var(--index) * 1.65);
-  }
   .header__logo1 img {
     width: calc(var(--index) * 3);
     height: calc(var(--index) * 2);
@@ -1003,11 +948,11 @@ font-size:  calc(var(--index) * 1);
     padding-left: calc(var(--index) * 0.7);
   }
   .header__social {
-    margin-left: calc(var(--index) * 4);
-    margin-top: calc(var(--index) * -0.7);
+    margin-left: calc(var(--index) * 6);
+    margin-top: calc(var(--index) * .7);
   }
   .header__tel a {
-    margin-left: calc(var(--index) * 4.5);
+    margin-left: calc(var(--index) * 6.9);
   }
   .newYear {
     position: relative;
@@ -1060,9 +1005,6 @@ font-size:  calc(var(--index) * 1);
   }
 }
 @media (max-width: 600px) {
-  .telegram {
-    margin-top: calc(var(--index) * 1.65);
-  }
   .header__logo2 {
     display: none;
   }
@@ -1071,53 +1013,38 @@ font-size:  calc(var(--index) * 1);
     padding-top: calc(var(--index) * 0.7);
   }
 }
-@media (max-width: 550px) {
-  .telegram {
-    margin-top: calc(var(--index) * 1.7);
-  }
-}
 @media (max-width: 500px) {
-  .telegram {
-    margin-top: calc(var(--index) * 1.8);
-  }
   .header__nav li {
     padding-right: calc(var(--index) * 2);
   }
+  .header__social {
+    margin-top: calc(var(--index) * .3);
+  }
+  .header__tel  {
+    margin-top: calc(var(--index) * -1);
+  }
 }
 @media (max-width: 450px) {
-  .telegram {
-    margin-top: calc(var(--index) * 1.87);
-  }
-  .social__whatsapp {
-    margin-top: calc(var(--index) * 1.68);
-  }
   .header__social {
-    margin-left: calc(var(--index) * 3);
-    margin-top: calc(var(--index) * -0.9);
+    margin-left: calc(var(--index) * 5.5);
+    margin-top: calc(var(--index) * 0.3);
   }
   .header__tel a {
-    margin-left: calc(var(--index) * 3.7);
+    margin-left: calc(var(--index) * 6.5);
   }
   .header__nav {
-    padding-left: calc(var(--index) * 2);
+    padding-left: calc(var(--index) * 3);
   }
   .footer__logoPuri img {
     width: calc(var(--index) * 20);
   }
 }
 @media (max-width: 400px) {
-  .telegram {
-    margin-top: calc(var(--index) * 2.1);
-  }
-  .header__social {
-    margin-left: calc(var(--index) * 1.5);
-    margin-top: calc(var(--index) * -0.9);
-  }
   .header__tel a {
-    margin-left: calc(var(--index) * 1.9);
+    margin-left: calc(var(--index) * 6.5);
   }
   .header__nav {
-    padding-left: calc(var(--index) * 1.5);
+    padding-left: calc(var(--index) * 3);
   }
   .header__nav li {
     padding-right: calc(var(--index) * 1);

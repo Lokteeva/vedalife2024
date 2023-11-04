@@ -19,12 +19,12 @@ function footer() {
        <div className="footer__info">
         <div className="footer__social">
           <div >
-            <a href="#"><img className="footer__whatsapp" src="./image/social/whatsapp.svg"></img></a>
-            <a href="#"><img className="footer__telegram" src="./image/social/telegram.svg"></img></a>
+            <a href="#"><img className="footer__whatsapp" src="./image/social/whatsapp-svgrepo-com.svg"></img></a>
+            <a href="#"><img className="footer__telegram" src="./image/social/telegram-svgrepo-com.svg"></img></a>
           </div>
           <div className="footer__social">
-            <a href="#"><img className="footer__vk" src="./image/social/vk.svg"></img></a>
-            <a href="#"><img className="footer__instagram" src="./image/social/instagram.svg"></img></a>
+            <a href="#"><img className="footer__vk" src="./image/social/vk-svgrepo-com.svg"></img></a>
+            <a href="#"><img className="footer__instagram" src="./image/social/instagram-167-svgrepo-com.svg"></img></a>
           </div>
         </div>
           <div className="footer__tel">

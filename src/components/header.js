@@ -18,16 +18,16 @@ function Header() {
         <div className="header__social-box">
           <div className="header__social">
             <div className="social__whatsapp">
-              <a href="#"><img className="whatsapp" src="./image/social/whatsapp.svg"></img></a>
+              <a href="#"><img className="whatsapp" src="./image/social/whatsapp-svgrepo-com.svg"></img></a>
             </div> 
             <div className="social__telegram">
-              <a href="#"><img className="telegram" src="./image/social/telegram.svg"></img></a>
+              <a href="#"><img className="telegram" src="./image/social/telegram-svgrepo-com.svg"></img></a>
              </div> 
              <div className="social__vk">
-              <a href="#"><img className="vk" src="./image/social/vk.svg"></img></a>
+              <a href="#"><img className="vk" src="./image/social/vk-svgrepo-com.svg"></img></a>
              </div> 
              <div className="social__instagram">
-              <a href="#"><img className="instagram" src="./image/social/instagram.svg"></img></a>
+              <a href="#"><img className="instagram" src="./image/social/instagram-167-svgrepo-com.svg"></img></a>
              </div>        
           </div>
 
