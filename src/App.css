@@ -69,7 +69,7 @@ body {
 }
 .header__social {
   display: flex;
-  margin-left: calc(var(--index) * 6.2);
+  margin-left: calc(var(--index) * 2);
   margin-top: calc(var(--index) * 1.5);
 }
 .header__social img {
@@ -80,7 +80,7 @@ body {
   text-decoration: none;
   color: var(--white);
   font-family: 'BebasNeueRegular';
-  margin-left: calc(var(--index) * 7.2);
+  margin-left: calc(var(--index) * 3);
   font-size: calc(var(--index) * 1);
 }
 .header__nav {
@@ -864,8 +864,11 @@ body {
 }
 /* media */
 @media (max-width: 900px) {
+  .header__logo3 {
+    display: none;
+  }
   .header__social-box {
-    margin-left: calc(var(--index) * -5);
+    margin-left: calc(var(--index) * 0.5);
   }
   .registraition__title {
     margin-top: calc(var(--index) * 3);
@@ -905,9 +908,6 @@ body {
   }
 }
 @media (max-width: 800px) {
-  .header__tel a {
-    margin-left: calc(var(--index) * 7);
-  }
   .header__nav {
     margin-left: calc(var(--index) * -2);
   }
@@ -935,8 +935,7 @@ body {
   }
   .festival__content {
     width: calc(var(--index) * 50);
-    /* text-align: center; */
-    margin-right: calc(var(--index) * 0);
+    margin-right: calc(var(--index) * 4);
     margin-left: calc(var(--index) * 4);
   }
   .festival__img {
@@ -956,30 +955,7 @@ body {
     width: calc(var(--index) * 28);
   }
 }
-@media (max-width: 700px) {
-  .header__logo1 img {
-    width: calc(var(--index) * 3);
-    height: calc(var(--index) * 2);
-    padding-left: calc(var(--index) * 0.5);
-  }
-  .header__logo2 img {
-    width: calc(var(--index) * 7);
-    height: calc(var(--index) * 2.3);
-    padding-left: calc(var(--index) * 0.7);
-  }
-  .header__logo3 img {
-    width: calc(var(--index) * 4);
-    height: calc(var(--index) * 1.8);
-    padding-top: calc(var(--index) * 1.4);
-    padding-left: calc(var(--index) * 0.7);
-  }
-  .header__social {
-    margin-left: calc(var(--index) * 6);
-    margin-top: calc(var(--index) * 0.7);
-  }
-  .header__tel a {
-    margin-left: calc(var(--index) * 6.9);
-  }
+@media (max-width: 750px) {
   .newYear {
     position: relative;
   }
@@ -996,6 +972,9 @@ body {
   .newYear__title h3 {
     margin-left: calc(var(--index) * 3);
   }
+  .newYear__date h3 {
+    padding-top: calc(var(--index) * 2);
+  }
   .newYear {
     flex-direction: column;
   }
@@ -1009,6 +988,27 @@ body {
     width: calc(var(--index) * 20);
     height: calc(var(--index) * 20);
     z-index: 1;
+  }
+  .festival__content {
+    width: calc(var(--index) * 45);
+    margin-right: calc(var(--index) * 5);
+    margin-left: calc(var(--index) * 5);
+  }
+}
+@media (max-width: 700px) {
+  .header__logo1 img {
+    width: calc(var(--index) * 3);
+    height: calc(var(--index) * 2);
+    padding-left: calc(var(--index) * 0.5);
+  }
+  .header__logo2 img {
+    width: calc(var(--index) * 7);
+    height: calc(var(--index) * 2.3);
+    padding-left: calc(var(--index) * 0.7);
+  }
+  .header__social-box {
+    margin-left: calc(var(--index) * -2);
+    margin-top: calc(var(--index) * -.6);
   }
   .programmFestival {
     flex-direction: column-reverse;
@@ -1042,6 +1042,11 @@ body {
   .description__img img {
     width: calc(var(--index) * 28);
     padding-bottom: calc(var(--index) * 3);
+  }
+  .festival__content {
+    width: calc(var(--index) * 40);
+    margin-right: calc(var(--index) * 5);
+    margin-left: calc(var(--index) * 5);
   }
 }
 @media (max-width: 600px) {
@@ -1135,6 +1140,11 @@ body {
   .speaker__title h2 {
     font-size: calc(var(--index) * 2.5);
   }
+  .festival__content {
+    width: calc(var(--index) * 35);
+    margin-right: calc(var(--index) * 5);
+    margin-left: calc(var(--index) * 5);
+  }
 }
 @media (max-width: 500px) {
   .header__nav li {
@@ -1142,6 +1152,7 @@ body {
   }
   .header__social {
     margin-top: calc(var(--index) * 0.3);
+    margin-top: calc(var(--index) * 1.5);
   }
   .header__tel {
     margin-top: calc(var(--index) * -1);
@@ -1152,28 +1163,30 @@ body {
   }
   .footer__logoPuri img {
     width: calc(var(--index) * 10);
-
+  }
+  .festival__content {
+    width: calc(var(--index) * 32);
+    margin-right: calc(var(--index) * 5);
+    margin-left: calc(var(--index) * 5);
   }
 }
 @media (max-width: 450px) {
-  .header__social {
-    margin-left: calc(var(--index) * 5.5);
-    margin-top: calc(var(--index) * 0.3);
-  }
-  .header__tel a {
-    margin-left: calc(var(--index) * 6.5);
-  }
+  .header__logo1 {
+    display: none;
+   }
   .header__nav {
     padding-left: calc(var(--index) * 3);
   }
   .footer__logoPuri img {
     width: calc(var(--index) * 20);
   }
+  .festival__content {
+    width: calc(var(--index) * 30);
+    margin-right: calc(var(--index) * 5);
+    margin-left: calc(var(--index) * 5);
+  }
 }
 @media (max-width: 400px) {
-  .header__tel a {
-    margin-left: calc(var(--index) * 6.5);
-  }
   .header__nav {
     padding-left: calc(var(--index) * 3);
   }
@@ -1182,7 +1195,7 @@ body {
   }
 }
 @media (max-width: 350px) {
-  .header__logo3 {
-    display: none;
-  }
+ .header__box {
+  background-color: red;
+ }
 }
