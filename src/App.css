@@ -1050,3 +1050,8 @@ font-size:  calc(var(--index) * 1);
     padding-right: calc(var(--index) * 1);
   }
 }
+@media (max-width: 350px) {
+  .header__logo3 {
+    display: none;
+  }
+}
