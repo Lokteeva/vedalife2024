@@ -159,6 +159,10 @@ body {
   align-items: center;
   margin-top: calc(var(--index) * 2.8);
   justify-content: right;
+  position: relative;
+}
+.newYear__date {
+  padding-right: calc(var(--index) * 1.5);
 }
 .newYear__date h3 {
   color: var(--white);
@@ -168,11 +172,15 @@ body {
   margin-left: calc(var(--index) * 1.6);
   margin-top: calc(var(--index) * -1.5);
   padding-top: calc(var(--index) * 1);
+  z-index: 3;
+  
+
 }
 .newYear__month {
   display: flex;
   position: relative;
   padding-bottom: calc(var(--index) * 1);
+  z-index: 3;
 }
 .newYear__date-dec {
   color: var(--white);
@@ -200,7 +208,11 @@ body {
 .newYear__snowflake img {
   width: calc(var(--index) * 8);
   height: calc(var(--index) * 8);
-  margin-left: calc(var(--index) * 2);
+  position: absolute;
+  opacity: 0.5;
+  top: calc(var(--index) * 1);
+  left: calc(var(--index) * 1);
+  z-index: 1;
 }
 .newYear__title h3 {
   font-size: calc(var(--index) * 3);
@@ -637,6 +649,7 @@ body {
   margin: auto 0;
   width: calc(var(--index) * 25);
   /* background-color:red; */
+  padding-bottom: calc(var(--index) * 4);
   color: var(--white);
   z-index: 3;
   position: relative;
@@ -856,12 +869,17 @@ body {
   }
   .registraition__title {
     margin-top: calc(var(--index) * 3);
+    font-size: calc(var(--index) * 1.8);
   }
   .registraition__text p:last-child {
     margin-bottom: calc(var(--index) * 3);
   }
   .registraition__img img {
     margin-top: calc(var(--index) * 4);
+    margin-left: inherit;
+  }
+  .registraition__content a {
+    font-size: calc(var(--index) * 1.8);
   }
   .footer__container {
     width: calc(var(--index) * 50);
@@ -877,6 +895,13 @@ body {
   .description__title,
   .festival__title {
     font-size: calc(var(--index) * 1.8);
+  }
+  .festival__btn {
+    bottom: calc(var(--index) * 5);
+    right: calc(var(--index) * -5);
+  }
+  .description__btnEnd2 {
+    bottom: calc(var(--index) * 27);
   }
 }
 @media (max-width: 800px) {
@@ -971,6 +996,20 @@ body {
   .newYear__title h3 {
     margin-left: calc(var(--index) * 3);
   }
+  .newYear {
+    flex-direction: column;
+  }
+  .newYear__title,
+  .newYear__date,
+  .newYear__month {
+    z-index: 3;
+  }
+  .newYear__snowflake img {
+    top: calc(var(--index) * 0);
+    width: calc(var(--index) * 20);
+    height: calc(var(--index) * 20);
+    z-index: 1;
+  }
   .programmFestival {
     flex-direction: column-reverse;
   }
@@ -1013,21 +1052,17 @@ body {
     font-size: calc(var(--index) * 1.5);
     padding-top: calc(var(--index) * 0.7);
   }
-  .newYear {
-    flex-direction: column;
-  }
-  .newYear__title,
-  .newYear__date,
-  .newYear__month {
-    z-index: 3;
-  }
-  .newYear__snowflake img {
-    top: calc(var(--index) * 0);
-    width: calc(var(--index) * 20);
-    height: calc(var(--index) * 20);
-    z-index: 1;
-  }
-  .festival__snowflake2 {
+  .festival__btn,
+  .programmFestival__btn,
+  .description__btn,
+  .description__btn2,
+  .description__btnEnd,
+  .festival__snowflake2,
+  .description__btnEnd2,
+  .speaker__btn1,
+  .speaker__btn2,
+  .price__btn1,
+  .price__btn2  {
     display: none;
   }
   .festival__snowflake1,
@@ -1110,6 +1145,14 @@ body {
   }
   .header__tel {
     margin-top: calc(var(--index) * -1);
+  }
+  .footer__logo2 img {
+    width: calc(var(--index) * 10);
+    padding-top: calc(var(--index) * 2);
+  }
+  .footer__logoPuri img {
+    width: calc(var(--index) * 10);
+
   }
 }
 @media (max-width: 450px) {
