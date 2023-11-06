@@ -3,7 +3,7 @@ import React from 'react'
 function newYear() {
   return (
     <div>
-      <section className="newYear">
+      <section id='newYear' className="newYear">
   <div className="newYear__date">
     <h3>29–5</h3>
     <div className="newYear__month">

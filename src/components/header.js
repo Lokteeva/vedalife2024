@@ -3,7 +3,7 @@ import React from 'react'
 function Header() {
   return (
     <div>
-      <header className="header">
+      <header className="header ">
       <div className="header__line"></div>
       <div className="header__box">
         <div className="header__logo1">
@@ -38,10 +38,10 @@ function Header() {
         
         <nav className="header__nav">
 <ul>
-  <li>о нас</li>
-  <li>фестиваль</li>
-  <li>программа</li>
-  <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdRaZpZQktevoHTpFihjeujw8oefjtg63IetGSHUyPYMuJrWw/viewform">регистрация</a></li>
+  <li><a href='#footer'>о нас</a></li>
+  <li><a href='#newYear'>фестиваль</a></li>
+  <li><a href='#programmFestival'>программа</a></li>
+  <li><a  className="registraition__button" href="#registraition">регистрация</a></li>
 </ul>
         </nav>
       </div>

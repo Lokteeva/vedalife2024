@@ -3,7 +3,7 @@ import React from 'react'
 function programmFestival() {
   return (
     <div>
-      <section className="programmFestival">
+      <section id="programmFestival" className="programmFestival">
   <div className="programmFestival__img">
     <img src="./image/12.jpg" alt="img"/>
   </div>

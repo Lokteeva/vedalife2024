@@ -3,7 +3,7 @@ import React from 'react'
 function registraition() {
   return (
     <div>
-       <section className="registraition">
+       <section id='registraition' className="registraition">
     <div className="registraition__content">
       <div className="registraition__title">
         <h2> РЕГИСТРАЦИЯ</h2>
