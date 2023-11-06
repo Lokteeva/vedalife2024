@@ -235,7 +235,7 @@ body {
   bottom: calc(var(--index) * 1.4);
 }
 .home__button-present3 {
-  bottom: calc(var(--index) * -1.5);
+  bottom: calc(var(--index) * -1.7);
 }
 .home__button-present-pink {
   color: var(--pink);
@@ -1442,6 +1442,12 @@ body {
   .home__button-festival {
     margin-top: calc(var(--index) * 8);
   }
+  .home__date h3 {
+    padding-top: calc(var(--index) * 3);
+  }
+  .home__sochi {
+    font-size: calc(var(--index) * 2.2);
+  }
   .footer__logoPuri img {
     width: calc(var(--index) * 20);
   }
@@ -1453,7 +1459,6 @@ body {
   .home__button-festival {
     margin-top: calc(var(--index) * 3);
   }
- 
   .registraition__content {
     margin-top: calc(var(--index) * 1);
   }
