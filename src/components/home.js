@@ -14,7 +14,9 @@ function home() {
           <img className="home__img" src="./image/09.jpg" alt="home" />
           <div>
 
-            <h3 className="home__button-present">+2 дня отдыха <span> в подарок </span> при оплате в ноябре</h3>
+            <h3 className="home__button-present0 home__button-present">+2 дня отдыха</h3> 
+            <h3 className='home__button-present home__button-present2 home__button-present-pink'> в подарок </h3>
+            <h3 className="home__button-present home__button-present3"> при оплате в ноябре</h3>
           </div>
         </div>
 
