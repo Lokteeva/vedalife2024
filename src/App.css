@@ -148,12 +148,25 @@ body {
   display: flex;
   border-radius: 0 calc(var(--index) * 10) calc(var(--index) * 10) 0;
   margin-left: calc(var(--index) * -3);
+  margin-bottom: calc(var(--index) * 3);
 }
 .home__content {
-margin-left: auto;
+  position: absolute;
+  right: 0;
+  top: calc(var(--index) * 5);
+  margin-left: auto;
+  /* background-color: blue; */
+}
+.newYear__month-img {
+  width: calc(var(--index) * 10);
 }
 .home__box {
   display: flex;
+ /* margin: auto; */
+ z-index: 4;
+}
+.home__button-box {
+  position: relative;
 }
 .home__button-festival {
   color: var(--white);
@@ -164,10 +177,13 @@ margin-left: auto;
   letter-spacing: 2px;
   border-radius: calc(var(--index) * 10) 0 0 calc(var(--index) * 10);
   width: max-content;
-  padding: calc(var(--index) * 0.5) calc(var(--index) * 2);
+  padding: calc(var(--index) * 0.5) calc(var(--index) * 5);
   box-shadow: -5px 5px 15px #666;
 }
 .home__button-ashram {
+  position: absolute;
+  right: 0;
+  bottom: calc(var(--index) * -2);
   color: var(--white);
   background-color: var(--pink);
   border-radius: calc(var(--index) * 10) 0 0 calc(var(--index) * 10);
@@ -177,6 +193,7 @@ margin-left: auto;
   font-size: calc(var(--index) * 1.2);
   letter-spacing: 1px;
   box-shadow: -5px 5px 15px #666;
+  margin-left: auto;
 }
 .home__date h3 {
   color: var(--darkPink);
@@ -209,7 +226,12 @@ margin-left: auto;
   z-index: 4;
   display: flex;
   font-family: 'BebasNeueBook';
-
+  position: absolute;
+  bottom: calc(var(--index) * 1.5);
+}
+.home__button-present span {
+  color: var(--pink);
+  padding: 0 10px;
 }
 .home__sochi {
   color: var(--liteBlue);
@@ -218,11 +240,13 @@ margin-left: auto;
   font-family: 'BebasNeueBook';
   font-size: calc(var(--index) * 4);
   letter-spacing: 3px;
+  text-align: right;
+  padding-right: calc(var(--index) * 1.5);
 }
 .home__img-treeth {
   width: 100vw;
   position: absolute;
-  bottom: calc(var(--index) * 1);
+  bottom: calc(var(--index) * 0);
  
 }
 
@@ -1133,6 +1157,9 @@ margin-left: auto;
     height: calc(var(--index) * 2.3);
     padding-left: calc(var(--index) * 0.7);
   }
+  .home__button-festival {
+    padding: calc(var(--index) * 0.5) calc(var(--index) * 3);
+  }
   .programmFestival {
     flex-direction: column-reverse;
   }
@@ -1230,6 +1257,28 @@ margin-left: auto;
   .header__nav ul {
     font-size: calc(var(--index) * 1.5);
   }
+  .home__button-festival {
+    padding: calc(var(--index) * 0.5) calc(var(--index) * 2);
+  }
+  .home__date h3 {
+    font-size: calc(var(--index) * 5);
+    margin-left: calc(var(--index) * 1.6);
+    margin-top: calc(var(--index) * -1.5);
+    padding-top: calc(var(--index) * 2);
+  }
+  .home__date-jun {
+    left: calc(var(--index) * 4.5);
+    font-size: calc(var(--index) * 1);
+  }
+  .newYear__date-dec {
+    font-size: calc(var(--index) * 1);
+  }
+  .newYear__month-img {
+    width: calc(var(--index) * 7.5);
+    padding-left: calc(var(--index) * 2);
+    padding-top: calc(var(--index) * 2);
+  }
+  
   .festival__btn,
   .programmFestival__btn,
   .description__btn,
@@ -1286,14 +1335,30 @@ margin-left: auto;
   .footer__logoPuri img {
     width: calc(var(--index) * 10);
   }
+  .home__date h3 {
+    font-size: calc(var(--index) * 4);
+  }
+  .home__date-jun {
+    left: calc(var(--index) * 3.8);
+    font-size: calc(var(--index) * .8);
+  }
+  .newYear__date-dec {
+    font-size: calc(var(--index) * .8);
+  }
+  .newYear__month-img {
+    width: calc(var(--index) * 6);
+    padding-left: calc(var(--index) * 1);
+  }
 }
 @media (max-width: 450px) {
   .header__logo1 {
     display: none;
   }
-
   .footer__logoPuri img {
     width: calc(var(--index) * 20);
+  }
+  .newYear__month-img {
+    padding-top: calc(var(--index) * 7);
   }
 }
 

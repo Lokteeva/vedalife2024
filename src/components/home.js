@@ -12,7 +12,7 @@ function home() {
           <img className="home__img" src="./image/09.jpg" alt="home" />
           <div>
 
-            <h3 className="home__button-present">+2 дня отдыха в подарок при оплате в ноябре</h3>
+            <h3 className="home__button-present">+2 дня отдыха <span> в подарок </span> при оплате в ноябре</h3>
           </div>
         </div>
 
@@ -23,6 +23,7 @@ function home() {
               <button className="newYear__date-dec">декабря</button>
               <button className="home__date-jun">января</button>
             </div>
+            <img className="newYear__month-img" src="./image/yearPink.png" alt="year"/>
           </div>
 
         <div className='home__content'>
@@ -30,17 +31,15 @@ function home() {
             <h1>Сочи</h1>
           </div>
 
-          <h1 className="home__button-festival">
+        <div className='home__button-box'>
+        <h1 className="home__button-festival">
             Новогодний
             <br /> фестиваль
           </h1>
           <h3 className="home__button-ashram">в ашраме</h3>
+        </div>
+        </div>
 
-          </div>
-
-         
-
-          
         </div>
       </section>
     </div>
