@@ -16,6 +16,10 @@
 * {
   margin: 0;
   padding: 0;
+  /* box-sizing: border-box; */
+}
+#root{
+  width: 100vw;
 }
 body {
   overflow-x: hidden;
@@ -30,7 +34,7 @@ body {
 }
 .header {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 99;
 }
 .header__line {
