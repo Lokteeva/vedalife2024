@@ -1391,7 +1391,7 @@ body {
   .home__img {
     padding-top: calc(var(--index) * 3);
     padding-bottom: calc(var(--index) * 5);
-  border-radius: 0 calc(var(--index) * 9.5) calc(var(--index) * 10.5) 0;
+  border-radius: 0 calc(var(--index) * 8) calc(var(--index) * 8.5) 0;
   }
   .footer__logoPuri img {
     width: calc(var(--index) * 20);
@@ -1401,7 +1401,7 @@ body {
     padding-bottom: calc(var(--index) * 7);
   }
   .home__button-festival {
-    margin-top: calc(var(--index) * 4.5);
+    margin-top: calc(var(--index) * 3);
   }
   .home__img-snowflake {
     display: flex;
