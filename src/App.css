@@ -1341,6 +1341,9 @@ body {
   .header__tel {
     margin-top: calc(var(--index) * -1);
   }
+  .home__img {
+    max-width: calc(var(--index) * 20);
+  }
   .footer__logo2 img {
     width: calc(var(--index) * 10);
     padding-top: calc(var(--index) * 2);
@@ -1366,10 +1369,14 @@ body {
     margin-left: inherit;
   }
 }
+/* my mobile */
 @media (max-width: 450px) {
-  .header__box {
-    background-color: yellow;
-  }
+ .header__social {
+  display: none;
+ }
+ .header__tel {
+  display: none;
+ }
   .header__logo1 {
     display: none;
   }
@@ -1377,20 +1384,19 @@ body {
     width: calc(var(--index) * 20);
   }
   .newYear__month-img {
-    padding-top: calc(var(--index) * 7);
+    padding-top: calc(var(--index) * -1);
+    padding-bottom: calc(var(--index) * 7);
   }
   .home__sochi {
     font-size: calc(var(--index) * 3);
     padding-top: calc(var(--index) * 2);
   }
 }
+/* lisa mobile */
 @media (max-width: 400px) {
-  .header__box {
-    background-color: green;
-  }
   .home__sochi {
     font-size: calc(var(--index) * 1.7);
-    padding-top: calc(var(--index) * 4);
+    padding-top: calc(var(--index) * 2);
   }
   .home__date h3 {
     font-size: calc(var(--index) * 3);
@@ -1403,16 +1409,14 @@ body {
     font-size: calc(var(--index) * .6);
   }
   .newYear__month-img {
-    padding-top: calc(var(--index) * 8.3);
+    padding-top: calc(var(--index) * 1);
+    padding-bottom: calc(var(--index) * 8);
   }
   .header__social-box {
     display: none;
   }
 }
 @media (max-width: 350px) {
-  .header__box {
-    background-color: grey;
-  }
   .home .home__date {
     padding-left: calc(var(--index) * 1);
   }
