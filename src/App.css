@@ -13,12 +13,19 @@
   src: url('../public/fonts/Bebas-Neue-book.ttf') format('truetype');
   font-display: block;
 }
+@font-face {
+  font-family: 'Corvetta';
+  src: url('../public/fonts/Corvetta.ttf') format('truetype');
+  font-display: block;
+}
+
+
 * {
   margin: 0;
   padding: 0;
   /* box-sizing: border-box; */
 }
-#root{
+#root {
   width: 100vw;
 }
 body {
@@ -30,6 +37,7 @@ body {
   --litePink: rgb(233, 125, 177);
   --white: #fff;
   --darkBlue: rgb(55, 131, 161);
+  --liteBlue: rgb(128, 188, 206);
   --index: calc(1vw + 1vh);
 }
 .header {
@@ -131,12 +139,93 @@ body {
 }
 /* home */
 .home {
+  position: relative;
   padding-top: calc(var(--index) * 5.1);
+  display: flex;
 }
-.home img {
-  width: 100%;
-  padding-top: 5px;
+.home__img {
+  width: calc(var(--index) * 30);
+  display: flex;
+  border-radius: 0 calc(var(--index) * 10) calc(var(--index) * 10) 0;
+  margin-left: calc(var(--index) * -3);
 }
+.home__content {
+margin-left: auto;
+}
+.home__box {
+  display: flex;
+}
+.home__button-festival {
+  color: var(--white);
+  background-color: var(--darkBlue);
+  text-transform: uppercase;
+  font-family: 'BebasNeueRegular';
+  font-size: calc(var(--index) * 2);
+  letter-spacing: 2px;
+  border-radius: calc(var(--index) * 10) 0 0 calc(var(--index) * 10);
+  width: max-content;
+  padding: calc(var(--index) * 0.5) calc(var(--index) * 2);
+  box-shadow: -5px 5px 15px #666;
+}
+.home__button-ashram {
+  color: var(--white);
+  background-color: var(--pink);
+  border-radius: calc(var(--index) * 10) 0 0 calc(var(--index) * 10);
+  width: max-content;
+  padding: calc(var(--index) * 0.5) calc(var(--index) * 2);
+  font-family: 'BebasNeueBook';
+  font-size: calc(var(--index) * 1.2);
+  letter-spacing: 1px;
+  box-shadow: -5px 5px 15px #666;
+}
+.home__date h3 {
+  color: var(--darkPink);
+  font-size: calc(var(--index) * 7.3);
+  font-family: 'BebasNeueBook';
+  margin-left: calc(var(--index) * 1.6);
+  margin-top: calc(var(--index) * -1.5);
+  padding-top: calc(var(--index) * 1);
+  z-index: 3;
+}
+.home__date-jun {
+  position: absolute;
+  left: calc(var(--index) * 6.5);
+  color: var(--white);
+  background-color: var(--litePink);
+  border-radius: calc(var(--index) * 0.8);
+  font-size: calc(var(--index) * 1.5);
+  font-weight: 500;
+  padding: calc(var(--index) * 0.01) calc(var(--index) * 0.9) calc(var(--index) * 0.15)
+    calc(var(--index) * 2.2);
+  border: none;
+}
+.home__button-present {
+  color: var(--white);
+  background-color: var(--darkBlue);
+  border-radius: 0 calc(var(--index) * 2) calc(var(--index) * 2) 0;
+  padding: calc(var(--index) * 0.5) calc(var(--index) * 0.8);
+  width: max-content;
+  box-shadow: 5px 5px 15px #666;
+  z-index: 4;
+  display: flex;
+  font-family: 'BebasNeueBook';
+
+}
+.home__sochi {
+  color: var(--liteBlue);
+  opacity: 0.5;
+  text-transform: uppercase;
+  font-family: 'BebasNeueBook';
+  font-size: calc(var(--index) * 4);
+  letter-spacing: 3px;
+}
+.home__img-treeth {
+  width: 100vw;
+  position: absolute;
+  bottom: calc(var(--index) * 1);
+ 
+}
+
 /* vedalife */
 .vedalife {
   padding-top: calc(var(--index) * 3);
