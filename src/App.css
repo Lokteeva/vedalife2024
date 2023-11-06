@@ -19,7 +19,6 @@
   font-display: block;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -162,9 +161,9 @@ body {
 }
 .home__box {
   display: flex;
- /* margin: auto; */
+  /* margin: auto; */
   /* background-color: blue; */
- z-index: 4;
+  z-index: 4;
 }
 .home__button-box {
   position: relative;
@@ -1258,7 +1257,6 @@ body {
   }
   .registraition__content {
     width: inherit;
-
     margin-right: calc(var(--index) * 2);
     margin-left: calc(var(--index) * 2);
   }
@@ -1291,7 +1289,7 @@ body {
     padding-left: calc(var(--index) * 2);
     padding-top: calc(var(--index) * 2);
   }
-  
+
   .festival__btn,
   .programmFestival__btn,
   .description__btn,
@@ -1344,6 +1342,11 @@ body {
   .home__img {
     max-width: calc(var(--index) * 20);
   }
+  .home__sochi {
+    font-size: calc(var(--index) * 2);
+    padding-top: calc(var(--index) * 1);
+    opacity: 0.3;
+  }
   .footer__logo2 img {
     width: calc(var(--index) * 10);
     padding-top: calc(var(--index) * 2);
@@ -1353,17 +1356,17 @@ body {
   }
   .home__date h3 {
     font-size: calc(var(--index) * 4);
+    margin-top: calc(var(--index) * 0.1);
   }
   .home__date-jun {
     left: calc(var(--index) * 3.8);
-    font-size: calc(var(--index) * .8);
+    font-size: calc(var(--index) * 0.8);
   }
   .newYear__date-dec {
-    font-size: calc(var(--index) * .8);
+    font-size: calc(var(--index) * 0.8);
   }
   .newYear__month-img {
-    width: calc(var(--index) * 6);
-    padding-left: calc(var(--index) * 1);
+    display: none;
   }
   .vedalife {
     margin-left: inherit;
@@ -1371,12 +1374,12 @@ body {
 }
 /* my mobile */
 @media (max-width: 450px) {
- .header__social {
-  display: none;
- }
- .header__tel {
-  display: none;
- }
+  .header__social {
+    display: none;
+  }
+  .header__tel {
+    display: none;
+  }
   .header__logo1 {
     display: none;
   }
@@ -1387,10 +1390,7 @@ body {
     padding-top: calc(var(--index) * -1);
     padding-bottom: calc(var(--index) * 7);
   }
-  .home__sochi {
-    font-size: calc(var(--index) * 3);
-    padding-top: calc(var(--index) * 2);
-  }
+ 
 }
 /* lisa mobile */
 @media (max-width: 400px) {
@@ -1403,10 +1403,10 @@ body {
   }
   .home__date-jun {
     left: calc(var(--index) * 3);
-    font-size: calc(var(--index) * .6);
+    font-size: calc(var(--index) * 0.6);
   }
   .newYear__date-dec {
-    font-size: calc(var(--index) * .6);
+    font-size: calc(var(--index) * 0.6);
   }
   .newYear__month-img {
     padding-top: calc(var(--index) * 1);
