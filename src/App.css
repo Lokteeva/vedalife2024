@@ -1367,6 +1367,9 @@ body {
   }
 }
 @media (max-width: 450px) {
+  .header__box {
+    background-color: yellow;
+  }
   .header__logo1 {
     display: none;
   }
@@ -1382,6 +1385,9 @@ body {
   }
 }
 @media (max-width: 400px) {
+  .header__box {
+    background-color: green;
+  }
   .home__sochi {
     font-size: calc(var(--index) * 1.7);
     padding-top: calc(var(--index) * 4);
@@ -1404,6 +1410,9 @@ body {
   }
 }
 @media (max-width: 350px) {
+  .header__box {
+    background-color: grey;
+  }
   .home .home__date {
     padding-left: calc(var(--index) * 1);
   }
