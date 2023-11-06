@@ -112,7 +112,7 @@ body {
   text-decoration: none;
   color: var(--white);
 }
-.registraition__button{
+.registraition__button {
   border: 1px solid var(--white);
   padding: calc(var(--index) * 0.5) calc(var(--index) * 1);
   border-radius: 8px;
@@ -128,7 +128,6 @@ body {
 /* home */
 .home {
   padding-top: calc(var(--index) * 5.1);
-
 }
 .home img {
   width: 100%;
@@ -187,8 +186,6 @@ body {
   margin-top: calc(var(--index) * -1.5);
   padding-top: calc(var(--index) * 1);
   z-index: 3;
-  
-
 }
 .newYear__month {
   display: flex;
@@ -882,6 +879,24 @@ body {
   display: flex;
   margin: auto;
 }
+.up,
+.down {
+  width: 20px;
+  background-color: var(--pink);
+  border-radius: 50%;
+  padding: 10px;
+  opacity: 0.5;
+  position: fixed;
+}
+.up {
+  bottom: 50px;
+  left: 10px;
+}
+.down {
+  bottom: 0px;
+  left: 10px;
+  rotate: 180deg;
+}
 /* media */
 @media (max-width: 900px) {
   .header__logo3 {
@@ -908,7 +923,7 @@ body {
   .header__nav ul {
     font-size: calc(var(--index) * 1.3);
   }
- 
+
   .programmFestival__title,
   .vedalife__title,
   .description__title,
@@ -922,15 +937,14 @@ body {
   .description__btnEnd2 {
     bottom: calc(var(--index) * 27);
   }
- .footer__logo1 {
-  margin: auto;
- }
+  .footer__logo1 {
+    margin: auto;
+  }
   .footer__container2 {
     flex-direction: column-reverse;
   }
 }
 @media (max-width: 800px) {
-  
   .registraition {
     display: block;
   }
@@ -1111,7 +1125,7 @@ body {
   }
   .registraition__content {
     width: inherit;
-    
+
     margin-right: calc(var(--index) * 2);
     margin-left: calc(var(--index) * 2);
   }
@@ -1133,7 +1147,7 @@ body {
   .speaker__btn1,
   .speaker__btn2,
   .price__btn1,
-  .price__btn2  {
+  .price__btn2 {
     display: none;
   }
   .festival__snowflake1,
@@ -1167,10 +1181,8 @@ body {
   .registraition__img {
     margin-top: calc(var(--index) * 3);
   }
-  
 }
 @media (max-width: 500px) {
- 
   .header__tel {
     margin-top: calc(var(--index) * -1);
   }
@@ -1185,16 +1197,15 @@ body {
 @media (max-width: 450px) {
   .header__logo1 {
     display: none;
-   }
-  
+  }
+
   .footer__logoPuri img {
     width: calc(var(--index) * 20);
   }
 }
 
 @media (max-width: 350px) {
-.header__social-box {
-  display: none;
-}
- 
+  .header__social-box {
+    display: none;
+  }
 }

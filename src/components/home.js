@@ -4,7 +4,8 @@ function home() {
   return (
     <div>
       
-    <section className="home">
+    <section id="home" className="home">
+
       <img src="./image/home.jpg" alt="home"/>
     </section>
     </div>

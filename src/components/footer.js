@@ -45,6 +45,8 @@ function footer() {
       </div>
     </div>
 
+<a href='#home'><img className="up" src="./image/up.png" alt='up'/></a>
+<a href="#footer"><img className="down" src="./image/up.png" alt='down'/></a>
   </footer>
     </div>
   )
