@@ -1338,7 +1338,7 @@ body {
     left: calc(var(--index) * 4.5);
     font-size: calc(var(--index) * 1);
   }
-  .newYear__date-dec {
+  .home__date-dec {
     font-size: calc(var(--index) * 1);
   }
   .newYear__month-img {
@@ -1475,7 +1475,7 @@ body {
   .home__img {
     border-radius: 0 calc(var(--index) * 9.5) calc(var(--index) * 11) 0;
   }
-  .newYear__date-dec {
+  .home__date-dec {
     font-size: calc(var(--index) * 0.6);
   }
   .newYear__month-img {
@@ -1506,7 +1506,7 @@ body {
     left: calc(var(--index) * 2.5);
     font-size: calc(var(--index) * 1);
   }
-  .newYear__date-dec {
+  .home__date-dec {
     font-size: calc(var(--index) * 1);
     margin-left: calc(var(--index) * -2);
   }

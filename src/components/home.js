@@ -24,7 +24,7 @@ function home() {
         <div className=" home__date">
             <h3>29–5</h3>
             <div className="newYear__month">
-              <button className="newYear__date-dec">декабря</button>
+              <button className="newYear__date-dec home__date-dec">декабря</button>
               <button className="home__date-jun">января</button>
             </div>
             <img className="newYear__month-img" src="./image/yearPink.png" alt="year"/>
