@@ -1362,6 +1362,9 @@ body {
     width: calc(var(--index) * 6);
     padding-left: calc(var(--index) * 1);
   }
+  .vedalife {
+    margin-left: inherit;
+  }
 }
 @media (max-width: 450px) {
   .header__logo1 {
@@ -1387,7 +1390,7 @@ body {
     font-size: calc(var(--index) * 3);
   }
   .home__date-jun {
-    left: calc(var(--index) * 3.8);
+    left: calc(var(--index) * 3);
     font-size: calc(var(--index) * .6);
   }
   .newYear__date-dec {
@@ -1401,6 +1404,9 @@ body {
   }
 }
 @media (max-width: 350px) {
+  .home .home__date {
+    padding-left: calc(var(--index) * 1);
+  }
   .newYear__month-img {
     width: calc(var(--index) * 5);
     padding-left: calc(var(--index) * -1);
@@ -1409,5 +1415,21 @@ body {
     font-size: calc(var(--index) * 1.5);
     padding-bottom: calc(var(--index) * 3);
     padding-top: calc(var(--index) * 1);
+  }
+  .footer__container {
+    width: inherit;
+  }
+  .home__img {
+    width: calc(var(--index) * 15);
+    padding-top: calc(var(--index) * 1);
+    border-radius: 0 calc(var(--index) * 5) calc(var(--index) * 5) 0;
+  }
+  .newYear__month-img {
+    padding-top: calc(var(--index) * -2);
+    padding-bottom: calc(var(--index) * 7.3);
+    padding-left: calc(var(--index) * 1.5);
+  }
+  .home__sochi {
+    padding-bottom: calc(var(--index) * 0);
   }
 }
