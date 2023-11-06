@@ -655,9 +655,10 @@ body {
   position: relative;
 }
 .registraition__title {
-  font-size: calc(var(--index) * 1);
+  font-size: calc(var(--index) * 1.2);
   font-family: 'BebasNeueBook';
   padding-bottom: calc(var(--index) * 1);
+  padding-top: calc(var(--index) * 2);
   color: var(--darkPink);
   letter-spacing: 1.5px;
   text-shadow: 0px 0px 5px var(--white);
@@ -1014,8 +1015,9 @@ body {
     flex-direction: column-reverse;
   }
   .programmFestival__content {
-    width: calc(var(--index) * 50);
+    width: inherit;
     margin-left: calc(var(--index) * 6);
+    margin-right: calc(var(--index) * 4);
   }
   .programmFestival__title,
   .vedalife__title,
@@ -1033,8 +1035,10 @@ body {
     flex-direction: column;
   }
   .description__content {
-    width: calc(var(--index) * 50);
-    margin-left: calc(var(--index) * 4);
+    width: inherit;
+    text-align: center;
+    margin-left: calc(var(--index) * 5);
+    margin-right: calc(var(--index) * 5);
   }
   .description__img {
     margin: auto;
@@ -1042,11 +1046,58 @@ body {
   .description__img img {
     width: calc(var(--index) * 28);
     padding-bottom: calc(var(--index) * 3);
+    margin-right: 0;
   }
   .festival__content {
-    width: calc(var(--index) * 40);
-    margin-right: calc(var(--index) * 5);
-    margin-left: calc(var(--index) * 5);
+    width: inherit;
+    margin-right: calc(var(--index) * 2);
+    margin-left: calc(var(--index) * 2);
+  }
+  .speaker,
+  .speaker2 {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: calc(var(--index) * 0);
+  }
+  .speaker__box {
+    margin: 0 auto;
+    width: inherit;
+  }
+  .speaker__text {
+    padding-bottom: calc(var(--index) * 3.5);
+  }
+  .speaker__text p {
+    font-size: calc(var(--index) * 1.5);
+  }
+  .speakers {
+    margin-bottom: calc(var(--index) * 3.5);
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .speakers__date {
+    margin: auto;
+    padding-top: calc(var(--index) * 2);
+  }
+  .speakers__year img {
+    padding-left: inherit;
+    padding-top: inherit;
+    padding-bottom: calc(var(--index) * 2);
+  }
+  .speakers__year {
+    margin: auto;
+  }
+  .speaker__img img {
+    width: calc(var(--index) * 30);
+  }
+  .speaker__title h2 {
+    font-size: calc(var(--index) * 2.5);
+  }
+  .registraition__content {
+    width: inherit;    
+    margin-right: calc(var(--index) * 2);
+    margin-left: calc(var(--index) * 2);
   }
 }
 @media (max-width: 600px) {
@@ -1083,7 +1134,7 @@ body {
   }
   .programmFestival__snowflake1 {
     opacity: 0.1;
-    width: calc(var(--index) * 30);
+    width: inherit;
     height: calc(var(--index) * 30);
   }
   .registraition__title h2 {
@@ -1101,50 +1152,7 @@ body {
   .registraition__img {
     margin-top: calc(var(--index) * 3);
   }
-  .speaker,
-  .speaker2 {
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: calc(var(--index) * 0);
-  }
-  .speaker__box {
-    margin: 0 auto;
-    width: inherit;
-  }
-  .speaker__text {
-    padding-bottom: calc(var(--index) * 3.5);
-  }
-  .speaker__text p {
-    font-size: calc(var(--index) * 1.5);
-  }
-  .speakers {
-    margin-bottom: calc(var(--index) * 3.5);
-    flex-direction: column-reverse;
-    justify-content: center;
-  }
-  .speakers__date {
-    margin: auto;
-  }
-  .speakers__year img {
-    padding-left: inherit;
-    padding-top: inherit;
-  }
-  .speakers__year {
-    margin: auto;
-  }
-  .speaker__img img {
-    width: calc(var(--index) * 30);
-  }
-  .speaker__title h2 {
-    font-size: calc(var(--index) * 2.5);
-  }
-  .festival__content {
-    width: calc(var(--index) * 35);
-    margin-right: calc(var(--index) * 5);
-    margin-left: calc(var(--index) * 5);
-  }
+  
 }
 @media (max-width: 500px) {
   .header__nav li {
@@ -1164,11 +1172,6 @@ body {
   .footer__logoPuri img {
     width: calc(var(--index) * 10);
   }
-  .festival__content {
-    width: calc(var(--index) * 32);
-    margin-right: calc(var(--index) * 5);
-    margin-left: calc(var(--index) * 5);
-  }
 }
 @media (max-width: 450px) {
   .header__logo1 {
@@ -1179,11 +1182,6 @@ body {
   }
   .footer__logoPuri img {
     width: calc(var(--index) * 20);
-  }
-  .festival__content {
-    width: calc(var(--index) * 30);
-    margin-right: calc(var(--index) * 5);
-    margin-left: calc(var(--index) * 5);
   }
 }
 @media (max-width: 400px) {
