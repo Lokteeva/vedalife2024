@@ -322,6 +322,13 @@ body {
   font-size: 18px;
   line-height: 1.5;
 }
+/* video */
+.video {
+  margin: auto;
+  margin-top: calc(var(--index) * 1);
+  width: 100vw;
+  height: 50vw;
+}
 /* new year */
 .newYear {
   background-color: var(--litePink);
@@ -1524,7 +1531,6 @@ body {
 }
 /* my mobile */
 @media (max-width: 450px) {
- 
   .home__img {
     padding-top: calc(var(--index) * 3);
     padding-bottom: calc(var(--index) * 5);

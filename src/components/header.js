@@ -24,10 +24,10 @@ function Header() {
               <a href="#"><img className="telegram" src="./image/social/telegram-svgrepo-com.svg"></img></a>
              </div>  */}
              <div className="social__vk">
-              <a href="#"><img className="vk" src="./image/social/vk-svgrepo-com.svg"></img></a>
+              <a href="https://vk.com/vedalife_sochi"><img className="vk" src="./image/social/vk-svgrepo-com.svg"></img></a>
              </div> 
              <div className="social__instagram">
-              <a href="#"><img className="instagram" src="./image/social/instagram-167-svgrepo-com.svg"></img></a>
+              <a href="https://instagram.com/vedalife"><img className="instagram" src="./image/social/instagram-167-svgrepo-com.svg"></img></a>
              </div>        
           </div>
 
