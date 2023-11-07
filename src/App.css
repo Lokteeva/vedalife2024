@@ -230,6 +230,7 @@ body {
   background-color: var(--darkBlue);
   border-radius: 0 calc(var(--index) * 2) calc(var(--index) * 2) 0;
   padding: calc(var(--index) * 0.5) calc(var(--index) * 0.8);
+  padding-left: calc(var(--index) * 2);
   width: max-content;
   box-shadow: 5px 5px 15px #666;
   z-index: 4;
@@ -256,6 +257,7 @@ body {
   color: var(--white);
   padding: 0 10px;
   background-color: var(--pink);
+  padding-left: calc(var(--index) * 2);
 }
 .home__sochi {
   color: var(--liteBlue);
