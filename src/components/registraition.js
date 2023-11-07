@@ -25,6 +25,8 @@ function registraition() {
     </div>
   
     <img className="registraition__snowflake" src="./image/snowflake.png" alt="snowflake"/>
+    <img className="registraition__snowflake2" src="./image/snowflake.png" alt="snowflake"/>
+
   </section>
     </div>
   )

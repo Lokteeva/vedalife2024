@@ -238,8 +238,9 @@ body {
   bottom: calc(var(--index) * -1.7);
 }
 .home__button-present-pink {
-  color: var(--pink);
+  color: var(--white);
   padding: 0 10px;
+  background-color: var(--pink);
 }
 .home__sochi {
   color: var(--liteBlue);
@@ -696,6 +697,9 @@ body {
   padding-left: calc(var(--index) * 1);
   padding-top: calc(var(--index) * 1.5);
 }
+.speakers__snowflake {
+  display: none;
+}
 /* speaker */
 .speaker {
   position: relative;
@@ -849,6 +853,13 @@ body {
   width: calc(var(--index) * 13);
   opacity: 0.5;
 }
+.registraition__snowflake2 {
+  position: absolute;
+  bottom: calc(var(--index) * -3);
+  right: calc(var(--index) * 10);
+  width: calc(var(--index) * 25);
+  opacity: 0.3;
+}
 /* price */
 .price {
   position: relative;
@@ -887,6 +898,7 @@ body {
 }
 .price__table td {
   border-bottom: 2px solid var(--darkBlue);
+  padding: calc(var(--index) * 0.3) calc(var(--index) * 1) ;
 }
 .price__table span {
   font-size: calc(var(--index) * 0.9);
@@ -897,6 +909,9 @@ body {
   font-family: 'BebasNeueBook';
   font-weight: 900;
   text-align: center;
+}
+.price p {
+  font-size: calc(var(--index) * 1.5);
 }
 .table-btn {
   color: var(--white);
@@ -1021,11 +1036,11 @@ body {
   position: fixed;
 }
 .up {
-  bottom: 50px;
+  bottom: 70px;
   left: 10px;
 }
 .down {
-  bottom: 0px;
+  bottom: 20px;
   left: 10px;
   rotate: 180deg;
 }
@@ -1036,7 +1051,8 @@ body {
   }
   .header__nav ul {
     font-size: calc(var(--index) * 1.3);
-  }.home__button-festival {
+  }
+  .home__button-festival {
     margin-top: calc(var(--index) * 5);
   }
   .newYear__month-img {
@@ -1053,6 +1069,7 @@ body {
   .registraition__img img {
     margin-top: calc(var(--index) * 4);
     margin-left: inherit;
+    z-index: 4;
   }
   .registraition__content a {
     font-size: calc(var(--index) * 1.8);
@@ -1069,6 +1086,12 @@ body {
   }
   .description__btnEnd2 {
     bottom: calc(var(--index) * 27);
+  }
+  .price__table {
+    font-size: calc(var(--index) * 1.5);
+  }
+  .table-btn {
+    font-size: calc(var(--index) * 1.5);
   }
   .footer__logo1 {
     position: absolute;
@@ -1097,11 +1120,20 @@ body {
     margin: inherit;
     justify-content: start;
   }
-  
+  .footer__content {
+    padding-left: calc(var(--index) * 2);
+  }
+  .footer__info h3 {
+    font-size: calc(var(--index) * 1.3);
+    letter-spacing: 1.3px;
+  }
+  .footer__tel {
+    font-size: calc(var(--index) * 1.5);
+  }
 }
 @media (max-width: 800px) {
   .newYear__month-img {
-   width: calc(var(--index) * 8);
+    width: calc(var(--index) * 8);
   }
   .home__sochi {
     z-index: -1;
@@ -1113,6 +1145,7 @@ body {
   }
   .registraition {
     display: block;
+    padding-right: inherit;
   }
   .registraition__content {
     margin: auto;
@@ -1225,7 +1258,7 @@ body {
   }
   .newYear__month-img {
     width: calc(var(--index) * 6);
-   }
+  }
   .programmFestival {
     flex-direction: column-reverse;
   }
@@ -1246,6 +1279,19 @@ body {
   .programmFestival__img img {
     width: calc(var(--index) * 28);
   }
+  .festival {
+    padding-top: calc(var(--index) * 2);
+    padding-bottom: calc(var(--index) * 2);
+  }
+  .festival__content {
+    width: inherit;
+  }
+  .festival__img {
+    padding-bottom: calc(var(--index) * 2);
+  }
+  .description {
+    padding-top: calc(var(--index) * 2);
+  }
   .description__box {
     flex-direction: column;
   }
@@ -1263,10 +1309,17 @@ body {
     padding-bottom: calc(var(--index) * 3);
     margin-right: 0;
   }
-  .festival__content {
-    width: inherit;
-    margin-right: calc(var(--index) * 2);
-    margin-left: calc(var(--index) * 2);
+  .speakers {
+    position: relative;
+  }
+  .speakers__snowflake {
+    display: flex;
+    position: absolute;
+    top: calc(var(--index) * -12);
+    left: calc(var(--index) * -15);
+    width: calc(var(--index) * 25);
+    opacity: 0.5;
+    z-index: 1;
   }
   .speaker,
   .speaker2 {
@@ -1275,16 +1328,6 @@ body {
     padding-left: 0;
     padding-right: 0;
     padding-top: calc(var(--index) * 0);
-  }
-  .speaker__box {
-    margin: 0 auto;
-    width: inherit;
-  }
-  .speaker__text {
-    padding-bottom: calc(var(--index) * 3.5);
-  }
-  .speaker__text p {
-    font-size: calc(var(--index) * 1.5);
   }
   .speakers {
     margin-bottom: calc(var(--index) * 3.5);
@@ -1295,6 +1338,10 @@ body {
     margin: auto;
     padding-top: calc(var(--index) * 2);
   }
+  .speakers__date h3 {
+    z-index: 4;
+    position: relative;
+  }
   .speakers__year img {
     padding-left: inherit;
     padding-top: inherit;
@@ -1302,9 +1349,21 @@ body {
   }
   .speakers__year {
     margin: auto;
+    z-index: 4;
   }
   .speakers__title {
     padding-top: calc(var(--index) * 2);
+    z-index: 4;
+  }
+  .speaker__box {
+    margin: 0 auto;
+    width: inherit;
+  }
+  .speaker__text {
+    padding-bottom: calc(var(--index) * 3.5);
+  }
+  .speaker__text p {
+    font-size: calc(var(--index) * 1.5);
   }
   .speaker__img img {
     width: calc(var(--index) * 30);
@@ -1397,7 +1456,7 @@ body {
 }
 @media (max-width: 500px) {
   .home__img {
-    width: calc(var(--index) *20);
+    width: calc(var(--index) * 20);
     border-radius: 0 calc(var(--index) * 11) calc(var(--index) * 10) 0;
     padding-top: calc(var(--index) * 2);
   }
@@ -1461,6 +1520,9 @@ body {
   }
   .registraition__content {
     margin-top: calc(var(--index) * 1);
+  }
+  .price__table {
+    font-size: calc(var(--index) * 1.7);
   }
 }
 /* lisa mobile */
@@ -1528,5 +1590,4 @@ body {
     padding-top: calc(var(--index) * 2);
     border-radius: 0 calc(var(--index) * 7) calc(var(--index) * 9.2) 0;
   }
- 
 }

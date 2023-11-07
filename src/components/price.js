@@ -43,7 +43,7 @@ function price() {
     </table>
 
     <p>
-    При оплате <strong>до 15 ноября</strong> <br/> 2 дня ОТДЫХА в ашраме до или после фестиваля <strong>БЕСПЛАТНО!</strong>
+    При оплате <strong>до 15 ноября</strong> <br/> 2 дня ОТДЫХА в ашраме<br/> до или после фестиваля <strong>БЕСПЛАТНО!</strong>
     </p>
 
     <button className="price__btn1"></button>
