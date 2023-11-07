@@ -28,7 +28,7 @@
   width: 100vw;
 }
 .none {
-  display: none;
+  display: none !important;
 }
 body {
   overflow-x: hidden;
@@ -517,12 +517,32 @@ body {
 .table {
   margin-top: calc(var(--index) * -4.8);
   padding: calc(var(--index) * 1);
+  background-color: var(--darkBlue);
+  display: flex;
 }
 .table__img {
   display: flex;
   margin: 0 auto;
   width: 95%;
   box-shadow: calc(var(--index) * 0.5) calc(var(--index) * 0.5) calc(var(--index) * 1) #666;
+}
+.table a {
+  text-decoration: none;
+  color: var(--pink);
+  background-color: var(--white);
+  padding: calc(var(--index) * 0.5) calc(var(--index) * 1);
+  border-radius: calc(var(--index) * 1);
+  box-shadow: 1px 1px 25px var(--white);
+  font-family: 'BebasNeueRegular';
+  font-size: calc(var(--index) * 1.2);
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  transition: 0.5s ease-in;
+  margin: 0 auto;
+}
+.table a:hover {
+  color: var(--pink);
+  background-color: var(--white);
 }
 /* description */
 .description {
@@ -878,6 +898,8 @@ body {
   margin-top: calc(var(--index) * 1);
   margin-bottom: calc(var(--index) * 1);
   margin-left: calc(var(--index) * 3);
+  z-index: 3;
+  position: relative;
 }
 .registraition__snowflake {
   position: absolute;
@@ -1114,6 +1136,12 @@ body {
   .description__title,
   .festival__title {
     font-size: calc(var(--index) * 1.8);
+  }
+  .festival {
+    padding-top: calc(var(--index) * 2);
+  }
+  .festival__img img {
+    padding-bottom: calc(var(--index) * 2);
   }
   .festival__btn {
     bottom: calc(var(--index) * 5);
@@ -1622,13 +1650,13 @@ body {
     padding-bottom: calc(var(--index) * 0);
     padding-top: calc(var(--index) * 1);
   }
-  .footer__container {
-    width: inherit;
-  }
   .home__img {
     width: calc(var(--index) * 17);
     padding-top: calc(var(--index) * 2);
     border-radius: 0 calc(var(--index) * 7) calc(var(--index) * 9.2) 0;
+  }
+  .footer__container {
+    width: inherit;
   }
 }
 

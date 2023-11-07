@@ -3,8 +3,9 @@ import React from 'react';
 function table() {
   return (
     <div>
-      <div className="table none">
-        <img className="table__img" src="./image/table1.jpg" alt="table" />
+      <div className="table">
+        <a href="#">Расписание фестиваля</a>
+        <img className="table__img none" src="./image/table1.jpg" alt="table" ></img>
       </div>
     </div>
   );
