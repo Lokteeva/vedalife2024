@@ -12,17 +12,17 @@ function Header() {
         <div className="header__logo2">
           <img src="./image/logo2.png" alt="logo"/>
         </div>
-        <div className="header__logo3">
+        {/* <div className="header__logo3">
           <img src="./image/logo3.png" alt="logo"/>
-        </div>
+        </div> */}
         <div className="header__social-box">
           <div className="header__social">
-            <div className="social__whatsapp">
+            {/* <div className="social__whatsapp">
               <a href="#"><img className="whatsapp" src="./image/social/whatsapp-svgrepo-com.svg"></img></a>
             </div> 
             <div className="social__telegram">
               <a href="#"><img className="telegram" src="./image/social/telegram-svgrepo-com.svg"></img></a>
-             </div> 
+             </div>  */}
              <div className="social__vk">
               <a href="#"><img className="vk" src="./image/social/vk-svgrepo-com.svg"></img></a>
              </div> 

@@ -13,6 +13,7 @@ import Speakers from './components/speakers'
 import Registraition from './components/registraition'
 import Price from './components/price'
 import Footer from './components/footer'
+import Video from './components/video'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
        <Header/>
        <Home/>
        <Vedalife/>
+       <Video/>
        <NewYear/>
        <Festival/>
        <Mandarin/>

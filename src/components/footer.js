@@ -21,13 +21,14 @@ function footer() {
             >Ashramsochi@gmail.com</a></h3></td>
 		</tr>
 		<tr>
-			<td> <a href="#"><img width={25} className="footer__whatsapp" src="./image/social/whatsapp-svgrepo-com.svg"></img></a></td>
-			<td><a href="#"><img width={25} className="footer__telegram" src="./image/social/telegram-svgrepo-com.svg"></img></a></td>
+			{/* <td> <a href="#"><img width={25} className="footer__whatsapp" src="./image/social/whatsapp-svgrepo-com.svg"></img></a></td> */}
+      <td><a href="https://vk.com/vedalife_sochi"><img width={25} className="footer__vk" src="./image/social/vk-svgrepo-com.svg"></img></a></td>
+			{/* <td><a href="#"><img width={25} className="footer__telegram" src="./image/social/telegram-svgrepo-com.svg"></img></a></td> */}
 			<td><a href="tel:+79884876527" className='footer__tel'>+7 988 487 6527</a></td>
 		</tr>
 		<tr>
-			<td><a href="#"><img width={25} className="footer__vk" src="./image/social/vk-svgrepo-com.svg"></img></a></td>
-			<td><a href="#"><img width={25} className="footer__instagram" src="./image/social/instagram-167-svgrepo-com.svg"></img></a></td>
+			
+			<td><a href="https://instagram.com/vedalife"><img width={25} className="footer__instagram" src="./image/social/instagram-167-svgrepo-com.svg"></img></a></td>
 			<td> <a href="#" className='footer__tel'>@ashramsochi</a></td>
 		</tr>
 	</tbody>
