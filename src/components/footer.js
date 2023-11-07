@@ -11,13 +11,13 @@ function footer() {
       </div>
 
       <div className="footer__content">
-        <table class="footer__info">
+        <table className="footer__info">
 	<tbody>
 		<tr>
-			<td colspan="3"><h3>Контакты: Сочи, ул. Фурманова, д. 38</h3></td>
+			<td colSpan="3"><h3>Контакты: Сочи, ул. Фурманова, д. 38</h3></td>
 		</tr>
 		<tr>
-			<td colspan="3"><h3>e-mail: <a href="mailto:ashramsochi@gmail.com"
+			<td colSpan="3"><h3>e-mail: <a href="mailto:ashramsochi@gmail.com"
             >Ashramsochi@gmail.com</a></h3></td>
 		</tr>
 		<tr>
