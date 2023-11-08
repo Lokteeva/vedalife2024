@@ -11,7 +11,7 @@ function Cooking() {
   return (
     <div ref={ref}>
       <div className={`cooking ${inView ? 'active' : ''}`}>
-        <img className="cooking__img" src="./image/09.jpg" alt="cooking" />
+        <img className="cooking__img" src="./image/09small.jpg" alt="cooking" />
       </div>
     </div>
   );

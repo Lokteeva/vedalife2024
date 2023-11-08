@@ -287,7 +287,7 @@ body {
   left: calc(var(--index) * 35);
   opacity: 0.2;
   z-index: 1;
-  width: calc(var(--index) * 25);
+  width: calc(var(--index) * 17);
 }
 
 /* vedalife */
@@ -326,8 +326,8 @@ body {
 .video {
   margin: auto;
   margin-top: calc(var(--index) * 1);
-  width: 100vw;
-  height: 50vw;
+  width: 50vw;
+  height: 25vw;
 }
 .active {
   animation: active 1s ease-in;
@@ -450,15 +450,15 @@ body {
   position: absolute;
   bottom: calc(var(--index) * 1);
   left: calc(var(--index) * -1.5);
-  width: calc(var(--index) * 15);
+  width: calc(var(--index) * 10);
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 .festival__snowflake2 {
   position: absolute;
   z-index: -1;
-  opacity: 0.5;
-  width: calc(var(--index) * 20);
+  opacity: 0.3;
+  width: calc(var(--index) * 10);
   top: calc(var(--index) * 1);
 }
 .festival__btn {
@@ -512,9 +512,9 @@ body {
   position: absolute;
   top: calc(var(--index) * 10);
   right: calc(var(--index) * -1);
-  width: calc(var(--index) * 19);
+  width: calc(var(--index) * 11);
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 .programmFestival__btn {
   position: absolute;
@@ -601,9 +601,9 @@ body {
   position: absolute;
   top: calc(var(--index) * 0.1);
   right: calc(var(--index) * 2.5);
-  width: calc(var(--index) * 19);
+  width: calc(var(--index) * 11);
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 .description__btn {
   position: absolute;
@@ -631,33 +631,33 @@ body {
   position: absolute;
   top: calc(var(--index) * 14.5);
   right: calc(var(--index) * 5.5);
-  width: calc(var(--index) * 8);
+  width: calc(var(--index) * 7);
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 .description__snowflake3 {
   position: absolute;
   bottom: calc(var(--index) * -10);
   left: calc(var(--index) * 5);
-  width: calc(var(--index) * 18);
+  width: calc(var(--index) * 11);
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 .description__snowflake4 {
   position: absolute;
   bottom: calc(var(--index) * -13);
   right: calc(var(--index) * -7);
-  width: calc(var(--index) * 18);
+  width: calc(var(--index) * 10);
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 .description__snowflake5 {
   position: absolute;
   bottom: calc(var(--index) * 1);
   left: calc(var(--index) * -0.5);
-  width: calc(var(--index) * 18);
+  width: calc(var(--index) * 10);
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 .description__btnEnd {
   position: absolute;
@@ -806,9 +806,9 @@ body {
   position: absolute;
   top: calc(var(--index) * 1);
   left: calc(var(--index) * 6);
-  width: calc(var(--index) * 19);
+  width: calc(var(--index) * 10);
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 .speaker__snowflake1 {
   position: absolute;
@@ -816,15 +816,15 @@ body {
   left: calc(var(--index) * 5);
   width: calc(var(--index) * 7);
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 .speaker__snowflake2 {
   position: absolute;
   top: calc(var(--index) * 34);
   right: calc(var(--index) * -4);
-  width: calc(var(--index) * 19);
+  width: calc(var(--index) * 10);
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 .speaker__btn1 {
   position: absolute;
@@ -877,9 +877,9 @@ body {
   font-family: 'BebasNeueBook';
   padding-bottom: calc(var(--index) * 1);
   padding-top: calc(var(--index) * 2);
-  color: var(--darkPink);
+  color: var(--white);
   letter-spacing: 1.5px;
-  text-shadow: 0px 0px 5px var(--white);
+  /* text-shadow: 0px 0px 5px var(--white); */
 }
 .registraition__text {
   font-size: 18px;
@@ -924,15 +924,15 @@ body {
   position: absolute;
   top: calc(var(--index) * -2);
   left: calc(var(--index) * 1);
-  width: calc(var(--index) * 13);
-  opacity: 0.5;
+  width: calc(var(--index) * 12);
+  opacity: 0.2;
 }
 .registraition__snowflake2 {
   position: absolute;
-  bottom: calc(var(--index) * -3);
-  right: calc(var(--index) * 10);
-  width: calc(var(--index) * 25);
-  opacity: 0.3;
+  bottom: calc(var(--index) * -1);
+  right: calc(var(--index) * 22);
+  width: calc(var(--index) * 10);
+  opacity: 0.2;
 }
 /* price */
 .price {
@@ -1020,8 +1020,8 @@ body {
   position: absolute;
   top: calc(var(--index) * 5);
   left: calc(var(--index) * 1);
-  width: calc(var(--index) * 23);
-  opacity: 0.5;
+  width: calc(var(--index) * 13);
+  opacity: 0.3;
   z-index: -1;
 }
 /* footer */
@@ -1037,6 +1037,7 @@ body {
   padding-bottom: calc(var(--index) * 3);
 }
 .footer__logo1 img {
+  display: none;
   width: calc(var(--index) * 6);
   height: calc(var(--index) * 3.5);
 }
@@ -1091,7 +1092,8 @@ body {
 .footer__whatsapp:hover,
 .footer__telegram:hover,
 .footer__instagram:hover,
-.footer__vk:hover {
+.footer__vk:hover,
+.footer__social img:hover {
   scale: 1.2;
   transition: scale 0.2s ease-in;
   cursor: pointer;
@@ -1287,7 +1289,7 @@ body {
     position: absolute;
     top: calc(var(--index) * 2);
     left: calc(var(--index) * -1);
-    opacity: 0.5;
+    opacity: 0.2;
     z-index: 1;
   }
   .newYear__date {
@@ -1313,13 +1315,11 @@ body {
     height: calc(var(--index) * 20);
     z-index: 1;
   }
+  
   .festival__content {
     width: calc(var(--index) * 45);
     margin-right: calc(var(--index) * 5);
     margin-left: calc(var(--index) * 5);
-  }
-  .price__snowflake {
-    opacity: 0.2;
   }
 }
 @media (max-width: 700px) {
@@ -1401,10 +1401,10 @@ body {
   .speakers__snowflake {
     display: flex;
     position: absolute;
-    top: calc(var(--index) * -12);
+    top: calc(var(--index) * -7);
     left: calc(var(--index) * -15);
-    width: calc(var(--index) * 25);
-    opacity: 0.5;
+    width: calc(var(--index) * 17);
+    opacity: 0.1;
     z-index: 1;
   }
   .speaker,
