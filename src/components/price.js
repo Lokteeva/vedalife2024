@@ -1,9 +1,16 @@
 import React from 'react'
+import { useInView } from 'react-intersection-observer';
 
-function price() {
+
+function Price() {
+  const { ref, inView } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
+
   return (
-    <div>
-       <section className="price">
+    <div ref={ref}>
+       <section className={`price ${inView ? 'active' : ''}`}>
     <h2> <strong>стоимость участия</strong><br/>
 и проживание в номерах</h2>
 <h3>В стоимость входит:<br/> проживание, питание, вся программа</h3>
@@ -54,4 +61,4 @@ function price() {
   )
 }
 
-export default price
+export default Price

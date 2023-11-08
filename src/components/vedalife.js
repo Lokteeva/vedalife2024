@@ -4,9 +4,8 @@ function vedalife() {
   return (
     <div>
       <section className="vedalife">
-  <div className="vedalife__img">
+  <div className="vedalife__img ">
     <img src="./image/img01.jpg" alt="img"/>
-
   </div>
   <div className="vedalife__content">
     <div className="vedalife__title">

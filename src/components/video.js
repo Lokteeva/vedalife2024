@@ -1,19 +1,26 @@
 import React from 'react'
 import Iframe from 'react-iframe'
+import { useInView } from 'react-intersection-observer';
 
-function video() {
+
+function Video() {
+  
+  const { ref, inView } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
+
   return (
-    <div>
+
+    <div ref={ref}>
       <Iframe url="https://vk.com/video_ext.php?oid=-42933644&id=456239337&hd=2"
-        // width="640px"
-        // height="320px"
         id=""
-        className="video"
+        className={`video ${inView ? 'active' : ''}`}
         display="block"
         position="relative"/>
     
     </div>
   )
 }
-export default video
+export default Video
 

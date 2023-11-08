@@ -1,9 +1,17 @@
 import React from 'react'
+import { useInView } from 'react-intersection-observer';
 
-function festival() {
+
+function Festival() {
+
+  const { ref, inView } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
+
   return (
-    <div>
-      <section className="festival">
+    <div ref={ref}>
+      <section className={`festival ${inView ? 'active' : ''}`}>
   <div className="festival__content">
     <div className="festival__title">
       <h2> ФЕСТИВАЛЬ И НОВЫЙ ГОД</h2>
@@ -18,7 +26,7 @@ function festival() {
     </div>
   </div>
   <div className="festival__img">
-    <img src="./image/10.jpg" alt="img"/>
+    {inView ? <img src="./image/10.jpg" alt="img"/> : <div className="skeleton23"/>}
   </div>
 
   <img className="festival__snowflake1" src="./image/snowflake.png" alt="snowflake"/>
@@ -30,4 +38,4 @@ function festival() {
   )
 }
 
-export default festival
+export default Festival

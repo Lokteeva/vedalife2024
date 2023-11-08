@@ -1,13 +1,20 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 
-function cooking() {
+
+function Cooking() {
+  const { ref, inView } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
+
   return (
-    <div>
-      <div className="cooking">
+    <div ref={ref}>
+      <div className={`cooking ${inView ? 'active' : ''}`}>
         <img className="cooking__img" src="./image/09.jpg" alt="cooking" />
       </div>
     </div>
   );
 }
 
-export default cooking;
+export default Cooking;

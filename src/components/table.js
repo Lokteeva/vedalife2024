@@ -1,9 +1,18 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 
-function table() {
+
+function Table() {
+  const { ref, inView } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
+  
   return (
-    <div>
-      <div className="table">
+    
+    <div ref={ref}>
+      
+      <div className={`table ${inView ? 'active' : ''}`}>
         <a href="#">Расписание фестиваля</a>
         <img className="table__img none" src="./image/table1.jpg" alt="table" ></img>
       </div>
@@ -11,4 +20,4 @@ function table() {
   );
 }
 
-export default table;
+export default Table;

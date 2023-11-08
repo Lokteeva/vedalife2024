@@ -1,13 +1,22 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 
-function mandarin() {
+
+function Mandarin() {
+  const { ref, inView } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
+
   return (
-    <div>
+    <div ref={ref}>
       <div className="mandarin">
-        <img className="mandarin__img" src="./image/13.jpg" alt="mandarin" />
+        <img 
+        className={`mandarin__img ${inView ? 'active' : ''}`} 
+         src="./image/13.jpg" alt="mandarin" />
       </div>
     </div>
   );
 }
 
-export default mandarin;
+export default Mandarin;

@@ -1,9 +1,16 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 
-function speakers() {
+
+function Speakers() {
+  const { ref, inView } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
+
   return (
-    <div>
-      <section className="speakers">
+    <div ref={ref}>
+      <section  className={`speakers ${inView ? 'active' : ''}`}>
         <div className="speakers__year">
           <img src="./image/year.png" alt="year" />
         </div>
@@ -25,7 +32,7 @@ function speakers() {
         </div>
       </section>
 
-      <section className="speaker">
+      <section  className="speaker">
         <div className="speaker__box">
           <div className="speaker__img">
             <img src="./image/22.jpg" alt="img" />
@@ -95,4 +102,4 @@ function speakers() {
   );
 }
 
-export default speakers;
+export default Speakers;

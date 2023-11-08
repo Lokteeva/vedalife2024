@@ -329,6 +329,13 @@ body {
   width: 100vw;
   height: 50vw;
 }
+.active {
+  animation: active 1s ease-in;
+}
+@keyframes active {
+  0% {opacity: 0; transform: translateY(100px);}
+  100% {opacity: 1; transform: translateY(0);}
+}
 /* new year */
 .newYear {
   background-color: var(--litePink);
@@ -432,6 +439,12 @@ body {
 .festival__img img {
   border-radius: 50%;
   width: calc(var(--index) * 23);
+}
+.skeleton23 {
+  background-color: var(--white);
+  border-radius: 50%;
+  width: calc(var(--index) * 23);
+  height: calc(var(--index) * 23);
 }
 .festival__snowflake1 {
   position: absolute;
@@ -577,6 +590,12 @@ body {
   border-radius: 50%;
   width: calc(var(--index) * 10.5);
   margin-right: calc(var(--index) * 3);
+}
+.skeleton10 {
+  background-color: var(--white);
+  border-radius: 50%;
+  width: calc(var(--index) * 10.5);
+  height: calc(var(--index) * 10.5);
 }
 .description__snowflake1 {
   position: absolute;

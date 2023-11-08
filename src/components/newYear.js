@@ -1,9 +1,16 @@
 import React from 'react'
+import { useInView } from 'react-intersection-observer';
 
-function newYear() {
+
+function NewYear() {
+  const { ref, inView } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
+
   return (
-    <div>
-      <section id='newYear' className="newYear">
+    <div ref={ref}>
+      <section id='newYear' className={`newYear ${inView ? 'active' : ''}`}>
   <div className="newYear__date">
     <h3>29–5</h3>
     <div className="newYear__month">
@@ -25,4 +32,4 @@ function newYear() {
   )
 }
 
-export default newYear
+export default NewYear

@@ -1,9 +1,16 @@
 import React from 'react'
+import { useInView } from 'react-intersection-observer';
 
-function footer() {
+
+function Footer() {
+  const { ref, inView } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
+
   return (
-    <div>
-        <footer id='footer' className="footer">
+    <div ref={ref}>
+        <footer id='footer' className={`footer ${inView ? 'active' : ''}`}>
     <div className="footer__container">
      <div className="footer__container2">
      <div className="footer__logo1">
@@ -53,4 +60,4 @@ function footer() {
   )
 }
 
-export default footer
+export default Footer

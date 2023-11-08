@@ -1,9 +1,16 @@
 import React from 'react'
+import { useInView } from 'react-intersection-observer';
 
-function registraition() {
+
+function Registraition() {
+  const { ref, inView } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
+
   return (
-    <div>
-       <section id='registraition' className="registraition">
+    <div ref={ref}>
+       <section id='registraition' className={`registraition ${inView ? 'active' : ''}`}>
     <div className="registraition__content">
       <div className="registraition__title">
         <h2> РЕГИСТРАЦИЯ</h2>
@@ -32,4 +39,4 @@ function registraition() {
   )
 }
 
-export default registraition
+export default Registraition
