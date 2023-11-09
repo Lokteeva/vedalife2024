@@ -17,7 +17,7 @@ function vedalife() {
       </p>
      
     </div>
-    <div className="footer__logoPuri">
+    <div className="vedalife__logoPuri">
       <img src="./image/NewDjPuri.png" alt="logo"/>
     </div>
   </div>

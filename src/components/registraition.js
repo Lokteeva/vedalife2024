@@ -22,7 +22,7 @@ function Registraition() {
         <p>
           Оставить заявку, чтобы успеть забронировать место по самой выгодной цене! 
         </p>
-        <p>Оставить заявку на участие в фестивале вы можете по ссылке
+        <p>Оставить заявку на участие в фестивале вы можете по кнопке ниже
         </p>
       </div>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdRaZpZQktevoHTpFihjeujw8oefjtg63IetGSHUyPYMuJrWw/viewform"> Оставить заявку</a>

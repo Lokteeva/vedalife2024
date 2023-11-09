@@ -30,7 +30,7 @@ function App() {
       <Festival />
       <Mandarin />
       <ProgrammFestival />
-      {/* <Table /> */}
+      <Table />
       <Description />
       <Cooking />
       <Speakers />
