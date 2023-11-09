@@ -23,28 +23,38 @@ function Price() {
         </tr>
         <tr>
           <td>6 <span>ти</span> - местный</td>
-          <td className="price__num">22 000</td>
-          <td className="price__num">13 200</td>
+          <td className="price__num">22 500</td>
+          <td className="price__num">13 500</td>
         </tr>
         <tr>
           <td>4 <span>х</span> - местный</td>
           <td className="price__num">25 500</td>
-          <td className="price__num">15 400</td>
+          <td className="price__num">15 500</td>
         </tr>
         <tr>
-          <td> <span>доп. место</span> в 4 <span>х</span> местном</td>
+          <td>2 <span>х</span> - местный</td>
+          <td className="price__num">32 000</td>
+          <td className="price__num">20 500</td>
+        </tr>
+        <tr>
+          <td> <span>доп. место в </span> 4 <span>х</span> местном</td>
           <td className="price__num">21 000</td>
           <td className="price__num">12 600</td>
         </tr>
         <tr>
-          <td>2 <span>х</span> - местный</td>
-          <td className="price__num">28 300</td>
-          <td className="price__num">17 000</td>
+          <td>4 <span>х</span> - местный / комфорт</td>
+          <td className="price__num">29 900</td>
+          <td className="price__num">18 000</td>
         </tr>
         <tr>
-          <td>4 <span>х</span> - местный / комфорт</td>
-          <td className="price__num">29 800</td>
-          <td className="price__num">18 000</td>
+          <td>Новый дом 2 <span>х</span> - местный / комфорт</td>
+          <td className="price__num">40 500</td>
+          <td className="price__num">24 300</td>
+        </tr>
+        <tr>
+          <td>Новый дом 4 <span>х</span> - местный / комфорт</td>
+          <td className="price__num">29 700</td>
+          <td className="price__num">17 800</td>
         </tr>
       </tbody>
     </table>
