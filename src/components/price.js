@@ -43,8 +43,8 @@ function Price() {
         </tr>
         <tr>
           <td>4 <span>х</span> - местный / комфорт</td>
-          <td className="price__num">29 900</td>
-          <td className="price__num">18 000</td>
+          <td className="price__num">37 800</td>
+          <td className="price__num">22 700</td>
         </tr>
         <tr>
           <td>Новый дом 2 <span>х</span> - местный / комфорт</td>
