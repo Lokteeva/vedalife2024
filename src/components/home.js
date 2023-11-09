@@ -22,8 +22,9 @@ function home() {
 
         <div className='home__box'>
         <div className=" home__date">
+          <h2>СОЧИ</h2>
             <h3>29–5</h3>
-            <div className="newYear__month">
+            <div className="home__month">
               <button className="newYear__date-dec home__date-dec">декабря</button>
               <button className="home__date-jun">января</button>
             </div>
@@ -31,9 +32,7 @@ function home() {
           </div>
 
         <div className='home__content'>
-          <div className="home__sochi">
-            <h1>Сочи</h1>
-          </div>
+          
 
         <div className='home__button-box'>
         <h1 className="home__button-festival">

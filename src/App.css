@@ -187,7 +187,7 @@ body {
   letter-spacing: 2px;
   border-radius: calc(var(--index) * 10) 0 0 calc(var(--index) * 10);
   width: max-content;
-  padding: calc(var(--index) * 0.5) calc(var(--index) * 5);
+  padding: calc(var(--index) * 0.5) calc(var(--index) * 4);
   box-shadow: -5px 5px 15px #666;
 }
 .home__button-ashram {
@@ -217,18 +217,32 @@ body {
     opacity: 1;
   }
 }
+.home__date {
+  text-align: center;
+}
 .home__date h3 {
   color: var(--darkPink);
   font-size: calc(var(--index) * 7.3);
   font-family: 'BebasNeueBook';
-  margin-left: calc(var(--index) * 1.6);
+  /* margin-left: calc(var(--index) * 1.6); */
   margin-top: calc(var(--index) * -1.5);
   padding-top: calc(var(--index) * 1);
   z-index: 3;
 }
+.home__date h2 {
+  color: var(--liteBlue);
+  font-size: calc(var(--index) * 4);
+  font-family: 'BebasNeueBook';
+  z-index: 3;
+  letter-spacing: 2px;
+}
+.home__month {
+  display: flex;
+  position: relative;
+  z-index: 3;
+}
 .home__date-jun {
-  position: absolute;
-  left: calc(var(--index) * 6.5);
+  margin-left: calc(var(--index) * -1);
   color: var(--white);
   background-color: var(--litePink);
   border-radius: calc(var(--index) * 0.8);
@@ -285,6 +299,9 @@ body {
   letter-spacing: 3px;
   text-align: right;
   padding-right: calc(var(--index) * 1.5);
+}
+.home__sochi-mobile{
+  display: none;
 }
 .home__img-treeth {
   width: 100vw;
@@ -928,7 +945,7 @@ letter-spacing: 1.5px;
   text-decoration: none;
   color: var(--white);
   background-color: var(--pink);
-  padding: calc(var(--index) * 0.5) calc(var(--index) * 2.2);
+  padding: calc(var(--index) * 0.5) calc(var(--index) * 1);
   border-radius: calc(var(--index) * 2);
   box-shadow: 1px 1px 25px var(--white);
   font-family: 'BebasNeueRegular';
@@ -1175,6 +1192,12 @@ letter-spacing: 1.5px;
   .newYear__month-img {
     display: none;
   }
+  .home__sochi {
+    display: none;
+  }
+  .home__button-festival {
+    padding: calc(var(--index) * 0.5) calc(var(--index) * 2.5);
+  }
   .video {
     width: 80vw;
     height: 40vh;
@@ -1332,6 +1355,10 @@ letter-spacing: 1.5px;
   .header__logo2,
   .header__social-box {
     display: none;
+  }
+  .home__button-festival {
+    font-size: calc(var(--index) * 1.4);
+    padding: calc(var(--index) * 0.5) calc(var(--index) * 1.7);
   }
   .newYear {
     position: relative;
@@ -1514,6 +1541,13 @@ letter-spacing: 1.5px;
     margin-left: calc(var(--index) * 2);
   }
 }
+@media (max-width: 650px) {
+  .home__button-festival {
+    font-size: calc(var(--index) * 1.4);
+    padding: calc(var(--index) * 0.5) calc(var(--index) * 1.7);
+    margin-top: calc(var(--index) * 10);
+  }
+}
 @media (max-width: 600px) {
   .home__img {
     width: calc(var(--index) * 22);
@@ -1529,12 +1563,9 @@ letter-spacing: 1.5px;
   .header__nav ul {
     font-size: calc(var(--index) * 1.5);
   }
-  .home__button-festival {
-    padding: calc(var(--index) * 0.5) calc(var(--index) * 4);
-  }
+ 
   .home__date h3 {
     font-size: calc(var(--index) * 6);
-    margin-left: calc(var(--index) * 2);
     padding-top: calc(var(--index) * 1);
   }
   .home__date-jun {
@@ -1549,12 +1580,8 @@ letter-spacing: 1.5px;
     padding-left: calc(var(--index) * -2);
     padding-top: calc(var(--index) * 10);
   }
-  .home__sochi {
-    font-size: calc(var(--index) * 2.5);
-    padding-top: calc(var(--index) * 0.5);
-  }
   .vedalife__title {
-    padding-top: calc(var(--index) * 4);
+    padding-top: calc(var(--index) * 5);
   }
   .festival__btn,
   .programmFestival__btn,
@@ -1586,7 +1613,7 @@ letter-spacing: 1.5px;
     height: calc(var(--index) * 30);
   }
   .registraition__title h2 {
-    font-size: calc(var(--index) * 2);
+    font-size: calc(var(--index) * 3);
   }
   .registraition__text {
     z-index: 3;
@@ -1613,9 +1640,6 @@ letter-spacing: 1.5px;
     margin-left: calc(var(--index) * -2);
     padding-bottom: calc(var(--index) * 4);
   }
-  .home__sochi {
-    font-size: calc(var(--index) * 2);
-  }
   .vedalife {
     margin-left: inherit;
   }
@@ -1640,15 +1664,13 @@ letter-spacing: 1.5px;
     /* border-radius:0 50% 50% 0; */
     /* position: absolute; */
   }
-  .home__button-festival {
-    margin-top: calc(var(--index) * 8);
-  }
-  .home__date h3 {
-    padding-top: calc(var(--index) * 6);
-    padding-left: calc(var(--index) * 2);
+  .home__date {
+    /* background-color:red; */
+    display: block;
+    text-align: center;
   }
   .home__sochi {
-    font-size: calc(var(--index) * 2.2);
+    font-size: calc(var(--index) * 2);
   }
   .newYear__month {
     padding-left: calc(var(--index) * 2);
@@ -1664,14 +1686,11 @@ letter-spacing: 1.5px;
     padding-bottom: calc(var(--index) * 1);
     margin-left: calc(var(--index) * -3);
   }
-  .home__button-festival {
-    margin-top: calc(var(--index) * 7);
-  }
   .registraition__content {
     margin-top: calc(var(--index) * 1);
   }
   .price__table {
-    font-size: calc(var(--index) * 1.7);
+    font-size: calc(var(--index) * 2);
   }
 }
 /* lisa mobile */
@@ -1702,9 +1721,6 @@ letter-spacing: 1.5px;
   }
   .home__date h3 {
     padding-top: calc(var(--index) * 4);
-  }
-  .home__button-festival {
-    margin-top: calc(var(--index) * 4);
   }
   .home__img {
     width: calc(var(--index) * 17);
