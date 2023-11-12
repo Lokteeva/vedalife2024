@@ -9,29 +9,7 @@ function Description() {
 
   return (
     <div ref={ref}>
-      <section className="description">
-        <div className="description__box">
-          <div className="description__img">
-            {inView ? <img src="./image/22.jpg" alt="img" /> : <div className="skeleton10" />}
-          </div>
-
-          <div className="description__content">
-            <div className="description__title">
-              <h2>лекции</h2>
-            </div>
-            <div className="description__text">
-              <p>
-                Лекции и семинары на разные темы наполнят вас знаниями, которые расширят ваше
-                сознание и дадут новый импульс к внутренним трансформациям и победам
-              </p>
-            </div>
-          </div>
-
-          <img className="description__snowflake1" src="./image/snowflake.png" alt="snowflake" />
-
-          <button className="description__btn"></button>
-        </div>
-      </section>
+      
 
       <section className="description">
         <div className="description__box box2">
