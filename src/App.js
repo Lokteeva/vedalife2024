@@ -15,6 +15,8 @@ import Registraition from './components/registraition';
 import Price from './components/price';
 import Footer from './components/footer';
 import Video from './components/video';
+import Reviews from './components/reviews';
+import Hram from './components/hram';
 
 
 function App() {
@@ -34,6 +36,8 @@ function App() {
       <Description />
       <Cooking />
       <Speakers />
+      <Reviews/>
+      <Hram/>
       <Registraition />
       <Price />
       <Footer />
