@@ -42,8 +42,9 @@ function Speakers() {
               <h2>Игорь Евстигнеев</h2>
             </div>
             <div className="speaker__text">
-              <p>Президент Фестиваля Ведалайф Сочи</p>
-              <p>Президент храма Ашрам Сочи Нью Джаганнатха Пури</p>
+              <p>Философ и конфликтолог.  </p>
+              <p>Проведет семинар</p>
+              <p><strong>«Свобода и предопределение в отношениях»</strong></p>
             </div>
           </div>
         </div>
@@ -57,7 +58,8 @@ function Speakers() {
             </div>
             <div className="speaker__text">
               <p>Психолог-консультант, гештальт-терапевт,</p>
-              <p>васту-специалист, коуч, наставник, бизнесмен</p>
+              <p>васту-специалист, коуч, наставник, бизнесмен.</p>
+              <p>Проведет семинар<strong> «Дом семьи, любви и счастья»</strong></p>
             </div>
           </div>
         </div>
@@ -75,28 +77,15 @@ function Speakers() {
           </div>
           <div className="speaker__content">
             <div className="speaker__title">
-              <h2>Роман Волков</h2>
+              <h2>Роман Волков и<br/> Оксана Волкова-Чудаева</h2>
             </div>
             <div className="speaker__text">
-              <p>Бизнес-архитектор, </p>
-              <p>счастливый муж счастливой жены</p>
+              <p>Психологи по семейным отношениям.  </p>
+              <p>Проведут семинар-тренинг <strong>«Искусство отношений»</strong></p>
             </div>
           </div>
         </div>
-        <div className="speaker__box">
-          <div className="speaker__img">
-            <img src="./image/20.jpg" alt="img" />
-          </div>
-          <div className="speaker__content">
-            <div className="speaker__title">
-              <h2>Оксана Волкова-Чудаева</h2>
-            </div>
-            <div className="speaker__text">
-              <p>Женский психолог, психотерапевт, </p>
-              <p>аюрведический психолог-консультант</p>
-            </div>
-          </div>
-        </div>
+        
       </section>
     </div>
   );
