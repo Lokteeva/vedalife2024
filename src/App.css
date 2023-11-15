@@ -1034,9 +1034,10 @@ body {
   width: 25.35vw;
   height: 45vw;
   box-shadow: 5px 5px 15px #333;
+  z-index: 2;
 }
 /* slider */
- .slider h2 {
+.slider h2 {
   font-family: 'BebasNeueBook';
   color: var(--pink);
   letter-spacing: 1.5px;
@@ -1391,7 +1392,10 @@ body {
     height: 40vh;
   }
   .vedalife__content {
-    max-width: inherit;
+    max-width: 80vw;
+    padding-right: 0;
+    padding-left: 0;
+    margin: auto;
   }
   .registraition__content {
     padding-inline: calc(var(--index) * 3);
@@ -1515,9 +1519,11 @@ body {
     flex-direction: column-reverse;
   }
   .festival__content {
-    width: calc(var(--index) * 50);
-    margin-right: calc(var(--index) * 4);
-    margin-left: calc(var(--index) * 4);
+    width: 80vw;
+    /* display: flex; */
+    margin: auto;
+    /* margin-right: calc(var(--index) * 4);
+    margin-left: calc(var(--index) * 4); */
   }
   .festival__img {
     margin: auto;
@@ -1587,11 +1593,6 @@ body {
   .vedalife__title {
     padding-top: calc(var(--index) * 5);
   }
-  .festival__content {
-    width: calc(var(--index) * 45);
-    margin-right: calc(var(--index) * 5);
-    margin-left: calc(var(--index) * 5);
-  }
 }
 @media (max-width: 700px) {
   .header__logo1 img {
@@ -1612,9 +1613,13 @@ body {
     flex-direction: column-reverse;
   }
   .programmFestival__content {
-    width: inherit;
-    margin-left: calc(var(--index) * 6);
-    margin-right: calc(var(--index) * 4);
+    width: 85vw;
+    margin: auto;
+  }
+  .festival__text {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 0;
   }
   .programmFestival__title,
   .vedalife__title,
@@ -1632,9 +1637,6 @@ body {
   .festival {
     padding-top: calc(var(--index) * 2);
     padding-bottom: calc(var(--index) * 2);
-  }
-  .festival__content {
-    width: inherit;
   }
   .festival__img {
     padding-bottom: calc(var(--index) * 2);
@@ -1711,6 +1713,7 @@ body {
   }
   .speaker__text {
     padding-bottom: calc(var(--index) * 6);
+    width: 90vw;
   }
   .speaker__text p {
     font-size: calc(var(--index) * 1.5);
@@ -1721,6 +1724,10 @@ body {
   }
   .speaker__title h2 {
     font-size: calc(var(--index) * 2.5);
+  }
+  .hram__text {
+    width: 80vw;
+    margin: auto;
   }
   .registraition__content {
     width: inherit;
