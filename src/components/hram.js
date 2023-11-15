@@ -1,6 +1,8 @@
 import React from 'react';
 import Iframe from 'react-iframe';
 import { useInView } from 'react-intersection-observer';
+import video from '../video/01.mp4'
+
 
 function Hram() {
   const { ref, inView } = useInView({
@@ -30,7 +32,16 @@ function Hram() {
       </ul>
       </div>
 
+      <img className="hram__img" src="./image/img9.jpg" alt="img" />
+
+      <video className='videoRoot' width="180" height="320" controls >
+      <source src={video} type="video/mp4"/>
+     </video>
+      
+
       <img className="hram__img-snowflake" src="./image/snowflake.png" alt="snowflake" />
+      <img className="hram__img-snowflake1" src="./image/snowflake.png" alt="snowflake" />
+      <img className="hram__img-snowflake2" src="./image/snowflake.png" alt="snowflake" />
     </div>
   );
 }

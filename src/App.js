@@ -17,6 +17,8 @@ import Footer from './components/footer';
 import Video from './components/video';
 import Reviews from './components/reviews';
 import Hram from './components/hram';
+import Slider1 from './components/slider1';
+import Slider2 from './components/slider2';
 
 
 function App() {
@@ -38,6 +40,8 @@ function App() {
       <Speakers />
       <Reviews/>
       <Hram/>
+      <Slider1/>
+      <Slider2/>
       <Registraition />
       <Price />
       <Footer />

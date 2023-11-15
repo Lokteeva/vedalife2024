@@ -919,7 +919,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-family: 'BebasNeueBook';
-  font-size: calc(var(--index) * 1.5);
+  font-size: calc(var(--index) * 2);
   letter-spacing: 1.5px;
 }
 .reviews h3 {
@@ -960,11 +960,11 @@ body {
 }
 /* hram */
 .hram {
-    position: relative;
-    margin-top: calc(var(--index) * 3.5);
-    padding-top: calc(var(--index) * 1);
-    padding-bottom: calc(var(--index) * 3.5);
-    text-align: center;
+  position: relative;
+  margin-top: calc(var(--index) * 3.5);
+  padding-top: calc(var(--index) * 1);
+  padding-bottom: calc(var(--index) * 3.5);
+  text-align: center;
 }
 .hram h3 {
   background-color: var(--liteBlue);
@@ -974,11 +974,11 @@ body {
   font-family: 'BebasNeueBook';
   color: var(--white);
   letter-spacing: 1.5px;
-  font-size: calc(var(--index) * 1.5);
+  font-size: calc(var(--index) * 2);
 }
 .hram__text {
   padding-top: calc(var(--index) * 2);
-  width:max-content;
+  width: max-content;
   margin: auto;
 }
 .hram li {
@@ -991,6 +991,58 @@ body {
   right: calc(var(--index) * 10);
   width: calc(var(--index) * 5);
   opacity: 0.5;
+}
+.hram__img-snowflake1 {
+  position: absolute;
+  top: calc(var(--index) * 15);
+  left: calc(var(--index) * 5);
+  width: calc(var(--index) * 15);
+  opacity: 0.2;
+  z-index: -1;
+}
+.hram__img-snowflake2 {
+  position: absolute;
+  top: calc(var(--index) * 30);
+  right: calc(var(--index) * 10);
+  width: calc(var(--index) * 10);
+  opacity: 0.2;
+  z-index: -1;
+}
+.hram__img {
+  width: 100%;
+  padding-top: calc(var(--index) * 2);
+  padding-bottom: calc(var(--index) * 2);
+}
+.videoRoot {
+  margin: auto;
+  width: 25.35vw;
+  height: 45vw;
+  box-shadow: 5px 5px 15px #333;
+}
+/* slider */
+ .slider h2 {
+  font-family: 'BebasNeueBook';
+  color: var(--pink);
+  letter-spacing: 1.5px;
+  font-size: calc(var(--index) * 2);
+  padding-top: calc(var(--index) * 2);
+  padding-bottom: calc(var(--index) * 2);
+  text-align: center;
+}
+.slider {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.owl-stage .active {
+  animation: none;
+}
+.owl-nav span {
+  font-size: calc(var(--index) * 5);
+}
+.owl-theme .owl-nav {
+  margin-top: calc(var(--index) * -2);
 }
 /* регистрация */
 .registraition {
@@ -1740,6 +1792,14 @@ body {
     display: flex;
     left: calc(var(--index) * 4.5);
   }
+  .videoRoot {
+    margin: auto;
+    width: 100vw;
+    height: 100vw;
+  }
+  .slider {
+    width: 100%;
+  }
 }
 /* my mobile */
 @media (max-width: 450px) {
@@ -1785,7 +1845,6 @@ body {
   .reviews h3 {
     font-size: calc(var(--index) * 2);
   }
- 
 }
 /* lisa mobile */
 @media (max-width: 400px) {
