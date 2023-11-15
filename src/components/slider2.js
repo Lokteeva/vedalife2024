@@ -27,6 +27,9 @@ function Slader2() {
         <img src="./image/room/006.jpg"/>
         </div>
       </OwlCarousel>
+
+      <img className="slider__img-snowflake3" src="./image/snowflake.png" alt="snowflake" />
+      <img className="slider__img-snowflake4" src="./image/snowflake.png" alt="snowflake" />
     </div>
   );
 }

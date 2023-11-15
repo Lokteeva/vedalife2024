@@ -42,6 +42,9 @@ function Hram() {
       <img className="hram__img-snowflake" src="./image/snowflake.png" alt="snowflake" />
       <img className="hram__img-snowflake1" src="./image/snowflake.png" alt="snowflake" />
       <img className="hram__img-snowflake2" src="./image/snowflake.png" alt="snowflake" />
+      <img className="hram__img-snowflake3" src="./image/snowflake.png" alt="snowflake" />
+      <img className="hram__img-snowflake4" src="./image/snowflake.png" alt="snowflake" />
+      
     </div>
   );
 }

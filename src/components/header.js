@@ -1,8 +1,11 @@
 import React from 'react'
+import Snow from 'react-snow-effect'
+
 
 function Header() {
   return (
     <div>
+        <Snow />
       <header className="header ">
       <div className="header__line"></div>
       <div className="header__box">

@@ -9,7 +9,6 @@ function home() {
         </div>
         <img className="home__img-snowflake" src="./image/snowflake.png" alt="snowflake" />
 
-
         <div>
           <img className="home__img" src="./image/09.jpg" alt="home" />
           <div>
