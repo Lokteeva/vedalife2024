@@ -912,9 +912,9 @@ body {
 /* reviews */
 .reviews {
   position: relative;
-  margin-top: calc(var(--index) * 3.5);
+  margin-top: calc(var(--index) * 3);
   padding-top: calc(var(--index) * 1);
-  padding-bottom: calc(var(--index) * 3.5);
+  /* padding-bottom: calc(var(--index) * 3.5); */
   color: var(--white);
   text-align: center;
   text-transform: uppercase;
@@ -942,26 +942,11 @@ body {
   z-index: -1;
   opacity: 0.2;
 }
-.reviews__img-snowflake-video2 {
-  position: absolute;
-  top: calc(var(--index) * 40);
-  left: calc(var(--index) * 5);
-  width: calc(var(--index) * 10);
-  z-index: -1;
-  opacity: 0.2;
-}
-.reviews__img-snowflake-video3 {
-  position: absolute;
-  top: calc(var(--index) * 60);
-  right: calc(var(--index) * 5);
-  width: calc(var(--index) * 7);
-  z-index: -1;
-  opacity: 0.2;
-}
+
 /* hram */
 .hram {
   position: relative;
-  margin-top: calc(var(--index) * 3.5);
+  margin-top: calc(var(--index) * 1);
   padding-top: calc(var(--index) * 1);
   padding-bottom: calc(var(--index) * 3.5);
   text-align: center;
@@ -1060,7 +1045,7 @@ body {
   font-size: calc(var(--index) * 5);
 }
 .owl-theme .owl-nav {
-  margin-top: calc(var(--index) * -2);
+  margin-top: calc(var(--index) * -2) !important;
 }
 .slider__img-snowflake1 {
   position: absolute;
@@ -1094,6 +1079,17 @@ body {
   opacity: 0.2;
   z-index: -1;
 }
+.owl-theme {
+  color: #000;
+  margin-top: calc(var(--index) * 2.5);
+}
+.item iframe{
+  width: 50vw;
+  height: 50vh;
+}
+.owl-nav span {
+  font-family: none;
+} 
 /* регистрация */
 .registraition {
   position: relative;
@@ -1625,7 +1621,11 @@ body {
   }
   .video {
     width: 90vw;
-    height: 45vh;
+    height: 30vh;
+  }
+  .item iframe{
+    width: 90vw;
+    height: 30vh;
   }
   .programmFestival {
     flex-direction: column-reverse;

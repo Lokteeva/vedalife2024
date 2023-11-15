@@ -1,48 +1,36 @@
-import React from 'react'
-import Iframe from 'react-iframe'
-import { useInView } from 'react-intersection-observer';
-
-
+import React from 'react';
+import Iframe from 'react-iframe';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 function Reviews() {
-  const { ref, inView } = useInView({
-    threshold: 0,
-    triggerOnce: true,
-  });
   return (
-    
-    <div ref={ref} className='reviews'>
-      <h3  className={` ${inView ? 'active' : ''}`}>ОТЗЫВЫ Участников</h3>
-    <Iframe url="https://vk.com/video_ext.php?oid=-42933644&id=456239406&hd=2"
-      id=""
-      className={`video ${inView ? 'active' : ''}`}
-      display="block"
-      position="relative"
-      />
-      <Iframe url="https://vk.com/video_ext.php?oid=-42933644&id=456239244&hd=2"
-      id=""
-      className={`video ${inView ? 'active' : ''}`}
-      display="block"
-      position="relative"
-      /><Iframe url="https://vk.com/video_ext.php?oid=-42933644&id=456239405&hd=2"
-      id=""
-      className={`video ${inView ? 'active' : ''}`}
-      display="block"
-      position="relative"
-      /><Iframe url="https://vk.com/video_ext.php?oid=-42933644&id=456239220&hd=1"
-      id=""
-      className={`video ${inView ? 'active' : ''}`}
-      display="block"
-      position="relative"
-      />
+    <div className="reviews">
+      <h3>ОТЗЫВЫ Участников</h3>
 
-<img className="reviews__img-snowflake" src="./image/snowflake.png" alt="snowflake" />
-<img className="reviews__img-snowflake-video1" src="./image/snowflake.png" alt="snowflake" />
-<img className="reviews__img-snowflake-video2" src="./image/snowflake.png" alt="snowflake" />
-<img className="reviews__img-snowflake-video3" src="./image/snowflake.png" alt="snowflake" />
-  
-  </div>
-  )
+      <OwlCarousel className='owl-theme' video={true} dots={false} margin={10} nav items={1}>
+    <div className='item'>
+    <iframe src="https://vk.com/video_ext.php?oid=-42933644&id=456239406&hd=2" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div className='item'>
+    <iframe src="https://vk.com/video_ext.php?oid=-42933644&id=456239244&hd=2"  allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div className='item'>
+    <iframe src="https://vk.com/video_ext.php?oid=-42933644&id=456239405&hd=2" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div className='item'>
+    <iframe src="https://vk.com/video_ext.php?oid=-42933644&id=456239220&hd=1"  allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+    </div>
+</OwlCarousel>
+
+      <img className="reviews__img-snowflake" src="./image/snowflake.png" alt="snowflake" />
+    
+    </div>
+  );
 }
 
-export default Reviews
+export default Reviews;

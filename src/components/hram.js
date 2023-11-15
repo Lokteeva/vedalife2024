@@ -37,6 +37,14 @@ function Hram() {
       {/* <video className='videoRoot' width="180" height="320" controls >
       <source src={video} type="video/mp4"/>
      </video> */}
+      <Iframe
+        url="https://vk.com/video_ext.php?oid=-42933644&id=456239426&hd=2"
+        id=""
+        className={`videoRoot ${inView ? 'active' : ''}`}
+        display="block"
+        position="relative"
+      />
+     
       
 
       <img className="hram__img-snowflake" src="./image/snowflake.png" alt="snowflake" />
