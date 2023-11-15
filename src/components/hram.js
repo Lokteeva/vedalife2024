@@ -34,9 +34,9 @@ function Hram() {
 
       <img className="hram__img" src="./image/img9.jpg" alt="img" />
 
-      <video className='videoRoot' width="180" height="320" controls >
+      {/* <video className='videoRoot' width="180" height="320" controls >
       <source src={video} type="video/mp4"/>
-     </video>
+     </video> */}
       
 
       <img className="hram__img-snowflake" src="./image/snowflake.png" alt="snowflake" />

@@ -13,7 +13,11 @@ function Price() {
        <section className={`price ${inView ? 'active' : ''}`}>
     <h2> <strong>стоимость участия</strong><br/>
 и проживание в номерах</h2>
-<h3>В стоимость входит:<br/> проживание, питание, вся программа</h3>
+<h4><strong>до 1 декабря 10% скидка</strong></h4>
+<h4>цены указаны без учета скидки</h4>
+<h3>В стоимость входит:<br/> проживание, питание, вся программа  </h3>
+<h5>на 1 человека</h5>
+
     <table className="price__table">
       <tbody>
         <tr >
@@ -60,7 +64,7 @@ function Price() {
     </table>
 
     <p>
-    При оплате <strong>до 15 ноября</strong> <br/> 2 дня ОТДЫХА в ашраме<br/> до или после фестиваля <strong>БЕСПЛАТНО!</strong>
+    При оплате <strong>до 1 декабря</strong> <br/> 2 дня ОТДЫХА в ашраме<br/> до или после фестиваля <strong>БЕСПЛАТНО!</strong>
     </p>
 
     <button className="price__btn1"></button>
