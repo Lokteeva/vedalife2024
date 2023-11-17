@@ -1047,6 +1047,9 @@ body {
 .owl-theme .owl-nav {
   margin-top: calc(var(--index) * -2) !important;
 }
+.owl-theme .owl-nav:hover {
+  
+}
 .slider__img-snowflake1 {
   position: absolute;
   top: calc(var(--index) * 5);

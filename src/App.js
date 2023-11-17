@@ -42,8 +42,8 @@ function App() {
       <Hram/>
       <Slider1/>
       <Slider2/>
-      <Registraition />
       <Price />
+      <Registraition />
       <Footer />
     </div>
   );
