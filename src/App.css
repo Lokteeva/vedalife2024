@@ -845,6 +845,7 @@ body {
   padding-top: calc(var(--index) * 8.5);
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 .speaker__box {
   width: calc(var(--index) * 20.5);
