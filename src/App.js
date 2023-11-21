@@ -34,10 +34,10 @@ function App() {
       <Festival />
       <Mandarin />
       <ProgrammFestival />
+      <Speakers />
       <Table />
       <Description />
       <Cooking />
-      <Speakers />
       <Reviews/>
       <Hram/>
       <Slider1/>

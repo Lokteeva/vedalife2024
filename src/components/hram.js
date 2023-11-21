@@ -1,7 +1,6 @@
 import React from 'react';
 import Iframe from 'react-iframe';
 import { useInView } from 'react-intersection-observer';
-import video from '../video/01.mp4'
 
 
 function Hram() {
@@ -34,9 +33,6 @@ function Hram() {
 
       <img className="hram__img" src="./image/img9.jpg" alt="img" />
 
-      {/* <video className='videoRoot' width="180" height="320" controls >
-      <source src={video} type="video/mp4"/>
-     </video> */}
       <Iframe
         url="https://vk.com/video_ext.php?oid=-42933644&id=456239426&hd=2"
         id=""

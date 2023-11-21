@@ -572,7 +572,6 @@ body {
 }
 /* table */
 .table {
-  margin-top: calc(var(--index) * -4.8);
   padding: calc(var(--index) * 1);
   background-color: var(--darkBlue);
   display: flex;
@@ -752,7 +751,7 @@ body {
   width: 100%;
 }
 .table {
-  margin-top: calc(var(--index) * -4.8);
+  margin-top: calc(var(--index) * 4);
   padding: calc(var(--index) * 1);
 }
 .table__img {
@@ -827,16 +826,27 @@ body {
   display: none;
 }
 /* speaker */
+.btnModal {
+  display: flex;
+  margin: auto;
+  background-color: var(--liteBlue);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: 'BebasNeueRegular';
+  font-size: calc(var(--index) * 0.7);
+  letter-spacing: 1.2px;
+}
+.btnModal p {
+  padding-bottom: 20px;
+}
 .speaker {
   position: relative;
   padding-top: calc(var(--index) * 8.5);
   display: flex;
   justify-content: center;
-  /* column-gap: calc(var(--index) * 1.3); */
-  /* padding-right: calc(var(--index) * 6); */
 }
 .speaker__box {
-  /* background-color:red; */
   width: calc(var(--index) * 20.5);
 }
 .speaker__img img {
@@ -908,6 +918,9 @@ body {
 }
 .speaker2 .speaker__box {
   margin: auto;
+}
+.speaker__content {
+  padding-bottom: calc(var(--index) * 1);
 }
 /* reviews */
 .reviews {
@@ -1048,7 +1061,6 @@ body {
   margin-top: calc(var(--index) * -2) !important;
 }
 .owl-theme .owl-nav:hover {
-  
 }
 .slider__img-snowflake1 {
   position: absolute;
@@ -1086,13 +1098,13 @@ body {
   color: #000;
   margin-top: calc(var(--index) * 2.5);
 }
-.item iframe{
+.item iframe {
   width: 50vw;
   height: 50vh;
 }
 .owl-nav span {
   font-family: none;
-} 
+}
 /* регистрация */
 .registraition {
   position: relative;
@@ -1197,19 +1209,19 @@ body {
 .price h4 {
   color: var(--darkPink);
   text-align: center;
- font-size: calc(var(--index) * 1);
+  font-size: calc(var(--index) * 1);
 }
-.price h4 strong{
- font-weight: 800;
- font-size: calc(var(--index) * 1.2);
+.price h4 strong {
+  font-weight: 800;
+  font-size: calc(var(--index) * 1.2);
 }
 .price h5 {
   color: var(--darkBlue);
   text-align: center;
- font-size: calc(var(--index) * 1.2);
- margin-top: calc(var(--index) * -1.5);
- font-weight: 900;
- padding-bottom: calc(var(--index) * 2);
+  font-size: calc(var(--index) * 1.2);
+  margin-top: calc(var(--index) * -1.5);
+  font-weight: 900;
+  padding-bottom: calc(var(--index) * 2);
 }
 .price p {
   color: var(--pink);
@@ -1626,7 +1638,7 @@ body {
     width: 90vw;
     height: 30vh;
   }
-  .item iframe{
+  .item iframe {
     width: 90vw;
     height: 30vh;
   }
