@@ -923,6 +923,43 @@ body {
 .speaker__content {
   padding-bottom: calc(var(--index) * 1);
 }
+/* recomendation */
+.recomendation {
+  background-color: var(--litePink);
+  margin-top: calc(var(--index) * 3);
+  padding-top: calc(var(--index) * 1);
+  padding-bottom: calc(var(--index) * 1);
+}
+.recomendation__box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 90vw;
+  margin: auto;
+}
+.recomendation__img {
+  padding: calc(var(--index) * .5);
+  margin: auto;
+}
+.recomendation__img img {
+  border-radius: 50%;
+  width: 100%;
+}
+.recomendation__img h3 {
+  text-align: center;
+  color: var(--white);
+  font-family: 'BebasNeueBook';
+  letter-spacing: 1.2px;
+  font-size: calc(var(--index) * 1);
+  padding-top: calc(var(--index) * 1);
+}
+.recomendation h2 {
+  text-align: center;
+  color: var(--white);
+  font-family: 'BebasNeueBook';
+  letter-spacing: 1.2px;
+  font-size: calc(var(--index) * 1.5);
+  padding-bottom: calc(var(--index) * 1);
+}
 /* reviews */
 .reviews {
   position: relative;

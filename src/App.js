@@ -19,6 +19,7 @@ import Reviews from './components/reviews';
 import Hram from './components/hram';
 import Slider1 from './components/slider1';
 import Slider2 from './components/slider2';
+import Recomendation from './components/recomendation';
 
 
 function App() {
@@ -35,7 +36,8 @@ function App() {
       <Mandarin />
       <ProgrammFestival />
       <Speakers />
-      <Table />
+      <Recomendation/>
+      {/* <Table /> */}
       <Description />
       <Cooking />
       <Reviews/>
