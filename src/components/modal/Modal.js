@@ -16,9 +16,10 @@ export default function Modal({children}) {
 
   return (
     <>
-      <button onClick={toggleModal} className="btnModal">
+     <button onClick={toggleModal} className="btnModal">
         Подробнее
       </button>
+    
 
       {modal && (
         <div className="modal">
@@ -31,6 +32,7 @@ export default function Modal({children}) {
           </div>
         </div>
       )}
+      
       
     </>
   );

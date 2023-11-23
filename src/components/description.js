@@ -11,6 +11,7 @@ function Description() {
     <div ref={ref}>
       
 
+            <h1 className='description-title-h1'>ЧТО ВАС ЖДЕТ?</h1>
       <section className="description">
         <div className="description__box box2">
           <div className="description__img description__img-revers">

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import Modal from './modal/Modal';
+import Iframe from 'react-iframe';
 
 function Speakers() {
   const { ref, inView } = useInView({
@@ -154,6 +155,15 @@ function Speakers() {
           </button>
         </div>
       </section>
+      <div >
+      <Iframe
+        url="https://vk.com/video_ext.php?oid=-42933644&id=456239431&hd=2"
+        id=""
+        className={`videoAshram ${inView ? 'active' : ''}`}
+        display="block"
+        position="relative"
+      />
+      </div>
     </div>
   );
 }

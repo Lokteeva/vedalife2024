@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'BebasNeueRegular'; /* tel, nav*/
+  font-family: 'BebasNeueRegular'; 
   src: url('../public/fonts/BEYLAF-BebasNeueRegular.ttf') format('truetype');
   font-display: block;
 }
@@ -619,6 +619,13 @@ body {
   padding-top: calc(var(--index) * 5);
   /* padding-bottom: calc(var(--index) * 6); */
 }
+.description-title-h1 {
+  text-align: center;
+  margin-top: calc(var(--index) * 2);
+  font-family: 'BebasNeueBook';
+  font-size: calc(var(--index) * 2);
+  color: var(--darkBlue);
+}
 .description__box {
   display: flex;
 }
@@ -923,6 +930,13 @@ body {
 .speaker__content {
   padding-bottom: calc(var(--index) * 1);
 }
+.videoAshram {
+  display: flex;
+  margin: auto;
+  margin-top: calc(var(--index) * 2);
+  width: 50vw;
+  height: 50vh;
+}
 /* recomendation */
 .recomendation {
   background-color: var(--litePink);
@@ -1067,8 +1081,8 @@ body {
 }
 .videoRoot {
   margin: auto;
-  width: 25.35vw;
-  height: 45vw;
+  width: 37vw;
+  height: 100vh;
   box-shadow: 5px 5px 15px #333;
   z-index: 2;
 }
@@ -1674,11 +1688,15 @@ body {
   }
   .video {
     width: 90vw;
-    height: 30vh;
+    height: 45vh;
+  }
+  .videoRoot {
+    width: 90vw;
+    height: 90vh;
   }
   .item iframe {
     width: 90vw;
-    height: 30vh;
+    height: 45vh;
   }
   .programmFestival {
     flex-direction: column-reverse;
@@ -1783,7 +1801,7 @@ body {
     width: inherit;
   }
   .speaker__text {
-    padding-bottom: calc(var(--index) * 6);
+    padding-bottom: calc(var(--index) * 1);
     width: 90vw;
   }
   .speaker__text p {
@@ -1796,6 +1814,31 @@ body {
   .speaker__title h2 {
     font-size: calc(var(--index) * 2.5);
   }
+  .btnModal {
+    padding: 7px;
+    font-size: calc(var(--index) * 1.5);
+  }
+  .speaker__img img {
+    margin-top: calc(var(--index) * 3);
+  }
+  .recomendation__box {
+    display: flex;
+    flex-direction: column;
+  }
+  .recomendation__img img {
+    width: calc(var(--index) * 30);
+    display: flex;
+    margin: auto;
+  }
+  .recomendation h2 {
+    font-size: calc(var(--index) * 3);
+  }
+  .recomendation__img h3  {
+    font-size: calc(var(--index) * 2.2);
+  }
+  .description-title-h1 {
+    font-size: calc(var(--index) * 3);
+  }
   .hram__text {
     width: 80vw;
     margin: auto;
@@ -1805,6 +1848,12 @@ body {
     margin-right: calc(var(--index) * 2);
     margin-left: calc(var(--index) * 2);
   }
+  .videoAshram {
+    margin-top: calc(var(--index) * 4);
+    width: 90vw;
+    height: 45vh;
+  }
+  
 }
 @media (max-width: 650px) {
   .home__button-festival {
@@ -1919,11 +1968,7 @@ body {
     display: flex;
     left: calc(var(--index) * 4.5);
   }
-  .videoRoot {
-    margin: auto;
-    width: 100vw;
-    height: 100vw;
-  }
+ 
   .slider {
     width: 100%;
   }
