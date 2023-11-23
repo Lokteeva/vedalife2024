@@ -33,6 +33,14 @@ function Speakers() {
         </div>
       </section>
 
+      <Iframe
+        url="https://vk.com/video_ext.php?oid=-42933644&id=456239431&hd=2"
+        id=""
+        className={`videoAshram ${inView ? 'active' : ''}`}
+        display="block"
+        position="relative"
+      />
+
       <section className="speaker">
         <div className="speaker__box">
           <div className="speaker__img">
@@ -156,13 +164,7 @@ function Speakers() {
         </div>
       </section>
       <div >
-      <Iframe
-        url="https://vk.com/video_ext.php?oid=-42933644&id=456239431&hd=2"
-        id=""
-        className={`videoAshram ${inView ? 'active' : ''}`}
-        display="block"
-        position="relative"
-      />
+      
       </div>
     </div>
   );

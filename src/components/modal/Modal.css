@@ -15,7 +15,7 @@ body.active-modal {
 
 .overlay {
   background: rgba(49, 49, 49, 0.8);
-  z-index: 9;
+  z-index: 99;
 }
 .modal-content {
   position: absolute;
@@ -26,7 +26,7 @@ body.active-modal {
   background: #f1f1f1;
   padding: 10px;
   border-radius: 10px;
-  z-index: 99;
+  z-index: 999;
 }
 .modal-content-text {
   padding: 20px;
