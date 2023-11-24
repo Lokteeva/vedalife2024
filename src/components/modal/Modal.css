@@ -13,12 +13,12 @@ body.active-modal {
   position: fixed;
 }
 .modal {
-  z-index: 99;
+  z-index: 99 !important;
 }
 
 .overlay {
   background: rgba(49, 49, 49, 0.8);
-  z-index: 99;
+  z-index: 99 !important;
 }
 .modal-content {
   position: absolute;
@@ -29,7 +29,7 @@ body.active-modal {
   background: #f1f1f1;
   padding: 35px 10px 10px;
   border-radius: 10px;
-  z-index: 999;
+  z-index: 999 !important;
 }
 .modal-content-text {
   padding: 20px;
