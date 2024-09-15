@@ -12,19 +12,15 @@ function Speakers() {
   return (
     <div ref={ref}>
       <section className={`speakers ${inView ? 'active' : ''}`}>
-        <div className="speakers__year">
-          <img src="./image/year.png" alt="year" />
-        </div>
         <div className="speakers__title">
           <h3>
-            {' '}
             спикеры
             <br />
             фестиваля
           </h3>
         </div>
         <div className="speakers__date">
-          <h3>29–5</h3>
+          <h3>28–4</h3>
           <div className="speakers__month">
             <button className="speakers__date-dec">декабря</button>
             <button className="speakers__date-jun">января</button>
@@ -33,13 +29,13 @@ function Speakers() {
         </div>
       </section>
 
-      <Iframe
+      {/* <Iframe
         url="https://vk.com/video_ext.php?oid=-42933644&id=456239431&hd=2"
         id=""
         className={`videoAshram ${inView ? 'active' : ''}`}
         display="block"
         position="relative"
-      />
+      /> */}
 
       <section className="speaker">
         <div className="speaker__box">
@@ -122,18 +118,19 @@ function Speakers() {
       <section className="speaker2">
         <div className="speaker__box">
           <div className="speaker__img">
-            <img src="./image/19.jpg" alt="img" />
+            <img
+              src="https://brsswami.com/wp-content/themes/brsswami/assets/img/site4.png "
+              alt="img"
+            />
           </div>
           <div className="speaker__content">
             <div className="speaker__title">
-              <h2>
-                Роман Волков и<br /> Оксана Волкова-Чудаева
-              </h2>
+              <h2>Бхакти Расаяна Сагара Свами</h2>
             </div>
             <div className="speaker__text">
-              <p>Психологи по семейным отношениям. </p>
               <p>
-                Проведут семинар-тренинг <strong>«Искусство отношений»</strong>
+                Монах, с которым советуются миллионеры. 14 кругосветных путешествий с лекциями по
+                всему миру. Мудрец, соединяющий материальное и духовное
               </p>
             </div>
           </div>
@@ -141,14 +138,28 @@ function Speakers() {
             <details>
               <summary>Подробнее</summary>
               <p className="Podrobnee">
-                Роман и Оксана проведут тренинг «Искусство отношений». Это трансформационный
-                тренинг, после которого вы узнаете и будите применять в жизни что такое отношения:
-                отношения с собой, отношения в паре, отношения с родителями и детьми.
-              </p>
-              <p className="Podrobnee">У вас будут упражнения и работа в парах-тройках.</p>
-              <p className="Podrobnee">
-                Вы узнаете: как быть с разногласиями в отношениях, как формировать долгосрочное
-                видение отношений, как принять партнера, если он не такой как я.
+                <ul className='podrobnee-li'>
+                  <li>
+                    Более 30 лет практикует монашеский уклад жизни в традиции бхакти-йоги. В 2016
+                    году принял санньясу.
+                  </li>
+                  <li>
+                    Преподает и консультирует лидеров общества и бизнеса более чем в 20 странах на
+                    4-х континентах.
+                  </li>
+                  <li>
+                    Использует в своих лекциях и тренингах древние священные писания и современные
+                    разработки Гарвардской бизнес-школы.
+                  </li>
+                  <li> Развивает межконфессиональное сотрудничество на уровне стран и ООН. </li>
+                  <li>
+                    Выступает вдохновителем и духовным лидером международного бизнес-форума «Артха»
+                    на русскоязычном пространстве.
+                  </li>
+                  <li>
+                    Распространяя духовное знание, совершил 14 полных кругосветных путешествий.
+                  </li>
+                </ul>
               </p>
             </details>
           </button>

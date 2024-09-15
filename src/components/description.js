@@ -108,13 +108,13 @@ function Description() {
         </div>
       </section>
 
-      <section className="description">
+      {/* <section className="description">
         <div className="description__box box2">
           <div className="description__img description__img-revers">
             {inView ? <img src="./image/06.jpg" alt="img" /> : <div className="skeleton10" />}
-          </div>
+          </div> */}
 
-          <div className="description__content">
+          {/* <div className="description__content">
             <div className="description__title">
               <h2>мастер-класс сари и дхоти</h2>
             </div>
@@ -132,25 +132,23 @@ function Description() {
                 делать фотосессию, чтобы вы могли показать ваше преображение в ваших соц сетях 😉
               </p>
             </div>
-          </div>
-
+          </div> */}
+{/* 
           <img className="description__snowflake4 " src="./image/snowflake.png" alt="snowflake" />
-        </div>
-      </section>
+        </div> */}
+      {/* </section> */}
 
       <section className="description">
-        <div className="description__box">
-          <div className="description__img">
+        <div className="description__box box2">
+        <div className="description__img">
             {inView ? <img src="./image/07.jpg" alt="img" /> : <div className="skeleton23" />}
           </div>
-
           <div className="description__content">
             <div className="description__title">
               <h2>мастер-класс танцуют все</h2>
             </div>
             <div className="description__text">
               <p>
-                {' '}
                 Ведическая культура - это не только изучение древних книг, это чистый образ жизни. И
                 даже танцевать можно так, чтобы этот танец помогал очистить сознание и приблизиться
                 к совершенству жизни.
@@ -159,11 +157,12 @@ function Description() {
             </div>
           </div>
         </div>
+        
       </section>
 
       <section className="description">
-        <div className="description__box box2">
-          <div className="description__img description__img-revers">
+        <div className="description__box ">
+          <div className="description__img description__img">
             {inView ? <img src="./image/08.jpg" alt="img" /> : <div className="skeleton10" />}
           </div>
 

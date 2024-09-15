@@ -7,6 +7,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 function Reviews() {
   return (
     <div className="reviews">
+      
       <h3>ОТЗЫВЫ Участников</h3>
 
       <OwlCarousel className='owl-theme' video={true} dots={false} margin={10} nav items={1}>

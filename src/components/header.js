@@ -1,56 +1,59 @@
-import React from 'react'
-import Snow from 'react-snow-effect'
-
+import React from 'react';
+import Snow from 'react-snow-effect';
 
 function Header() {
   return (
     <div>
-        <Snow />
+      <Snow />
       <header className="header ">
-      <div className="header__line"></div>
-      <div className="header__box">
-        <div className="header__logo1">
-          <img src="./image/logo1.png" alt="logo"/>
-        </div>
-        <div className="header__logo2">
-          <img src="./image/logo2.png" alt="logo"/>
-        </div>
-        {/* <div className="header__logo3">
-          <img src="./image/logo3.png" alt="logo"/>
-        </div> */}
-        <div className="header__social-box">
-          <div className="header__social">
-            {/* <div className="social__whatsapp">
-              <a href="#"><img className="whatsapp" src="./image/social/whatsapp-svgrepo-com.svg"></img></a>
-            </div> 
-            <div className="social__telegram">
-              <a href="#"><img className="telegram" src="./image/social/telegram-svgrepo-com.svg"></img></a>
-             </div>  */}
-             <div className="social__vk">
-              <a href="https://vk.com/vedalife_sochi"><img className="vk" src="./image/social/vk-svgrepo-com.svg"></img></a>
-             </div> 
-             <div className="social__instagram">
-              <a href="https://instagram.com/vedalife"><img className="instagram" src="./image/social/instagram-167-svgrepo-com.svg"></img></a>
-             </div>        
+        <div className="header__line" />
+        <div className="header__box">
+          <div className="header__logo1">
+            <img src="./image/logo1.png" alt="logo" />
+          </div>
+          <div className="header__social-box">
+            <div className="header__social">
+              <div className="social__vk">
+                <a href="https://vk.com/vedalife_sochi">
+                  <img className="vk" src="./image/social/vk-svgrepo-com.svg"></img>
+                </a>
+              </div>
+              <div className="social__instagram">
+                <a href="https://instagram.com/vedalife">
+                  <img
+                    className="instagram"
+                    src="./image/social/instagram-167-svgrepo-com.svg"></img>
+                </a>
+              </div>
+            </div>
+
+            <div className="header__tel">
+              <a href="tel:+79631626238 ">+7 963 162 6238 </a>
+            </div>
           </div>
 
-          <div className="header__tel">
-            <a href="tel:+79884876527">+7 988 487 6527</a>
-          </div>
+          <nav className="header__nav">
+            <ul>
+              <li>
+                <a href="#footer">о нас</a>
+              </li>
+              <li>
+                <a href="#newYear">фестиваль</a>
+              </li>
+              <li>
+                <a href="#programmFestival">программа</a>
+              </li>
+              <li>
+                <a className="registraition__button" href="#registraition">
+                  регистрация
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        
-        <nav className="header__nav">
-<ul>
-  <li><a href='#footer'>о нас</a></li>
-  <li><a href='#newYear'>фестиваль</a></li>
-  <li><a href='#programmFestival'>программа</a></li>
-  <li><a  className="registraition__button" href="#registraition">регистрация</a></li>
-</ul>
-        </nav>
-      </div>
-    </header>
+      </header>
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;

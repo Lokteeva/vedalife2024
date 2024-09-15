@@ -2,12 +2,11 @@ import './App.css';
 
 import Header from './components/header';
 import Vedalife from './components/vedalife';
-import Home from './components/home';
+// import Home from './components/home';
 import NewYear from './components/newYear';
 import Festival from './components/festival';
 import Mandarin from './components/mandarin';
 import ProgrammFestival from './components/programmFestival';
-import Table from './components/table';
 import Description from './components/description';
 import Cooking from './components/cooking';
 import Speakers from './components/speakers';
@@ -20,30 +19,28 @@ import Hram from './components/hram';
 import Slider1 from './components/slider1';
 import Slider2 from './components/slider2';
 import Recomendation from './components/recomendation';
-
+import HomeBaner from './components/homeBaner';
 
 function App() {
-
-
   return (
     <div>
       <Header />
-      <Home />
+      <HomeBaner />
+      {/* <Home /> */}
       <Vedalife />
-      <Video/>
+      <Video />
       <NewYear />
       <Festival />
       <Mandarin />
       <ProgrammFestival />
       <Speakers />
-      <Recomendation/>
-      {/* <Table /> */}
+      <Recomendation />
       <Description />
       <Cooking />
-      <Reviews/>
-      <Hram/>
-      <Slider1/>
-      <Slider2/>
+      <Reviews />
+      <Hram />
+      <Slider1 />
+      <Slider2 />
       <Price />
       <Registraition />
       <Footer />

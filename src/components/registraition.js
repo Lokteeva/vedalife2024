@@ -17,14 +17,22 @@ function Registraition() {
       </div>
       <div className="registraition__text">
         <p>
-          Дорогие друзья! Приглашаем вас встретить грядущий 2024 год в действительно благоприятном месте - Ашраме Сочи на Vedalife!
+        Чтобы занять себе место достаточно внести от 3000 рублей, остальное при заезде.
         </p>
         <p>
-          Оставьте заявку, чтобы успеть забронировать место по самой выгодной цене! 
+        Напишите нам чтобы зарегистрироваться или уточнить подробности
         </p>
-        
       </div>
+          
+    <div className='button-registraition'>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdRaZpZQktevoHTpFihjeujw8oefjtg63IetGSHUyPYMuJrWw/viewform"> Оставить заявку</a>
+    <a className="baner__button" href="https://wa.me/79631626238 ">
+        Написать в Whatsapp
+      </a>
+      <a className="baner__button" href="https://t.me/aana_ambika">
+        Написать в Telegram
+      </a>
+    </div>
     </div>
     <div className="registraition__img">
       <img src="./image/17.jpg" alt="img"/>
@@ -33,6 +41,7 @@ function Registraition() {
     <img className="registraition__snowflake" src="./image/snowflake.png" alt="snowflake"/>
     <img className="registraition__snowflake2" src="./image/snowflake.png" alt="snowflake"/>
 
+ 
   </section>
     </div>
   )
