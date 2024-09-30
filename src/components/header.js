@@ -43,11 +43,11 @@ function Header() {
               <li>
                 <a href="#programmFestival">программа</a>
               </li>
-              <li>
+              {/* <li>
                 <a className="registraition__button" href="#registraition">
                   регистрация
                 </a>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>

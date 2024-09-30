@@ -47,9 +47,9 @@ body {
   justify-content: center;
   gap: 50px;
 }
-.padding-text p{
-padding: 50px;
-font-size: 24px;
+.padding-text p {
+  padding: 50px;
+  font-size: 24px;
 }
 .title-pink {
   color: var(--pink);
@@ -154,11 +154,21 @@ font-size: 24px;
   display: flex;
   width: max-content;
   margin-bottom: 15px;
+  margin-top: 24px;
 }
 .baner__button:hover {
   color: var(--pink);
   background-color: var(--white);
   font-family: 'BebasNeueRegular';
+}
+.homeBaner__title {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: 'BebasNeueRegular';
+  color: var(--pink);
+  letter-spacing: 3px;
+  margin-top: 24px;
 }
 .home {
   position: relative;
@@ -766,8 +776,8 @@ font-size: 24px;
 .cooking {
   margin-top: calc(var(--index) * 2.5);
 }
-.cooking__padding{
-   margin: 24px 0;
+.cooking__padding {
+  margin: 24px 0;
 }
 .cooking__img {
   width: 100%;

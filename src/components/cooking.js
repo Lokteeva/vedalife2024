@@ -1,5 +1,6 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
+import { sail } from './constants/constants.ts';
 
 function Cooking() {
   const { ref, inView } = useInView({
@@ -14,7 +15,7 @@ function Cooking() {
       </div>
       <div className='cooking__padding'>
         <p className='title-pink center'>
-          При открытии регистрации мы выделили 10 мест по скидке 7500 рублей при раннем
+          При открытии регистрации мы выделили 10 мест по скидке {sail} при раннем
           бронирование.
         </p>
         <p className='center'>Чтобы занять себе место достаточно внести 3000 рублей, остальное при заезде.</p>

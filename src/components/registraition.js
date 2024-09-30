@@ -25,7 +25,6 @@ function Registraition() {
       </div>
           
     <div className='button-registraition'>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdRaZpZQktevoHTpFihjeujw8oefjtg63IetGSHUyPYMuJrWw/viewform"> Оставить заявку</a>
     <a className="baner__button" href="https://wa.me/79631626238 ">
         Написать в Whatsapp
       </a>

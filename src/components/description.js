@@ -9,9 +9,7 @@ function Description() {
 
   return (
     <div ref={ref}>
-      
-
-            <h1 className='description-title-h1'>ЧТО ВАС ЖДЕТ?</h1>
+      <h1 className="description-title-h1">ЧТО ВАС ЖДЕТ?</h1>
       <section className="description">
         <div className="description__box box2">
           <div className="description__img description__img-revers">
@@ -95,7 +93,7 @@ function Description() {
             </div>
             <div className="description__text">
               <p>
-                В женских кругах вы будите дружественной, камерной атмосфере при свечах обсуждать
+                В женских кругах вы будете дружественной, камерной атмосфере при свечах обсуждать
                 как прошёл день, пообщаетесь с нашими спикерами на женские темы, зарядитесь женской
                 энергией вдохновения и радости
               </p>
@@ -108,39 +106,9 @@ function Description() {
         </div>
       </section>
 
-      {/* <section className="description">
-        <div className="description__box box2">
-          <div className="description__img description__img-revers">
-            {inView ? <img src="./image/06.jpg" alt="img" /> : <div className="skeleton10" />}
-          </div> */}
-
-          {/* <div className="description__content">
-            <div className="description__title">
-              <h2>мастер-класс сари и дхоти</h2>
-            </div>
-            <div className="description__text description__text-revers">
-              <p>
-                Ведическая культура - это очень красиво. Вы будите учиться одеваться традиционные
-                сари (женщины) и дхоти (мужчины).
-              </p>
-              <p>
-                Мало того что это красиво, так это еще и меняет внутренние ощущения, словами это не
-                передать. Нужно одеться!
-              </p>
-              <p>
-                Будите выглядеть как настоящие индийские женщины и мужчины :). А потом все идём
-                делать фотосессию, чтобы вы могли показать ваше преображение в ваших соц сетях 😉
-              </p>
-            </div>
-          </div> */}
-{/* 
-          <img className="description__snowflake4 " src="./image/snowflake.png" alt="snowflake" />
-        </div> */}
-      {/* </section> */}
-
       <section className="description">
         <div className="description__box box2">
-        <div className="description__img">
+          <div className="description__img">
             {inView ? <img src="./image/07.jpg" alt="img" /> : <div className="skeleton23" />}
           </div>
           <div className="description__content">
@@ -157,7 +125,6 @@ function Description() {
             </div>
           </div>
         </div>
-        
       </section>
 
       <section className="description">
@@ -175,7 +142,6 @@ function Description() {
                 Традиционно мы за 2-3 месяца начинаем готовить новогодний спектакль - это
                 философское, но при этом с юмором театральное действие на несколько часов.
               </p>
-              
             </div>
           </div>
         </div>

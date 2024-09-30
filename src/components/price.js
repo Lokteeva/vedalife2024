@@ -1,5 +1,6 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
+import { DiscountedCost, FullCost, sail } from './constants/constants.ts';
 
 function Price() {
   const { ref, inView } = useInView({
@@ -17,7 +18,7 @@ function Price() {
         </h2>
         <h4>
           <strong>
-            Первые 10 мест по скидке 7500₽ <br />+ 1 день отдыха бесплатно
+            Первые 10 мест по скидке {sail} <br />+ 1 день отдыха бесплатно
           </strong>
         </h4>
         <h3>
@@ -37,56 +38,71 @@ function Price() {
               <td>
                 6 <span>ти</span> - местный
               </td>
-              <td className="price__num"><del>30 000</del></td>
-              <td className="price__num">22 500</td>
+              <td className="price__num">
+                <del>{FullCost.A1}</del>
+              </td>
+              <td className="price__num">{DiscountedCost.B1}</td>
             </tr>
             <tr>
               <td>
                 4 <span>х</span> - местный
               </td>
-              <td className="price__num"><del>32 000</del></td>
-              <td className="price__num">25 500</td>
+              <td className="price__num">
+                <del>{FullCost.A2}</del>
+              </td>
+              <td className="price__num">{DiscountedCost.B2}</td>
             </tr>
             <tr>
               <td>
                 2 <span>х</span> - местный
               </td>
-              <td className="price__num"><del>40 000</del></td>
-              <td className="price__num">32 500</td>
+              <td className="price__num">
+                <del>{FullCost.A3}</del>
+              </td>
+              <td className="price__num">{DiscountedCost.B3}</td>
             </tr>
             <tr>
               <td>
                 {' '}
                 <span>доп. место в </span> 4 <span>х</span> местном
               </td>
-              <td className="price__num"><del>28 500</del></td>
-              <td className="price__num">21 000</td>
+              <td className="price__num">
+                <del>{FullCost.A4}</del>
+              </td>
+              <td className="price__num">{DiscountedCost.B4}</td>
             </tr>
             <tr>
               <td>
                 4 <span>х</span> - местный / комфорт
               </td>
-              <td className="price__num"><del>45 000</del></td>
-              <td className="price__num">37 500</td>
+              <td className="price__num">
+                <del>{FullCost.A5}</del>
+              </td>
+              <td className="price__num">{DiscountedCost.B5}</td>
             </tr>
             <tr>
               <td>
                 Новый дом 2 <span>х</span> - местный / комфорт
               </td>
-              <td className="price__num"><del>47 000</del></td>
-              <td className="price__num">39 500</td>
+              <td className="price__num">
+                <del>{FullCost.A6}</del>
+              </td>
+              <td className="price__num">{DiscountedCost.B6}</td>
             </tr>
             <tr>
               <td>
                 Новый дом 4 <span>х</span> - местный / комфорт
               </td>
-              <td className="price__num"><del>37 000</del></td>
-              <td className="price__num">29 500</td>
+              <td className="price__num">
+                <del>{FullCost.A7}</del>
+              </td>
+              <td className="price__num">{DiscountedCost.B7}</td>
             </tr>
           </tbody>
         </table>
 
-        <p>7500₽ при раннем бронировании, первые 10 мест</p>
+        <p>СКИДКИ !!!</p>
+        <p>{sail} при раннем бронировании, первые 10 мест</p>
         <p>
           50% от полной стоимости детям до 12-ти
           <br />
